@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cepm="http://schemas.android.com/apk/res/com.pm360.cepm360"
+    android:id="@+id/project_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60_h" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp12_w"
+                android:layout_marginRight="@dimen/dp12_w"
+                android:layout_marginBottom="@dimen/dp12_h"
+                android:layout_marginTop="@dimen/dp12_h"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp12_w"
+                    android:text="@string/project_view"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16_w"
+                    android:gravity="center_vertical" >
+
+                    <Spinner
+                        android:id="@+id/project_view_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_bg_black"
+                        android:paddingLeft="@dimen/dp6_w"
+                        android:paddingRight="@dimen/dp6_w"
+                        android:paddingBottom="@dimen/dp6_h"
+                        android:paddingTop="@dimen/dp6_h"/>
+                </RelativeLayout>
+            </LinearLayout>
+  
+            <com.pm360.cepm360.app.common.view.RightButtonEditText
+                android:id="@+id/search_edit"
+                android:layout_width="@dimen/dp240_w"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp24_w"
+                android:background="@drawable/edit_text_bg"
+                cepm:buttonIcon="@drawable/search_icon" />
+               
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TabHost
+                android:id="@+id/view_tabhost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <include
+                            android:id="@+id/recent_list"
+                            layout="@layout/project_table2" />
+
+                        <include
+                            android:id="@+id/eps_sort_list"
+                            layout="@layout/project_table2" />
+
+                        <include
+                            android:id="@+id/nosort_list"
+                            layout="@layout/project_table2" />
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+
+
+        </RelativeLayout>
+        <include
+            android:id="@+id/content_tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/content_listview_father_bg"
+            layout="@layout/base_view_pager" />
+    </LinearLayout>
+
+</LinearLayout>

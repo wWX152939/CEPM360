@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/task_make_feedback_bg" >
+
+    <EditText
+        android:id="@+id/dialog_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_store_quantity"
+        android:layout_marginLeft="@dimen/dp15_w"
+        android:layout_marginRight="@dimen/dp15_w"
+        android:layout_marginBottom="@dimen/dp15_h"
+        android:layout_marginTop="@dimen/dp15_h"
+        android:background="@drawable/base_dialog_content_bg"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/dp8_w"
+        android:paddingRight="@dimen/dp8_w"
+        android:paddingBottom="@dimen/dp8_h"
+        android:paddingTop="@dimen/dp8_h"
+        android:singleLine="true"
+        android:numeric="decimal"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dialog_edit_text"
+        android:layout_below="@id/dialog_edit_text"
+        android:layout_marginBottom="@dimen/dp10_h"
+        android:background="@drawable/button_bg"
+        android:minHeight="@dimen/dp30_h"
+        android:paddingLeft="@dimen/dp30_w"
+        android:paddingRight="@dimen/dp30_w"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/dialog_edit_text"
+        android:layout_below="@id/dialog_edit_text"
+        android:layout_marginBottom="@dimen/dp10_h"
+        android:background="@drawable/button_bg"
+        android:minHeight="@dimen/dp30_h"
+        android:paddingLeft="@dimen/dp30_w"
+        android:paddingRight="@dimen/dp30_w"
+        android:text="@string/cancel" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialog_edit_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dp10_h"
+        android:text="@string/input_out_store_amount"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18_s"/>
+    
+    <TextView
+        android:id="@+id/tv_store_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialog_edit_text"
+        android:layout_below="@+id/tv_title"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/sp16_s"/>
+
+</RelativeLayout>

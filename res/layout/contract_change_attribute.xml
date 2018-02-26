@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_chscroll_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:padding="@dimen/dp1_w"
+    android:background="@color/light_gray"
+    android:overScrollMode="never"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_light_gray"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/summary_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp12_w"
+            android:text="@string/contract_summary_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp17_s"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/summary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contract_change_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp12_w"
+            android:text="@string/contract_change_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp17_s"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/contract_change_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

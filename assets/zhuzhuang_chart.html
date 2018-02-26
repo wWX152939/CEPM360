@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>ichartjs ccl</title>
+		<script type="text/javascript" src="ichart-1.0.min.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			var data = [];
+			//JSON数组，用于演示给data[0]赋值
+			var result = cepm.jsontohtml();  
+			var obj = eval("("+result+")");//解析json字符串
+			for (var i = 0; i < obj.length;i++){
+				data[i]=obj[i];
+			}
+			var chart = new iChart.Pie3D({
+				render : 'canvasDiv',
+				data: obj,
+				title : {
+					text : '各类别合计费用比重图',
+					height:80,
+					fontsize : 30,
+					color : '#282828'
+				},
+				sub_option : {
+					mini_label_threshold_angle : 40,//迷你label的阀值,单位:角度
+					mini_label:{//迷你label配置项
+						fontsize:20,
+						fontweight:600,
+						color : '#ffffff'
+					},
+					label : {
+						background_color:null,
+						sign:false,//设置禁用label的小图标
+						padding:'0 4',
+						border:{
+							enable:false,
+							color:'#666666'
+						},
+						fontsize:20,
+						fontweight:600,
+						color : '#4572a7'
+					},
+					border : {
+						width : 2,
+						color : '#ffffff'
+					},
+					listeners:{
+						parseText:function(d, t){
+							return d.get('value')+"%";//自定义label文本
+						},
+						click:function(l,e,m){
+								cepm.clickOnAndroid("xxx");
+							}						
+					} 
+				},
+				legend:{
+					enable:true,
+					padding:0,
+					offsetx:120,
+					offsety:-70,
+					color:'#3e576f',
+					fontsize:25,//文本大小
+					sign_size:20,//小图标大小
+					line_height:28,//设置行高
+					sign_space:10,//小图标与文本间距
+					border:false,
+					align:'left',
+					background_color : null//透明背景
+				}, 
+				animation : true,//开启过渡动画
+				animation_duration:800,//800ms完成动画 				
+				shadow : true,
+				shadow_blur : 6,
+				shadow_color : '#aaaaaa',
+				shadow_offsetx : 0,
+				shadow_offsety : 0,
+				background_color:'#f1f1f1',
+				align:'right',//右对齐
+				offsetx:-180,//设置向x轴负方向偏移位置60px
+				offsety:-20,//设置向x轴负方向偏移位置60px
+				offset_angle:0,//逆时针偏移120度
+				yHeight:50,
+				width : 1100,
+				height : 600,
+				radius:250
+			});
+			
+			chart.draw();
+		});
+				
+			</script>
+		</head>
+		<body>
+			<div id='canvasDiv'></div>
+		</body>
+</html>

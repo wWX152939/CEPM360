@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purchase_add_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/content_listview_margin_width"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <include
+            android:id="@+id/lease_manager_add_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10_h"
+            layout="@layout/lease_add_top_item" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lease_manager_add_top"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/content_listview_edge_bg"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/listHeaderView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_height"
+                    layout="@layout/lease_add_list_item_title"
+                    android:paddingBottom="@dimen/dp5_h" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1_h"
+                    android:background="@color/divider"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:clickable="true"
+                    android:divider="@null"
+                    android:focusable="false"
+                    android:listSelector="@color/listview_selected_bg"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/content_listview_edge_bg"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/content_listview_edge_bg"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/lease_manager_add_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/purchase_budget_add_bottom_item" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/lease_add_save"
+        android:layout_width="@dimen/dp120_w"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/dp16_w"
+        android:background="@drawable/button_corners_blue_bg"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="@dimen/dp120_w"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/dp120_w"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:text="@string/submit"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/approval"
+        android:layout_width="@dimen/dp120_w"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/dp224_w"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:text="@string/approve"
+        android:visibility="gone" />
+
+</FrameLayout>

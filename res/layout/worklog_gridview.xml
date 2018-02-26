@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/attach_bg"
+    android:orientation="vertical" >
+    
+    <GridView
+        android:id="@+id/gridview" 
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10_h"
+        android:layout_marginLeft="@dimen/dp20_w"
+        android:layout_marginRight="@dimen/dp20_w"
+        android:layout_marginBottom="@dimen/dp20_h"
+        android:columnWidth="@dimen/dp120_w"
+        android:numColumns="5"
+        android:horizontalSpacing="@dimen/dp2_w"
+        android:verticalSpacing="@dimen/dp4_h"
+        android:gravity="center"
+        android:padding="@dimen/dp4_h"
+        android:stretchMode="columnWidth" 
+        android:src="@drawable/picture_add"
+        android:background="#E1E5F0">
+    </GridView>
+    
+
+</LinearLayout>

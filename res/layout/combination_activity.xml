@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:animateLayoutChanges="true" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dp240_w"
+        android:layout_height="fill_parent"
+        android:padding="3dp"
+        android:background="@color/tree_listview_bg"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/eps_name"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/schedule_title_table_height"
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/project_directory"
+            android:textColor="#4f4d4d"
+            android:textSize="@dimen/content_tree_title_text_size" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#e8edee"
+            android:dividerHeight="@dimen/dp1_h" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:animateLayoutChanges="true"
+        android:padding="3dp"
+        android:orientation="horizontal" >
+		
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true">
+            
+			<RelativeLayout
+	            android:id="@+id/empty_tv_father"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:gravity="center"
+		        android:clickable="false"
+    			android:background="@android:color/white"
+		        android:animateLayoutChanges="true">
+
+		        <TextView
+		            android:id="@+id/empty_tv"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:layout_gravity="center"
+		            android:clickable="true"
+		            android:gravity="center"
+		            android:padding="10dp"
+		            android:text="@string/combination_empty"
+		            android:textColor="#909191"
+		            android:textSize="@dimen/sp22_s" />
+	
+		        <ImageView
+		            android:id="@+id/clickme"
+		            android:layout_width="@dimen/dp65_w"
+		            android:layout_height="@dimen/dp65_h"
+		            android:layout_alignRight="@+id/empty_tv"
+		            android:layout_below="@+id/empty_tv"
+		            android:padding="5dp"
+		            android:visibility="gone"
+		            android:src="@drawable/animal_clickme"
+		            android:contentDescription="@null" />
+	            	    
+	    	</RelativeLayout>            
+
+            <RelativeLayout
+                android:id="@+id/horizontalScrollView_father"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+    			android:background="@android:color/white"
+			    android:gravity="center" >
+ 			    <HorizontalScrollView
+			        android:id="@+id/horizontalScrollView1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:clickable="true"
+			        android:fillViewport="true"
+			        android:gravity="center" >
+			
+			        <LinearLayout
+			            android:id="@+id/scrollviewlinearlayout"
+			            android:layout_width="wrap_content"
+			            android:layout_height="@dimen/dp500_h"
+			            android:clickable="true"
+			            android:gravity="center"
+			            android:orientation="horizontal" >
+
+			        </LinearLayout>
+			    </HorizontalScrollView>
+            </RelativeLayout>                        
+
+            <com.pm360.cepm360.app.common.view.FloatingMenuView
+                android:id="@+id/floating_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/dp16_h"
+                android:layout_marginEnd="@dimen/dp18_w"
+                android:clickable="true"
+                android:src="@drawable/btn_add" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

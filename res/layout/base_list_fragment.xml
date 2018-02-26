@@ -1,0 +1,102 @@
+<com.pm360.cepm360.app.common.view.ServerDragFrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/server_drag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- 内容列表 -->
+
+    <LinearLayout
+        android:id="@+id/content_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/content_listview_margin_height"
+        android:layout_marginLeft="@dimen/content_listview_margin_width"
+        android:layout_marginRight="@dimen/content_listview_margin_width"
+        android:layout_marginTop="@dimen/content_listview_margin_height"
+        android:background="@drawable/table_content_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/content_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_height"
+            android:orientation="horizontal" />
+
+        <com.pm360.cepm360.app.common.view.SHListView
+            android:id="@+id/content_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/content_listview_edge_bg"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!-- 菜单按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/button_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp48_h"
+        android:layout_gravity="bottom|right"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/DialogButtonStyle_Normal"
+            android:layout_width="@dimen/dp140_w"
+            android:layout_height="@dimen/dp40_h" 
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp5_h"
+            android:layout_marginRight="@dimen/dp30_w"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp17_s" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/DialogButtonStyle_Normal"
+            android:layout_width="@dimen/dp140_w"
+            android:layout_height="@dimen/dp40_h" 
+            android:layout_alignBaseline="@+id/btn_cancel"
+            android:layout_marginBottom="@dimen/dp5_h"
+            android:layout_marginRight="@dimen/dp20_w"
+            android:layout_toLeftOf="@+id/btn_cancel"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/complete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp17_s" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/baseViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/base_view_pager"
+        android:visibility="gone" />
+
+    <!-- 浮动菜单 -->
+
+    <com.pm360.cepm360.app.common.view.FloatingMenuView
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/floatingmenu_width"
+        android:clickable="true"
+        android:src="@drawable/btn_add" />
+
+</com.pm360.cepm360.app.common.view.ServerDragFrameLayout>

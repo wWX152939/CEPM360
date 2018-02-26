@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>ichartjs ccl</title>
+		<script type="text/javascript" src="ichart-1.0.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var data = [
+				        	{name : '已完成任务数',value : 0.73,color:'#6f83a5'},
+				        	{name : '超期已完成任务数',value : 35.75,color:'#a5c2d5'},
+				        	{name : '未开始任务数',value : 29.84,color:'#cbab4f'},
+				        	{name : '超期未开始任务数',value : 24.88,color:'#76a871'},
+				        	{name : '进行中任务数',value : 6.77,color:'#9f7961'},
+				        	{name : '超期进行中任务数',value : 2.02,color:'#a56f8f'}
+			        	];
+	        	
+				new iChart.Pie2D({
+					render : 'canvasDiv',
+					data: data,
+					title : {
+						text:'南京碧桂园城市花园二期工程任务统计',
+						color:'#ffffff'	
+					},
+					background_color:'#363645',
+					legend : {
+						enable : true
+					},
+					sub_option : {
+						label : {
+							background_color:null,
+							sign:false,//设置禁用label的小图标
+							padding:'0 4',
+							border:{
+								enable:false,
+								color:'#666666'
+							},
+							fontsize:18,
+							fontweight:600,
+							color : '#4572a7'
+						},
+						border : {
+							width : 2,
+							color : '#ffffff'
+						}
+					},
+					animation:true,
+					showpercent:true,
+					decimalsnum:2,
+					width : 1000,
+					height : 400,
+					radius:140
+				}).draw();
+			});
+				
+			</script>
+		</head>
+		<body>
+			<div id='canvasDiv'></div>
+		</body>
+</html>

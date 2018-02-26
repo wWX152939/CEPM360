@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/schedule_table_height"
+    android:background="@drawable/task_child_list_title_background"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/task_feedback_resource_id"
+        android:layout_width="@dimen/dp50_w"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp14_s"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/task_child_list_line"
+        android:visibility="visible" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/task_feedback_resource_actual_sum"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14_s"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+            
+            <TextView
+                android:id="@+id/task_feedback_resource_name"
+                android:layout_width="@dimen/dp140_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14_s"/>
+	
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+            
+            <TextView
+                android:id="@+id/task_feedback_resource_class"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14_s"/>
+            
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+            
+            <TextView
+                android:id="@+id/task_feedback_resource_type"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14_s"/>
+	
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/task_feedback_resource_child_type"
+                android:layout_width="@dimen/dp50_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14_s"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+            <TextView
+                android:id="@+id/task_feedback_resource_unit"
+                android:layout_width="@dimen/dp50_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14_s"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+           <TextView
+                android:id="@+id/task_feedback_resource_plan_sum"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14_s"/>
+           <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+           <TextView
+                android:id="@+id/task_feedback_get_out_amount"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14_s"/>
+           <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+           <TextView
+                android:id="@+id/task_feedback_resource_arrive_time"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp14_s"/>
+            
+            
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_white_bg"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/take_picture"
+        android:layout_width="@dimen/dp200_w"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp16_s"
+        android:text="@string/take_picture" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible" />
+    
+    <Button
+        android:id="@+id/local_picture"
+        android:layout_width="@dimen/dp200_w"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp16_s"
+        android:text="@string/local_picture" />
+    
+    <View
+        android:id="@+id/before_edit_template"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone" />
+    
+    <Button
+        android:id="@+id/edit_template"
+        android:layout_width="@dimen/dp200_w"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp16_s"
+        android:text="@string/edit_template"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/local_file_layout"
+        android:layout_width="@dimen/dp200_w"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">	    
+	        
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp1_h"
+	        android:background="@android:color/darker_gray"
+	        android:visibility="visible" />
+	    
+	    <Button
+	        android:id="@+id/local_file"
+	        android:layout_width="@dimen/dp200_w"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/transparent"
+	        android:textColor="@android:color/black"
+	        android:textSize="@dimen/sp16_s"
+	        android:text="@string/local_file" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/content_listview_margin_height"
+        android:layout_marginLeft="@dimen/content_listview_margin_width"
+        android:layout_marginRight="@dimen/content_listview_margin_width"
+        android:layout_marginTop="@dimen/content_listview_margin_height"
+        android:orientation="vertical" >
+
+        <!-- 列表头布局 -->
+
+        <include
+            android:id="@+id/plan_template_listhead"
+            layout="@layout/plan_template_title_list_item" />
+
+        <!-- 列表布局 -->
+
+        <ListView
+            android:id="@+id/plan_template_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_bg" >
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/content_listview_edge_bg"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <com.pm360.cepm360.app.common.view.FloatingMenuView
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/floatingmenu_width"
+        android:clickable="true"
+        android:src="@drawable/btn_add" />
+
+</FrameLayout>

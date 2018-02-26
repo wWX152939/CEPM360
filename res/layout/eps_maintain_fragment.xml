@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/take_make_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/listHeaderView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_list_title_height"
+                    layout="@layout/eps_maintain_list_item" />
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:clickable="true"
+                    android:descendantFocusability="blocksDescendants"
+                    android:divider="@color/setting_list_divider"
+                    android:background="@drawable/setting_list_item_background"
+                    android:dividerHeight="1px"
+                    android:focusable="false"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.pm360.cepm360.app.common.view.FloatingMenuView
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/dp16_w"
+        android:clickable="true"
+        android:src="@drawable/btn_add" />
+
+</FrameLayout>

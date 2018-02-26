@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <include
+        android:id="@+id/tree_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        layout="@layout/tree_for_dir_layout"/>
+    
+    <View
+        android:id="@+id/right_boundary_line"
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:background="@color/divider"/>
+
+    <include
+	    android:id="@+id/list_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    layout="@layout/list_layout"/>
+
+</LinearLayout>

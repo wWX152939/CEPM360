@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_condition_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F83A3A4A"
+        android:orientation="vertical" >
+    
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="@color/divider" />
+    
+    <LinearLayout
+        android:id="@+id/condition_reset_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F83A3A4A"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/searching"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp36_h"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="#F83F3F4A"
+            android:text="@string/searching"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp18_s"/>
+
+        <View
+            android:layout_width="@dimen/dp1_w"
+            android:layout_height="match_parent"
+            android:background="@color/divider" />
+
+        <Button
+            android:id="@+id/condition_reset"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp36_h"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="#F83F3F4A"
+            android:text="@string/condition_reset"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp18_s"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_portal_background"
+    android:fadingEdge="vertical"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp8_h"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp240_h"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_marginRight="@dimen/dp4_w"
+            android:layout_marginTop="@dimen/dp8_h"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/model1"
+                layout="@layout/portal_model_view_layout" />
+
+            <include
+                android:id="@+id/model2"
+                layout="@layout/portal_model_view_layout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp240_h"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_marginRight="@dimen/dp4_w"
+            android:layout_marginTop="@dimen/dp20_h"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/model3"
+                layout="@layout/portal_model_view_layout" />
+
+            <include
+                android:id="@+id/model4"
+                layout="@layout/portal_model_view_layout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp240_h"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_marginRight="@dimen/dp4_w"
+            android:layout_marginTop="@dimen/dp20_h"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/model5"
+                layout="@layout/portal_model_view_layout" />
+
+            <include
+                android:id="@+id/model6"
+                layout="@layout/portal_model_view_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

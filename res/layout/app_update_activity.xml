@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cepm="http://schemas.android.com/apk/res/com.pm360.cepm360"
+    android:layout_width="@dimen/dp420_w"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners_white_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50_h"
+        android:layout_marginTop="@dimen/dp8_h"
+        android:layout_marginBottom="@dimen/dp8_h"
+        android:layout_marginStart="@dimen/dp24_w"
+        android:gravity="center|left"
+        android:textSize="@dimen/sp20_s"
+        android:textColor="@android:color/black"/>
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="@color/divider"
+        android:visibility="visible" />
+            
+    <TextView
+        android:id="@+id/app_version_description" 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="@dimen/dp100_h"
+        android:layout_marginLeft="@dimen/dp24_w"
+        android:layout_marginRight="@dimen/dp24_w"
+        android:layout_marginBottom="@dimen/dp10_h"
+        android:layout_marginTop="@dimen/dp10_h"
+        android:gravity="left"
+        android:textSize="@dimen/sp17_s"
+        android:layout_weight="1"
+        android:singleLine="false"
+        android:textColor="@android:color/black"/>
+    
+    <com.pm360.cepm360.app.common.view.LineProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"           
+        android:layout_marginLeft="@dimen/dp20_w"
+        android:visibility="gone"
+        cepm:text_size="@dimen/sp16_s"
+        cepm:stroke_width="3dp"
+        cepm:background_stroke_width="3dp"
+        cepm:current_progress="0"
+        cepm:background_color="#FFFFFF"
+        cepm:progress_color="@color/colorPrimary" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="@color/divider"
+        android:visibility="visible" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50_h"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/app_upgrade_btn_left_bg"
+            android:text="@string/upgrade_later"
+            android:textColor="#12B7F5"
+            android:textSize="@dimen/sp20_s"
+            android:layout_weight="1">
+        </Button> 
+        
+        <View
+            android:layout_width="@dimen/dp1_w"
+            android:layout_height="match_parent"
+            android:background="@color/divider"
+            android:visibility="visible" />
+         <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/app_upgrade_btn_right_bg"
+            android:text="@string/upgrade_now"
+            android:textColor="#12B7F5"
+            android:textSize="@dimen/sp20_s"
+            android:layout_weight="1">
+        </Button>                
+    </LinearLayout>
+     
+</LinearLayout>

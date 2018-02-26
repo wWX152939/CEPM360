@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_dialog_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ticket_dialog_bg"
+    android:orientation="vertical" >
+	
+	<include 
+        android:id="@+id/title"
+        layout="@layout/dialog_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/list_view"
+        android:layout_width="@dimen/dp800_w"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exit_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/list_view"
+        android:layout_below="@+id/list_view"
+        android:layout_marginBottom="@dimen/dp10_h"
+        android:layout_marginRight="@dimen/dp20_w"
+        android:background="@drawable/button_bg"
+        android:minHeight="@dimen/dp30_h"
+        android:paddingLeft="@dimen/dp30_w"
+        android:paddingRight="@dimen/dp30_w"
+        android:visibility="gone"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/save_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_view"
+        android:layout_marginRight="@dimen/dp25_w"
+        android:layout_toLeftOf="@+id/exit_Button"
+        android:background="@drawable/button_bg"
+        android:minHeight="@dimen/dp30_h"
+        android:paddingLeft="@dimen/dp30_w"
+        android:paddingRight="@dimen/dp30_w"
+        android:visibility="gone"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/first_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_view"
+        android:layout_marginRight="@dimen/dp25_w"
+        android:layout_toLeftOf="@+id/save_Button"
+        android:background="@drawable/button_bg"
+        android:minHeight="@dimen/dp30_h"
+        android:paddingLeft="@dimen/dp30_w"
+        android:paddingRight="@dimen/dp30_w"
+        android:visibility="gone"
+        android:text="@string/save" />
+
+</RelativeLayout>

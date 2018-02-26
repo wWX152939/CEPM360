@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pm360.cepm360.app.common.view.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabhost"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/task_navigation_space"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="@dimen/dp168_w"
+            android:layout_height="match_parent"
+            android:background="@color/navigation_bg" >
+
+            <LinearLayout
+                android:id="@+id/tab_selected_indicator_view"
+                android:layout_width="@dimen/dp168_w"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp72_h">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp24_h"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shadow_up" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp70_h"
+                    android:background="@color/navigation_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp72_h">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp24_h"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/shadow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp168_w"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp72_h"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp24_s"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1_h"
+                    android:background="@color/table_line" />
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</com.pm360.cepm360.app.common.view.FragmentTabHost>

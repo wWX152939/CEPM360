@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/task_home_list_table" />
+
+    <corners
+        android:topRightRadius="6dip"
+        android:bottomRightRadius="6dip" />
+
+</shape>

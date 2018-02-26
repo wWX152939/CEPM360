@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp10_h">
+
+    <LinearLayout
+        android:id="@+id/lineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp5_w"
+        android:paddingRight="@dimen/dp5_w"
+        android:paddingBottom="@dimen/dp5_h"
+        android:paddingTop="@dimen/dp5_h">
+
+        <TextView
+        	android:id="@+id/tvStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp24_s"
+            android:textColor="@color/light_blue"
+            android:text="@string/start_date" />
+
+        <DatePicker
+            android:id="@+id/datePickerStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/fenge" />
+        
+    <LinearLayout
+        android:id="@+id/lineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp5_w"
+        android:paddingRight="@dimen/dp5_w"
+        android:paddingBottom="@dimen/dp5_h"
+        android:paddingTop="@dimen/dp5_h">
+
+        <TextView
+        	android:id="@+id/tvEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp24_s"
+            android:textColor="@color/light_blue"
+            android:text="@string/finish_date" />
+
+        <DatePicker
+            android:id="@+id/datePickerEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="true" />
+    </LinearLayout>
+
+</LinearLayout>

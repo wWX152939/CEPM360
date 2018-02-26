@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imageCoverFlow="http://schemas.android.com/apk/res/com.pm360.cepm360"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+    
+    <com.pm360.cepm360.app.common.view.imagecoverflow.CoverFlowView
+        android:id="@+id/coverflow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        imageCoverFlow:coverflowGravity="center_vertical"
+        imageCoverFlow:coverflowLayoutMode="wrap_content"
+        imageCoverFlow:enableReflection="false"
+        imageCoverFlow:reflectionShaderEnable="false"
+        imageCoverFlow:visibleImage="3" >
+    </com.pm360.cepm360.app.common.view.imagecoverflow.CoverFlowView>
+
+</LinearLayout>

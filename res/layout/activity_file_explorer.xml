@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp46_h"
+        android:layout_alignParentTop="true"
+        android:background="#18B4ED"
+        android:orientation="horizontal">
+        
+        <ImageButton 
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginLeft="@dimen/dp4_w"
+        	android:visibility="invisible"
+        	android:src="@drawable/back"
+        	android:background="@android:color/transparent"     	
+        	android:contentDescription="@string/app_name"/>
+        <TextView 
+        	android:id="@+id/back"
+        	android:layout_width="@dimen/dp100_w"
+        	android:layout_height="match_parent"
+			android:layout_toRightOf="@+id/back_icon"
+        	android:layout_gravity="center_vertical"
+        	android:gravity="center|left"
+        	android:text="@string/back"
+        	android:textSize="@dimen/sp18_s"
+        	android:textColor="@android:color/white"
+        	android:visibility="invisible"/>
+        
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp20_s"
+            android:text="@string/all_files" />
+
+        <TextView 
+        	android:id="@+id/cancel"
+        	android:layout_width="@dimen/dp100_w"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentRight="true"
+        	android:layout_gravity="center_vertical"
+        	android:gravity="center|right"
+        	android:paddingEnd="@dimen/dp10_w"
+        	android:textColor="@android:color/white"
+        	android:textSize="@dimen/sp18_s"
+        	android:text="@string/close" />
+       
+	</RelativeLayout>
+	
+    <FrameLayout
+    	android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_above="@+id/bottom_bar"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        
+        <!-- 文件类型界面 -->
+        <LinearLayout
+    	    android:id="@+id/folder_category_layout"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_marginTop="@dimen/dp16_h"
+        	android:layout_marginStart="@dimen/dp16_w"
+        	android:layout_marginEnd="@dimen/dp16_w"
+        	android:orientation="vertical">
+        
+        	<TextView
+        		android:id="@+id/project_folder"
+            	android:layout_width="match_parent"
+            	android:layout_height="@dimen/dp40_h"
+            	android:layout_marginStart="@dimen/dp16_w"
+            	android:text="@string/project_files"
+            	android:gravity="center|left"
+            	android:textColor="@android:color/black"
+            	android:textSize="@dimen/sp19_s"/>
+        	
+        	<View
+            	android:layout_width="match_parent"
+            	android:layout_height="@dimen/dp1_h"
+            	android:background="@color/divider" />
+        	
+        	<TextView
+        		android:id="@+id/sdcard_folder"
+            	android:layout_width="match_parent"
+            	android:layout_height="@dimen/dp40_h"
+            	android:layout_marginStart="@dimen/dp16_w"
+            	android:text="@string/device_storage"
+            	android:gravity="center|left"
+            	android:textColor="@android:color/black"
+            	android:textSize="@dimen/sp19_s"/>
+        	<View
+            	android:layout_width="match_parent"
+            	android:layout_height="@dimen/dp1_h"
+            	android:background="@color/divider" />
+        	<LinearLayout
+        	    android:id="@+id/usb_otg_layout"
+        	    android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+	        	<TextView
+	                android:id="@+id/usb_folder"
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/dp40_h"
+	                android:layout_marginStart="@dimen/dp16_w"
+	                android:text="@string/ext_otg_storage"
+	                android:gravity="center|left"
+	                android:textColor="@android:color/black"
+	                android:textSize="@dimen/sp19_s"/>
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/dp1_h"
+	                android:background="@color/divider" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- 文件列表界面 -->
+        <LinearLayout
+    	    android:id="@+id/file_list_layout"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="vertical"
+        	android:visibility="gone">
+        	
+            <!-- path -->
+   			<LinearLayout
+        		android:id="@+id/navigation_bar"
+        		android:layout_width="fill_parent"
+        		android:layout_height="@dimen/dp36_h"
+        		android:gravity="center_vertical"
+        		android:background="#FFFFFF"
+        		android:paddingRight="@dimen/dp10_w">
+
+        		<LinearLayout
+        		    android:id="@+id/root_path_item"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="match_parent"
+    				android:orientation="horizontal" >
+        		    
+    				<TextView
+        				android:id="@+id/root_path_name"
+        				android:layout_width="0dp"
+        				android:layout_height="match_parent"
+        				android:gravity="center_vertical"
+        				android:layout_gravity="center_vertical"
+        				android:singleLine="true"
+        				android:layout_weight="1"
+        				android:textColor="@android:color/black" />
+    
+    				<ImageView
+        				android:id="@+id/item_icon"
+        				android:layout_width="wrap_content"
+        				android:layout_height="match_parent"
+        				android:layout_gravity="center_vertical"
+        				android:gravity="center"
+        				android:scaleType="fitCenter"
+        				android:src="@drawable/path_gallery_first_item_bg"
+        				android:contentDescription="@string/app_name"/>
+				</LinearLayout>
+							    		
+        		<LinearLayout
+            		android:layout_width="0dip"
+            		android:layout_weight="1"
+            		android:layout_height="match_parent"
+            		android:gravity="center_vertical">
+                
+        			<HorizontalScrollView
+            			android:id="@+id/dropdown_navigation"
+            			android:overScrollMode="never"
+            			android:layout_width="wrap_content"
+            			android:gravity="center_vertical"
+            			android:layout_height="match_parent">
+            			<LinearLayout
+                			android:id="@+id/dropdown_navigation_list"
+                			android:orientation="horizontal"
+                			android:gravity="center_vertical"
+                			android:layout_width="wrap_content"
+                			android:layout_height="wrap_content"
+                			>
+            			</LinearLayout>
+        			</HorizontalScrollView>
+        		</LinearLayout>
+        		
+        		<ImageView
+            		android:id="@+id/path_pane_up_level"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="center_vertical|right"
+            		android:layout_marginLeft="@dimen/dp5_w"
+            		android:contentDescription="@string/app_name"/>
+    		</LinearLayout>
+    		<!-- end path -->
+    		
+    		<TextView 
+    		    android:layout_width="match_parent"
+    		    android:layout_height="@dimen/dp1_h"
+    		    android:background="@color/listview_divider"/>
+
+    		<FrameLayout
+        		android:layout_width="fill_parent"
+        		android:layout_height="0dip"
+        		android:layout_weight="1">
+        		
+        		<ListView
+            		android:id="@+id/file_path_list"
+            		android:layout_width="match_parent"
+            		android:layout_height="wrap_content"
+            		android:divider="@color/listview_divider"
+            		android:dividerHeight="@dimen/dp1_w"
+            		android:headerDividersEnabled="true"
+            		android:footerDividersEnabled="true" />
+        		        		
+        		<LinearLayout
+            		android:id="@+id/empty_view"
+            		android:orientation="vertical"
+            		android:layout_width="fill_parent"
+            		android:layout_height="fill_parent"
+            		android:gravity="center"
+            		android:visibility="gone">
+        			
+            		<ImageView
+                		android:src="@drawable/empty_icon"
+                		android:layout_width="wrap_content"
+               			android:layout_height="wrap_content" 
+               			android:contentDescription="@string/app_name"/>
+            		<TextView
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:text="@string/no_file"
+                		android:textSize="@dimen/sp27_s"
+                		android:singleLine="true" />
+        		</LinearLayout>
+       
+        		<LinearLayout
+            		android:id="@+id/sd_not_available_page"
+            		android:orientation="vertical"
+            		android:layout_width="fill_parent"
+            		android:layout_height="fill_parent"
+            		android:gravity="center"
+            		android:visibility="gone">
+            		
+            		<ImageView
+               			android:src="@drawable/sd_not_available"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_marginBottom="@dimen/dp25_h"
+                		android:contentDescription="@string/app_name"/>
+
+            		<TextView
+                		android:text="@string/enable_sd_card"
+                		android:layout_height="wrap_content"
+                		android:layout_width="wrap_content"
+                		android:textSize="@dimen/sp22_s"
+                		android:gravity="center" />
+
+        		</LinearLayout>
+    		</FrameLayout>
+
+        </LinearLayout>
+    
+    </FrameLayout>
+    
+    <RelativeLayout
+        android:id="@+id/bottom_bar" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:background="#a8a9ab">
+        
+        <TextView
+        	android:id="@+id/selected_file_size"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center_vertical"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+        	android:paddingStart="@dimen/dp10_w"
+        	android:gravity="center"
+        	android:textColor="@android:color/black"
+        	/>            
+        
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="@dimen/dp100_w"
+            android:layout_height="@dimen/dp30_h"
+            android:layout_alignParentRight="true"            
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp12_w"
+            android:textSize="@dimen/sp14_s"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"
+            android:text="@string/confirm" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

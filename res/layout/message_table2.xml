@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/table_height"
+        android:background="@color/content_listview_header_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/message_index"
+                android:layout_width="@dimen/dp60_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/index"
+                android:textColor="@color/content_listview_header_text_color"
+                android:textSize="@dimen/table_title_textsize"/>
+
+            <TextView
+                android:id="@+id/message_title"
+                android:layout_width="@dimen/dp450_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|left"
+                android:text="@string/title"
+                android:textColor="@color/content_listview_header_text_color"
+                android:textSize="@dimen/table_title_textsize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/message_time"
+                android:layout_width="@dimen/dp180_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|left"
+                android:text="@string/time"
+                android:textColor="@color/content_listview_header_text_color"
+                android:textSize="@dimen/table_title_textsize"/>
+
+            <TextView
+                android:id="@+id/message_type"
+                android:layout_width="@dimen/dp124_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|left"
+                android:text="@string/type"
+                android:textColor="@color/content_listview_header_text_color"
+                android:textSize="@dimen/table_title_textsize"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/msg_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none" />
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/content_listview_edge_bg"
+        android:visibility="visible" />
+</LinearLayout>

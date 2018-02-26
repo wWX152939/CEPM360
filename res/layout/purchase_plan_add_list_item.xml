@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/schedule_table_height"
+    android:background="@color/table_title"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+        android:id="@+id/plan_add_consume_name"
+        android:layout_width="@dimen/dp130_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp18_s"/>
+
+    <View
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:background="@color/divider"
+        android:visibility="visible" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+                android:id="@+id/plan_add_consume_type"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+		        android:gravity="center_vertical"
+        		android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp18_s"/>
+		
+		    <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="@color/divider"
+		        android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+                android:id="@+id/plan_add_brand"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+		        android:gravity="center_vertical"
+        		android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp18_s"/>
+
+            <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="@color/divider"
+		        android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+                android:id="@+id/plan_add_norms"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+		        android:gravity="center_vertical"
+        		android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp18_s"/>
+
+            <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="@color/divider"
+		        android:visibility="visible" />
+            
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+                android:id="@+id/plan_add_unit"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+		        android:gravity="center_vertical"
+        		android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp18_s"/>
+            
+            <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="@color/divider"
+		        android:visibility="visible" />
+            
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+                android:id="@+id/plan_add_sum"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+		        android:gravity="center_vertical"
+        		android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp18_s"/>
+            
+            <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="@color/divider"
+		        android:visibility="visible" />
+            
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+                android:id="@+id/plan_add_unit_price"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+				android:gravity="center_vertical|right"
+        		android:paddingRight="@dimen/table_padding_left"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp18_s"/>
+                
+            <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="@color/divider"
+		        android:visibility="visible" />
+  
+           <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+	            android:id="@+id/plan_add_money"
+	            android:layout_width="@dimen/dp120_w"
+	            android:layout_height="match_parent"
+				android:gravity="center_vertical|right"
+        		android:paddingRight="@dimen/table_padding_left"
+	            android:textColor="@android:color/black"
+	            android:textSize="@dimen/sp18_s"/>
+           <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="@color/divider"
+		        android:visibility="visible" />
+  
+           <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+	            android:id="@+id/plan_add_provider"
+	            android:layout_width="@dimen/dp120_w"
+	            android:layout_height="match_parent"
+				android:gravity="center_vertical"
+        		android:paddingLeft="@dimen/table_padding_left"
+	            android:textColor="@android:color/black"
+	            android:textSize="@dimen/sp18_s"/>
+	       <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="@color/divider"
+		        android:visibility="visible" />
+  
+           <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+	            android:id="@+id/plan_add_indate"
+	            android:layout_width="@dimen/dp120_w"
+	            android:layout_height="match_parent"
+				android:gravity="center_vertical"
+        		android:paddingLeft="@dimen/table_padding_left"
+	            android:textColor="@android:color/black"
+	            android:textSize="@dimen/sp18_s"/>
+	       <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="@color/divider"
+		        android:visibility="visible" />
+  
+           <com.pm360.cepm360.app.common.view.ScrollHorizontalWhiteTextView
+	            android:id="@+id/plan_add_task"
+	            android:layout_width="@dimen/dp120_w"
+	            android:layout_height="match_parent"
+				android:gravity="center_vertical"
+        		android:paddingLeft="@dimen/table_padding_left"
+	            android:textColor="@android:color/black"
+	            android:textSize="@dimen/sp18_s"/>
+
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

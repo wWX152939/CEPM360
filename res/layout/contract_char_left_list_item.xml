@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/schedule_table_height"
+    android:background="@color/listview_header_bg"
+    android:orientation="horizontal" >
+
+    <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+        android:id="@+id/tv1"
+        android:layout_width="@dimen/dp150_w"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/table_content_textsize" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:tag="CHScrollView" >
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

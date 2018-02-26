@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/tree_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/tree_listview_bg"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:id="@+id/tree_list_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_tree_title_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+	        <TextView
+	            android:id="@+id/wz_category"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:layout_weight="1"
+	            android:textSize="@dimen/sp20_s"
+	            android:textColor="@android:color/black"/>
+	        
+	        <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp6_h"
+                android:layout_marginBottom="@dimen/dp6_h"
+                android:background="@color/divider" />
+	        
+	        <ImageView 
+	            android:id="@+id/expand_icon"
+	            android:layout_width="@dimen/dp40_w"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp8_w"
+                android:paddingRight="@dimen/dp8_w"
+                android:paddingBottom="@dimen/dp8_h"
+                android:paddingTop="@dimen/dp8_h"
+                android:scaleType="center"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arrow_double_right_white"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/tree_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/right_boundary_line"
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:background="@color/divider" />
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_weight="1" >
+
+        <!-- 内容列表 -->
+        <LinearLayout
+            android:id="@+id/content_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+       		android:layout_marginLeft="@dimen/content_listview_margin_width"
+       		android:layout_marginRight="@dimen/content_listview_margin_width"
+       		android:layout_marginTop="@dimen/content_listview_margin_height"
+       		android:layout_marginBottom="@dimen/content_listview_margin_height"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/content_header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_height"
+                android:orientation="horizontal" />
+
+            <com.pm360.cepm360.app.common.view.SHListView
+                android:id="@+id/content_listview"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:clickable="true"
+		        android:focusable="false"
+		        android:scrollbars="none" />
+            
+			<View
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="@color/content_listview_edge_bg"
+		        android:visibility="visible" />	            
+
+        </LinearLayout>
+        
+        <!-- 菜单按钮  -->
+	   <RelativeLayout
+	        android:id="@+id/button_bar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/dp48_h"
+	        android:layout_gravity="bottom|right"
+	        android:visibility="gone"
+	        android:orientation="horizontal" >
+	
+	        <Button
+	            android:id="@+id/btn_cancel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="@dimen/dp30_w"
+	            android:layout_marginBottom="@dimen/dp5_h"
+	            android:background="@drawable/button_bg"
+	            android:clickable="true"
+	            android:gravity="center"
+	            android:text="@string/cancel"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/sp17_s"/>
+	
+	        <Button
+	            android:id="@+id/btn_ok"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginRight="@dimen/dp20_w"
+	            android:layout_marginBottom="@dimen/dp5_h"
+	            android:layout_toLeftOf="@+id/btn_cancel"
+	            android:background="@drawable/button_bg"
+	            android:clickable="true"
+	            android:gravity="center"
+	            android:text="@string/complete"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/sp17_s"/>
+	    </RelativeLayout>
+    
+        <!-- 浮动菜单 -->
+        <com.pm360.cepm360.app.common.view.FloatingMenuView
+            android:id="@+id/floating_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/dp16_h"
+            android:layout_marginEnd="@dimen/dp116_w"
+            android:clickable="true"
+            android:src="@drawable/btn_add" />
+    </FrameLayout>
+
+</LinearLayout>

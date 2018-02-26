@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/attachment_popup_maneu_backgroud"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/email_attachment_open"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="@string/open"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16_s"/>
+    
+    <View
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:background="#E2E2E2"
+        android:visibility="visible" />
+    
+    <TextView 
+        android:id="@+id/email_attachment_download_all"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="@string/email_operation_download_all"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16_s"/>
+
+</LinearLayout>

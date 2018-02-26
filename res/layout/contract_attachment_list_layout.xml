@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/table_height"
+    android:background="@drawable/table_header_bg"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:id="@+id/fix_id"
+        android:layout_width="@dimen/dp200_w"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    
+	    <TextView
+	        android:id="@+id/contract_payment_item_name"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="@dimen/table_padding_left"
+	        android:textColor="#ffffff"
+	        android:textSize="@dimen/table_content_textsize" />
+	    
+	    <ImageView 
+	        android:id="@+id/open_eye"
+	        android:layout_width="@dimen/dp36_w"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center"
+	        android:paddingLeft="@dimen/dp8_w"
+	        android:paddingRight="@dimen/dp8_w"
+	        android:paddingBottom="@dimen/dp8_h"
+	        android:paddingTop="@dimen/dp8_h"
+	        android:scaleType="center"
+	        android:contentDescription="@null"
+	        android:src="@drawable/arrow_double_right_white"
+	        android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:background="#c5707070"
+        android:visibility="visible" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+            <TextView
+		        android:id="@+id/contract_payment_item_code"
+		        android:layout_width="@dimen/dp150_w"
+		        android:layout_height="match_parent"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="center"
+		        android:textColor="#ffffff"
+		        android:textSize="@dimen/table_content_textsize" />
+		
+		    <View
+		        android:layout_width="@dimen/dp1_w"
+		        android:layout_height="match_parent"
+		        android:background="#c5707070"
+		        android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/contract_payment_item_should_pay"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|right"
+                android:paddingRight="@dimen/table_padding_left"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#c5707070"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/contract_payment_item_expect_pay_date"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|right"
+                android:paddingRight="@dimen/table_padding_left"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#c5707070"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/contract_payment_item_real_pay"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|right"
+                android:paddingRight="@dimen/table_padding_left"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#c5707070"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/contract_payment_item_real_pay_date"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/table_content_textsize" />
+            
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#c5707070"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/contract_payment_item_delay_date"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/table_content_textsize" />
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

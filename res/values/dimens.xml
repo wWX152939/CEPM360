@@ -1,0 +1,316 @@
+<resources>
+
+	<dimen name="dp1000_h">1000dp</dimen>
+	<dimen name="dp1000_w">1000dp</dimen>
+	<dimen name="dp100_h">100dp</dimen>
+	<dimen name="dp100_w">100dp</dimen>
+	<dimen name="dp105_w">105dp</dimen>
+	<dimen name="dp109_w">109dp</dimen>
+	<dimen name="dp10_h">10dp</dimen>
+	<dimen name="dp10_w">10dp</dimen>
+	<dimen name="sp10_s">10sp</dimen>
+	<dimen name="dp11_w">11dp</dimen>
+	<dimen name="dp110_h">110dp</dimen>
+	<dimen name="dp110_w">110dp</dimen>
+	<dimen name="dp116_w">116dp</dimen>
+	<dimen name="dp120_h">120dp</dimen>
+	<dimen name="dp120_w">120dp</dimen>
+	<dimen name="dp124_w">124dp</dimen>
+	<dimen name="dp12_h">12dp</dimen>
+	<dimen name="dp12_w">12dp</dimen>
+	<dimen name="sp12_s">12sp</dimen>
+	<dimen name="sp13_s">13sp</dimen>
+	<dimen name="dp130_w">130dp</dimen>
+	<dimen name="dp140_w">140dp</dimen>
+	<dimen name="dp140_h">140dp</dimen>
+	<dimen name="dp145_h">145dp</dimen>
+	<dimen name="dp148_w">148dp</dimen>    
+	<dimen name="dp14_w">14dp</dimen>
+	<dimen name="dp14_h">14dp</dimen>
+	<dimen name="sp14_s">14sp</dimen>
+	<dimen name="dp150_w">150dp</dimen>
+	<dimen name="dp150_h">150dp</dimen>
+	<dimen name="dp15_h">15dp</dimen>
+	<dimen name="dp15_w">15dp</dimen>
+	<dimen name="sp15_s">15sp</dimen>
+	<dimen name="dp160_w">160dp</dimen>
+	<dimen name="dp160_h">160dp</dimen>
+	<dimen name="dp164_w">164dp</dimen>
+	<dimen name="dp168_w">168dp</dimen>
+	<dimen name="dp16_h">16dp</dimen>
+	<dimen name="dp16_w">16dp</dimen>
+	<dimen name="sp16_s">16sp</dimen>
+	<dimen name="dp170_w">170dp</dimen>
+	<dimen name="dp17_h">17dp</dimen>
+	<dimen name="sp17_s">17sp</dimen>
+	<dimen name="dp180_h">180dp</dimen>
+	<dimen name="dp180_w">180dp</dimen>
+	<dimen name="dp184_w">184dp</dimen>
+	<dimen name="dp18_h">18dp</dimen>
+	<dimen name="dp18_w">18dp</dimen>
+	<dimen name="sp18_s">18sp</dimen>
+	<dimen name="dp183_w">183dp</dimen>
+	<dimen name="dp190_h">190dp</dimen>
+	<dimen name="dp196_h">196dp</dimen>
+	<dimen name="dp1_h">1dp</dimen>
+	<dimen name="dp1_w">1dp</dimen>
+	<dimen name="sp19_s">19sp</dimen>
+	<dimen name="dp200_h">200dp</dimen>
+	<dimen name="dp200_w">200dp</dimen>
+	<dimen name="dp20_h">20dp</dimen>
+	<dimen name="dp20_w">20dp</dimen>
+	<dimen name="sp20_s">20sp</dimen>
+	<dimen name="dp210_w">210dp</dimen>
+	<dimen name="dp21_h">21dp</dimen>
+	<dimen name="dp21_w">21dp</dimen>
+	<dimen name="dp220_w">220dp</dimen>
+	<dimen name="dp224_w">224dp</dimen>
+	<dimen name="dp225_h">225dp</dimen>
+	<dimen name="dp22_w">22dp</dimen>
+	<dimen name="dp22_h">22dp</dimen>
+	<dimen name="dp220_h">220dp</dimen>
+	<dimen name="sp22_s">22sp</dimen>
+	<dimen name="dp23_h">23dp</dimen>
+	<dimen name="dp235_h">235dp</dimen>
+	<dimen name="dp240_h">240dp</dimen>
+	<dimen name="dp240_w">240dp</dimen>
+	<dimen name="dp248_w">248dp</dimen>
+	<dimen name="dp24_h">24dp</dimen>
+	<dimen name="dp24_w">24dp</dimen>
+	<dimen name="sp24_s">24sp</dimen>
+	<dimen name="dp25_h">25dp</dimen>
+	<dimen name="dp25_w">25dp</dimen>
+	<dimen name="dp250_w">250dp</dimen>
+	<dimen name="dp260_w">260dp</dimen>
+	<dimen name="sp27_s">27sp</dimen>
+	<dimen name="sp28_s">28sp</dimen>
+	<dimen name="dp28_h">28dp</dimen>
+	<dimen name="dp28_w">28dp</dimen>
+	<dimen name="dp280_w">280dp</dimen>
+	<dimen name="dp2_h">2dp</dimen>
+	<dimen name="dp2_w">2dp</dimen>
+	<dimen name="dp300_h">300dp</dimen>
+	<dimen name="dp300_w">300dp</dimen>
+	<dimen name="dp30_h">30dp</dimen>
+	<dimen name="dp30_w">30dp</dimen>
+	<dimen name="sp30_s">30sp</dimen>
+	<dimen name="sp32_s">32sp</dimen>
+	<dimen name="dp32_h">32dp</dimen>
+	<dimen name="dp32_w">32dp</dimen>
+	<dimen name="dp328_h">328dp</dimen>
+	<dimen name="dp320_w">320dp</dimen>
+	<dimen name="dp320_h">320dp</dimen>
+	<dimen name="dp33_h">33dp</dimen>
+	<dimen name="dp330_w">330dp</dimen>
+	<dimen name="dp336_h">336dp</dimen>
+	<dimen name="dp35_h">35dp</dimen>
+	<dimen name="dp35_w">35dp</dimen>
+	<dimen name="dp350_h">350dp</dimen>
+	<dimen name="dp350_w">350dp</dimen>
+	<dimen name="dp360_h">360dp</dimen>
+	<dimen name="dp360_w">360dp</dimen>
+	<dimen name="dp36_h">36dp</dimen>
+	<dimen name="dp36_w">36dp</dimen>
+	<dimen name="dp375_w">375dp</dimen>
+	<dimen name="dp380_h">380dp</dimen>
+	<dimen name="dp3_h">3dp</dimen>
+	<dimen name="dp3_w">3dp</dimen>
+	<dimen name="dp400_h">400dp</dimen>
+	<dimen name="dp400_w">400dp</dimen>
+	<dimen name="dp40_h">40dp</dimen>
+	<dimen name="dp40_w">40dp</dimen>
+	<dimen name="sp40_s">40sp</dimen>
+	<dimen name="dp42_h">42dp</dimen>
+	<dimen name="dp420_h">420dp</dimen>
+	<dimen name="dp420_w">420dp</dimen>
+	<dimen name="dp430_h">430dp</dimen>
+	<dimen name="dp44_h">44dp</dimen>
+	<dimen name="dp44_w">44dp</dimen>
+	<dimen name="dp45_h">45dp</dimen>
+	<dimen name="dp45_w">45dp</dimen>
+	<dimen name="dp456_h">456dp</dimen>
+	<dimen name="dp46_h">46dp</dimen>
+	<dimen name="dp480_w">480dp</dimen>
+	<dimen name="dp450_w">450dp</dimen>
+	<dimen name="dp457_w">457dp</dimen>
+	<dimen name="dp468_w">468dp</dimen>
+	<dimen name="dp480_h">480dp</dimen>
+	<dimen name="dp488_w">488dp</dimen>
+	<dimen name="dp48_h">48dp</dimen>
+	<dimen name="dp48_w">48dp</dimen>
+	<dimen name="dp49_h">49dp</dimen>
+	<dimen name="dp49_w">49dp</dimen>
+	<dimen name="dp4_h">4dp</dimen>
+	<dimen name="dp4_w">4dp</dimen>
+	<dimen name="dp50_h">50dp</dimen>
+	<dimen name="dp50_w">50dp</dimen>
+	<dimen name="sp50_s">50sp</dimen>
+	<dimen name="dp500_h">500dp</dimen>
+	<dimen name="dp54_w">54dp</dimen>
+	<dimen name="dp540_w">540dp</dimen>
+	<dimen name="dp55_h">55dp</dimen>
+	<dimen name="dp56_w">56dp</dimen>
+	<dimen name="dp5_h">5dp</dimen>
+	<dimen name="dp5_w">5dp</dimen>
+	<dimen name="dp520_w">520dp</dimen>
+	<dimen name="dp528_w">528dp</dimen>
+	<dimen name="dp530_h">530dp</dimen>
+	<dimen name="dp560_w">560dp</dimen>
+	<dimen name="dp58_h">58dp</dimen>
+	<dimen name="dp588_w">588dp</dimen>
+	<dimen name="dp59_h">59dp</dimen>
+	<dimen name="dp59_w">59dp</dimen>
+	<dimen name="dp600_w">600dp</dimen>
+	<dimen name="dp60_h">60dp</dimen>
+	<dimen name="dp60_w">60dp</dimen>
+	<dimen name="dp62_h">62dp</dimen>
+	<dimen name="dp62_w">62dp</dimen>
+	<dimen name="dp64_h">64dp</dimen>
+	<dimen name="dp64_w">64dp</dimen>
+	<dimen name="dp65_h">65dp</dimen>
+	<dimen name="dp65_w">65dp</dimen>
+	<dimen name="dp6_h">6dp</dimen>
+	<dimen name="dp6_w">6dp</dimen>
+	<dimen name="dp68_h">68dp</dimen>
+	<dimen name="dp686_w">686dp</dimen>
+	<dimen name="dp70_h">70dp</dimen>
+	<dimen name="dp70_w">70dp</dimen>
+	<dimen name="dp700_w">700dp</dimen>
+	<dimen name="dp71_h">71dp</dimen>
+	<dimen name="dp714_w">714dp</dimen>
+	<dimen name="dp72_h">72dp</dimen>
+	<dimen name="dp720_w">720dp</dimen>
+	<dimen name="dp73_h">73dp</dimen>
+	<dimen name="dp73_w">73dp</dimen>
+	<dimen name="dp800_h">800dp</dimen>
+	<dimen name="dp800_w">800dp</dimen>
+	<dimen name="dp80_w">80dp</dimen>
+	<dimen name="dp80_h">80dp</dimen>
+	<dimen name="dp8_h">8dp</dimen>
+	<dimen name="dp8_w">8dp</dimen>
+	<dimen name="dp820_w">820dp</dimen>
+	<dimen name="dp84_w">84dp</dimen>
+	<dimen name="dp900_w">900dp</dimen>
+	<dimen name="dp940_w">940dp</dimen>
+	<dimen name="dp960_w">960dp</dimen>
+	<dimen name="dp90_w">90dp</dimen>
+	<dimen name="dp9_w">9dp</dimen>
+	<dimen name="dp96_w">96dp</dimen>
+	
+    <!-- login dimen -->
+    <dimen name="login_line_parent_w">@dimen/dp528_w</dimen>
+    <dimen name="login_line_parent_h">@dimen/dp336_h</dimen>
+    <dimen name="login_line_parent_margin_top_h">@dimen/dp48_h</dimen>
+    <dimen name="login_title_margin_top_h">@dimen/dp140_h</dimen>
+    <dimen name="login_table_w">@dimen/dp260_w</dimen>
+    <dimen name="login_table_margin_top_h">@dimen/dp20_h</dimen>
+    <dimen name="login_et_padding_bottom_h">@dimen/dp12_h</dimen>
+    <dimen name="login_et_padding_end_w">@dimen/dp16_w</dimen>
+    <dimen name="login_et_padding_start_w">@dimen/dp16_w</dimen>
+    <dimen name="login_et_padding_top_h">@dimen/dp6_h</dimen>
+    <dimen name="login_icon_padding_w">@dimen/dp4_w</dimen>
+    <dimen name="login_button_min_h">@dimen/dp40_h</dimen>
+    <dimen name="login_button_min_w">@dimen/dp260_w</dimen>
+    <dimen name="login_rel_w">@dimen/dp320_w</dimen>
+    <dimen name="login_rel_margin_top_h">@dimen/dp16_h</dimen>
+    <dimen name="login_noraml_s">@dimen/sp18_s</dimen>
+    <dimen name="login_low_s">@dimen/sp16_s</dimen>
+    <dimen name="login_high_s">@dimen/sp20_s</dimen>
+    <dimen name="login_xhigh_s">@dimen/sp40_s</dimen>
+    <!-- login dimen end -->
+    
+	<!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="floating_menu_margin_bottom">@dimen/dp16_h</dimen>
+    <dimen name="floating_menu_margin_sliding_open_right">@dimen/dp184_w</dimen>
+    <dimen name="floating_menu_margin_sliding_close_right">@dimen/dp16_w</dimen>
+    <dimen name="popup_window_tv_width">@dimen/dp109_w</dimen>
+    <dimen name="popup_window_tv_margin_left">@dimen/dp15_w</dimen>
+    <dimen name="popup_window_tv_margin_top">@dimen/dp10_h</dimen>
+    <dimen name="popup_window_et_width">@dimen/dp375_w</dimen>
+    <dimen name="popup_window_et_height">@dimen/dp40_h</dimen>
+    <dimen name="popup_window_et_remark_height">@dimen/dp150_h</dimen>
+    <dimen name="popup_window_localfile_et_width">@dimen/dp250_w</dimen>
+    <dimen name="popup_window_localfile_bt_width">@dimen/dp120_w</dimen>
+    <dimen name="popup_window_et_margin_left">@dimen/dp21_w</dimen>
+    <dimen name="popup_window_et_margin_top">@dimen/dp10_h</dimen>
+    <dimen name="popup_window_spinner_width">@dimen/dp183_w</dimen>
+    <dimen name="popup_window_spinner2_width">@dimen/dp183_w</dimen>
+    <dimen name="popup_window_image_width">@dimen/dp35_w</dimen>
+    <dimen name="popup_window_image_height">@dimen/dp21_h</dimen>
+    <dimen name="popup_window_image_margin_left">@dimen/dp21_w</dimen>
+    <dimen name="popup_window_image_margin_right">@dimen/dp5_w</dimen>
+    <dimen name="popup_window_image_margin_top">@dimen/dp10_h</dimen>
+    <dimen name="popup_window_height">@dimen/dp68_h</dimen>
+    <dimen name="popup_window_directory_height">@dimen/dp58_h</dimen>
+    <dimen name="table_padding_left">@dimen/dp10_w</dimen>
+    <dimen name="table_marginLeft">@dimen/dp2_h</dimen>
+    <dimen name="table_marginRight">@dimen/dp2_h</dimen>
+    <dimen name="ticket_list_height">@dimen/dp240_h</dimen>
+    <dimen name="schedule_table_height">@dimen/dp35_h</dimen>
+    
+    <!-- tickect style -->
+    <dimen name="ticket_table_height">@dimen/dp36_h</dimen>
+    <dimen name="ticket_title_text_size">@dimen/sp16_s</dimen>
+    <dimen name="ticket_table_text_size">@dimen/sp16_s</dimen>
+    <dimen name="ticket_button_width">@dimen/dp105_w</dimen>
+    <dimen name="ticket_button_height">@dimen/dp32_h</dimen>
+    <dimen name="schedule_title_table_height">@dimen/dp35_h</dimen>
+    <dimen name="schedule_attr_button_padding_height">@dimen/dp12_h</dimen>
+    <dimen name="line_width">@dimen/dp1_w</dimen>
+    <dimen name="inventory_table_title_height">@dimen/dp40_h</dimen>
+    <dimen name="inventory_table_height">@dimen/dp40_h</dimen>
+    <dimen name="inventory_table_title_text_size">@dimen/sp18_s</dimen>
+    <dimen name="inventory_table_text_size">@dimen/sp16_s</dimen>
+    <dimen name="task_navigation_textview_height">@dimen/dp72_h</dimen>
+    <dimen name="setting_list_title_height">@dimen/dp35_h</dimen>
+    <dimen name="setting_list_item_height">@dimen/dp35_h</dimen>
+
+    <!-- lock pattern start -->
+    <dimen name="alp_42447968_lock_pattern_dot_line_width">@dimen/dp4_w</dimen>
+    <dimen name="alp_42447968_separator_size">@dimen/dp2_w</dimen>
+    <dimen name="alp_42447968_lockpatternview_size_w">@dimen/dp320_w</dimen>
+    <dimen name="alp_42447968_lockpatternview_size_h">@dimen/dp300_h</dimen>
+    <dimen name="alp_42447968_lock_pattern_dot_size">@dimen/dp16_w</dimen>
+    <dimen name="alp_42447968_lock_pattern_dot_size_activated">@dimen/dp20_w</dimen>
+    <!-- lock pattern end -->
+
+    <dimen name="flow_approval_unit_bottom">@dimen/dp10_h</dimen>
+    <dimen name="inventory_attachments_gridview">@dimen/dp80_w</dimen>
+    
+    <!-- richeditor -->
+    <dimen name="activity_horizontal_margin">@dimen/dp16_w</dimen>
+    <dimen name="activity_vertical_margin">@dimen/dp16_h</dimen>
+    
+    <!-- 扁平化风格  -->
+    <dimen name="system_left_navigation_width">@dimen/dp100_w</dimen>
+    <dimen name="floatingmenu_width">@dimen/dp116_w</dimen>
+    <dimen name="content_listview_margin_width">@dimen/dp8_w</dimen>
+    <dimen name="content_listview_margin_height">@dimen/dp8_h</dimen>
+    <dimen name="content_tree_title_height">@dimen/dp44_h</dimen>
+    
+    <!-- 树头上的字体大小 -->
+    <dimen name="content_tree_title_text_size">@dimen/sp18_s</dimen>
+    <!-- 树的字体大小 -->
+    <dimen name="content_tree_text_size">@dimen/sp15_s</dimen>
+    <!-- 表头字体大小 -->
+    <dimen name="table_title_textsize">@dimen/sp15_s</dimen>
+    <!-- 表格字体大小 -->
+    <dimen name="table_content_textsize">@dimen/sp13_s</dimen>
+    <!-- 表头、表格高度 -->
+    <dimen name="table_height">@dimen/dp35_h</dimen>
+    
+    <!-- 弹出框标题字体大小 -->
+    <dimen name="dialog_title_textsize">@dimen/sp18_s</dimen>
+    <!-- 弹出框按钮字体大小 -->
+    <dimen name="dialog_button_textsize">@dimen/sp17_s</dimen>
+    
+    <!-- 全屏清单界面  -->
+    <dimen name="ticket_header_textsize">@dimen/sp17_s</dimen>
+    <dimen name="ticket_header_margin_top">@dimen/dp16_h</dimen>
+    <dimen name="ticket_header_margin_left">@dimen/dp8_w</dimen>
+    <dimen name="ticket_header_margin_right">@dimen/dp8_h</dimen>
+    <dimen name="ticket_list_margin_top">@dimen/dp20_h</dimen>
+    <dimen name="ticket_list_margin_left">@dimen/dp10_w</dimen>
+    <dimen name="ticket_list_margin_right">@dimen/dp10_w</dimen>
+    
+</resources>

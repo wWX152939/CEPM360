@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pm360.cepm360.app.common.view.MoreSettingsItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp50_h"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/more_item_feature_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dp20_w"
+        android:src="@drawable/ic_navigation_more_settings">
+    </ImageView>
+    
+    <TextView 
+        android:id="@+id/more_item_feature_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp20_w"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp18_s"
+        android:layout_toRightOf="@+id/more_item_feature_icon"/>
+    
+    <ToggleButton
+        android:id="@+id/more_item_feature_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp10_w"
+        android:background="@android:color/transparent"
+        android:button="@drawable/switch_btn_bg"
+        android:checked="false"
+        android:text=""
+        android:textOff="" 
+        android:textOn=""
+        android:visibility="gone">
+    </ToggleButton>
+    
+    <TextView 
+        android:id="@+id/more_item_feature_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp10_w"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp18_s"
+        android:layout_toLeftOf="@+id/more_item_feature_arrow"/>
+        
+    <ImageView
+        android:id="@+id/more_item_feature_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp16_w"
+        android:src="@drawable/more_settings_arrow_right">
+    </ImageView>
+    
+    <View 
+        android:id="@+id/more_item_feature_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="@color/content_listview_edge_bg"
+        android:layout_alignLeft="@+id/more_item_feature_content"
+        android:layout_alignParentBottom="true"/>
+
+</com.pm360.cepm360.app.common.view.MoreSettingsItemView>

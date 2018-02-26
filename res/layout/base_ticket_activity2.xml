@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    
+	<LinearLayout
+	    android:id="@+id/parent_id"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/purchase_add_bg"
+	    android:orientation="vertical" >    
+
+	</LinearLayout>
+
+	<Button
+	    android:id="@+id/save"
+	    android:layout_width="@dimen/dp80_w"
+	    android:layout_height="@dimen/dp50_h"
+	    android:layout_gravity="bottom|right"
+	    android:layout_marginBottom="@dimen/dp16_h"
+	    android:layout_marginEnd="@dimen/dp16_w"
+	    android:background="@drawable/button_bg"
+        android:textSize="@dimen/sp18_s"
+	    android:text="@string/save" />
+	
+    <Button
+        android:id="@+id/add"
+	    android:layout_width="@dimen/dp80_w"
+	    android:layout_height="@dimen/dp50_h"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/button_bg"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/dp120_w"
+        android:clickable="true"
+        android:textSize="@dimen/sp18_s"
+        android:text="@string/new_add"
+        android:src="@drawable/btn_add" />	
+        
+</FrameLayout>

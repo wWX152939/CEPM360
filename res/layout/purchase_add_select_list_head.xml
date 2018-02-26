@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp40_h"
+    android:background="@color/listview_header_bg"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/purchase_selecte"
+        android:layout_width="@dimen/dp30_w"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp9_w"
+        android:button="@drawable/login_checkbox_button"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16_s"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#c5707070"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="@dimen/dp200_w"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/good_name"
+        android:textSize="@dimen/sp16_s"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#c5707070"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/product_format"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/spec"
+        android:textSize="@dimen/sp16_s"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="#c5707070"
+        android:visibility="visible" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/product_type"
+                android:layout_width="@dimen/dp60_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/kind"
+                android:textSize="@dimen/sp16_s"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#c5707070"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/product_unit"
+                android:layout_width="@dimen/dp50_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/unit"
+                android:textSize="@dimen/sp16_s"/>
+            
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#c5707070"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/price"
+                android:textSize="@dimen/sp16_s"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#c5707070"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/product_supplier"
+                android:layout_width="@dimen/dp200_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/supplier"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16_s"/>
+
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+</LinearLayout>

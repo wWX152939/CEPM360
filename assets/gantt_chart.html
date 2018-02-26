@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+	<link rel="stylesheet" type="text/css" href="jsgantt.css"/>
+	<script language="javascript" src="jsgantt.js" charset="utf-8"></script>
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+
+<div style="position:relative" class="gantt" id="GanttChartDIV"></div>
+  <script>
+	var data = gtjavascript.generateData();
+	
+	var g = new JSGantt.GanttChart('g',document.getElementById('GanttChartDIV'), 'day');
+
+	g.setShowRes(0); // Show/Hide Responsible (0/1)
+	g.setShowDur(1); // Show/Hide Duration (0/1)
+	g.setShowComp(0); // Show/Hide % Complete(0/1)
+	g.setCaptionType('Custom');  // Set to Show Caption (None,Caption,Resource,Duration,Complete,Custom)
+	// g.setFormatArr("hours","minutes")
+
+	if( g ) {
+
+	// Parameters             (pID, pName,                  pStart,      pEnd,        pColor,   pLink,          pMile, pRes,  pComp, pGroup, pParent, pOpen)
+
+	// You can also use the XML file parser JSGantt.parseXML('project.xml',g)
+	var jsonData = eval(data);
+	for(var i = 0; i < jsonData.length;i++){
+		var obj = jsonData[i];
+		g.AddTaskItem(new JSGantt.TaskItem(obj.pID, obj.pName, obj.pStart, obj.pEnd, obj.pColor, obj.pLink, obj.pMile, obj.pRes, obj.pComp, obj.pGroup, obj.pParent, obj.pOpen));
+	}
+
+	g.Draw();	
+	g.DrawDependencies();
+
+	}
+
+	else
+	{
+	alert("not defined");
+	}
+  </script>
+
+<BR>
+
+</ul>
+
+</body>
+
+</html>

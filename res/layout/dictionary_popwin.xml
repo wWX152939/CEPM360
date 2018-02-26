@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40_h">
+
+        <RadioGroup
+            android:id="@+id/selectRadio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp180_w"
+                android:gravity="center_vertical"
+                android:text="@string/dictionary_type" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp50_w"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:text="@string/dictionary" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40_h">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp120_w"
+            android:gravity="center_vertical"
+            android:text="@string/code"
+            android:textSize="@dimen/sp16_s"/>
+
+        <EditText
+            android:id="@+id/edit_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp20_w"
+            android:layout_toRightOf="@+id/textView3"
+            android:ems="10"
+            android:textSize="@dimen/sp16_s"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40_h">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp120_w"
+            android:gravity="center_vertical"
+            android:text="@string/name"
+            android:textSize="@dimen/sp16_s"/>
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp20_w"
+            android:layout_toRightOf="@+id/textView4"
+            android:ems="10"
+            android:textSize="@dimen/sp16_s">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp50_w"
+            android:layout_toRightOf="@+id/edit_name"
+            android:background="@drawable/round_corner_bg"
+            android:text="@string/confirm" />
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5_h"/>
+
+</LinearLayout>

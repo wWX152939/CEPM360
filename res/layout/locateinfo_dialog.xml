@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ticket_dialog_bg"
+    android:orientation="vertical" >
+    
+	<TextView
+	    android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/now_registration"
+        android:textSize="@dimen/sp17_s"
+        android:textColor="@android:color/white"
+        android:background="@drawable/dialog_title">
+    </TextView>    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dialog_title"
+        android:layout_marginLeft="@dimen/dp20_w"
+        android:layout_marginRight="@dimen/dp20_w"
+        android:layout_marginBottom="@dimen/dp20_h"
+        android:layout_marginTop="@dimen/dp20_h"
+        android:text="@string/your_location"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18_s"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="@dimen/dp25_w"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/longitude"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp18_s"/>
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="TextView"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp18_s"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="@dimen/dp56_w"
+        android:layout_toRightOf="@+id/longitude"
+        android:text="@string/latitude"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp18_s"/>
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="TextView"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp18_s"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="@dimen/dp15_h"
+        android:text="@string/sign_location"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18_s"/>
+
+    <TextView
+        android:id="@+id/locateinfo_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="@string/address"
+        android:textColor="#ff0000"
+        android:textSize="@dimen/sp18_s"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="@dimen/dp15_h"
+        android:text="@string/sign_time"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18_s"/>
+
+    <TextView
+        android:id="@+id/gobacktime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/locateinfo_addr"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18_s"/>
+
+</RelativeLayout>

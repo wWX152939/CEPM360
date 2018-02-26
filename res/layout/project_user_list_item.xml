@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp36_h"
+    android:background="@color/listview_header_bg"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="@dimen/dp40_w"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp8_w"
+        android:button="@drawable/table_checkbox_button"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="@dimen/dp120_w"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/dp10_w"
+        android:text="@string/personal_name"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/table_content_textsize" />
+    
+    <TextView
+        android:id="@+id/user_role"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/dp10_w"
+        android:text="@string/personal_name"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/table_content_textsize" />
+<!--     <com.pm360.cepm360.app.common.view.CHScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+    <LinearLayout
+        android:id="@+id/checkbox_group"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp36_h"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/checkbox13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/table_content_textsize"
+            android:focusable="false" />
+    </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView> -->
+</LinearLayout>

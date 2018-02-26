@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:hint=""
+    android:inputType="numberDecimal"
+    android:paddingLeft="@dimen/dp8_w"
+    android:paddingRight="@dimen/dp8_w"
+    android:paddingBottom="@dimen/dp8_h"
+    android:paddingTop="@dimen/dp8_h"
+    android:singleLine="true"
+    android:textColor="@android:color/white"
+    android:textCursorDrawable="@null"
+    android:textSize="@dimen/sp14_s"
+    android:background="@drawable/project_table_edit_bg" />

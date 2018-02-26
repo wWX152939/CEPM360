@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/page_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48_h"
+            android:background="#6d54a5" >
+
+            <TextView
+                android:id="@+id/dictionary_stly"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp40_h"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp20_w"
+                android:gravity="center_vertical"
+                android:text="@string/dictionary_type"
+                android:textColor="@color/setting_list_text_color"
+                android:textSize="@dimen/sp16_s"/>
+
+            <Spinner
+                android:id="@+id/dictionary_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dictionary_stly"
+                android:layout_toRightOf="@+id/dictionary_stly"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp8_w"
+                android:paddingRight="@dimen/dp8_w"
+                android:paddingBottom="@dimen/dp8_h"
+                android:paddingTop="@dimen/dp8_h"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_list_title_height"
+                android:background="@color/content_listview_header_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/code"
+                    android:textColor="@color/setting_list_text_color"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <View
+                    android:layout_width="@dimen/dp1_w"
+                    android:layout_height="match_parent"
+                    android:background="@color/setting_list_divider" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/name"
+                    android:textColor="@color/setting_list_text_color"
+                    android:textSize="@dimen/sp16_s"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/dictionary_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/setting_list_item_background"
+                android:cacheColorHint="@android:color/transparent"
+                android:clickable="true"
+                android:divider="@color/setting_list_divider"
+                android:dividerHeight="@dimen/dp1_h"
+                android:focusable="false"
+                android:scrollbars="horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.pm360.cepm360.app.common.view.FloatingMenuView
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/dp16_w"
+        android:clickable="true"
+        android:src="@drawable/btn_add" />
+
+</FrameLayout>

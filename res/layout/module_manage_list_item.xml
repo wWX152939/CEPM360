@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp40_h"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/module_number"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp10_w"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp14_s"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#B7B7B7"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/module_code"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp10_w"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp14_s"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#B7B7B7"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/module_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp10_w"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp14_s"/>
+
+</LinearLayout>

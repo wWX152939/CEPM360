@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48_h"
+        android:background="@drawable/dialog_title"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp18_s"
+        android:textStyle="bold" 
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/baseViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/base_view_pager"/>
+    
+    <include
+        android:id="@+id/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48_h"
+        layout="@layout/button_bar_layout"/>
+    
+</LinearLayout>

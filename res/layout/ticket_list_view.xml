@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/purchase_add_bg"
+	    android:orientation="vertical" >    
+	    
+	    <View
+	        android:id="@+id/view1"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp1_h"
+	        android:background="@color/divider"
+	        android:visibility="visible" />
+	    
+	    <LinearLayout
+            android:id="@+id/listHeaderView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/schedule_table_height"
+	        android:layout_below="@id/view1"
+            android:orientation="horizontal" />
+	
+	    <View
+	        android:id="@+id/view2"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp1_h"
+	        android:layout_below="@id/listHeaderView"
+	        android:background="@color/divider"
+	        android:visibility="visible" />
+	
+	    <ListView
+	        android:id="@+id/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp190_h"
+	        android:layout_below="@id/view2"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:clickable="true"
+	        android:divider="@color/divider"
+	        android:dividerHeight="@dimen/dp1_w"
+	        android:focusable="false"
+	        android:scrollbars="none" />
+    
+
+	</RelativeLayout>
+        

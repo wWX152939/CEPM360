@@ -1,0 +1,3666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="table_column_ids_2">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+    </string-array>
+    <string-array name="table_column_ids_3">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+    </string-array>
+    <string-array name="table_column_ids_4">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+    </string-array>
+    <string-array name="table_column_ids_5">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+    </string-array>
+    <string-array name="table_column_ids_6">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+    </string-array>
+    <string-array name="table_column_ids_7">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+        <item>@id/tv7</item>
+    </string-array>
+    <string-array name="table_column_ids_8">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+        <item>@id/tv7</item>
+        <item>@id/tv8</item>
+    </string-array>
+    <string-array name="table_column_ids_9">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+        <item>@id/tv7</item>
+        <item>@id/tv8</item>
+        <item>@id/tv9</item>
+    </string-array>
+    <string-array name="table_column_ids_10">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+        <item>@id/tv7</item>
+        <item>@id/tv8</item>
+        <item>@id/tv9</item>
+        <item>@id/tv10</item>
+    </string-array>
+    <string-array name="table_column_ids_12">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+        <item>@id/tv7</item>
+        <item>@id/tv8</item>
+        <item>@id/tv9</item>
+        <item>@id/tv10</item>
+        <item>@id/tv11</item>
+        <item>@id/tv12</item>
+    </string-array>
+    <string-array name="empty_array" />
+    <string-array name="invitebid_flow_ids" parent="@array/table_column_ids_8" />
+    <string-array name="invitebid_flow_list_ids">
+        <item>@id/icon</item>
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+        <item>@id/tv7</item>
+    </string-array>
+    <string-array name="plan_email_option_menu">
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+        <item>@string/cooperation</item>
+    </string-array>
+    <string-array name="plan_file_email_option_menu">
+        <item>@string/view</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+        <item>@string/cooperation</item>
+    </string-array>
+    <string-array name="invitebid_flow_common">
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/plan_duration</item>
+        <item>@string/plan_progress</item>
+        <item>@string/plan_owner</item>
+        <item>@string/plan_department</item>
+    </string-array>
+    <string-array name="invitebid_plan">
+        <item>@string/invitebid_number</item>
+        <item>@string/invitebid_name</item>
+        <item>@string/invitebid_secrecy</item>
+        <item>@string/invitebid_budget</item>
+        <item>@string/invitebid_type</item>
+        <item>@string/invitebid_style</item>
+        <item>@string/invitebid_owner</item>
+        <item>@string/invitebid_department</item>
+        <item>@string/invitebid_license_no</item>
+        <item>@string/invitebid_status</item>
+        <item>@string/invitebid_plan_start</item>
+        <item>@string/invitebid_plan_end</item>
+        <item>@string/invitebid_start_time</item>
+        <item>@string/invitebid_end_time</item>
+        <item>@string/invitebid_evaluation_time</item>
+        <item>@string/invitebid_evaluation_end</item>
+        <item>@string/invitebid_tech_weight</item>
+        <item>@string/invitebid_commerce_weight</item>
+        <item>@string/invitebid_prefix_condition</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="invitebid_add_flow">
+        <item>@string/invitebid_flow</item>
+        <item>@string/status</item>
+        <item>@string/plan_progress</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/plan_progress</item>
+        <item>@string/plan_owner</item>
+        <item>@string/plan_department</item>
+    </string-array>
+    <string-array name="invitebid_add_flow_dialog">
+        <item>@string/name</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/plan_owner</item>
+        <item>@string/plan_department</item>
+    </string-array>
+    <string-array name="invitebid_mavin_list_names">
+        <item>@string/index</item>
+        <item>@string/name</item>
+        <item>@string/sex</item>
+        <item>@string/birth</item>
+        <item>@string/work_seniority</item>
+        <item>@string/work_unit</item>
+        <item>@string/expert_type</item>
+        <item>@string/telephone</item>
+        <item>@string/professional_title</item>
+        <item>@string/profession</item>
+        <item>@string/education</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="invitebid_mavin_optionmenu_name">
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="invitebid_mavin_list_ids" parent="@array/table_column_ids_12" />
+    <string-array name="invitebid_answer_list_names">
+        <item>@string/index</item>
+        <item>@string/invitebid_bid_company</item>
+        <item>@string/clarity_time</item>
+        <item>@string/clarity_address</item>
+        <item>@string/participants</item>
+        <item>@string/clarity_note</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="invitebid_answer_dialog">
+        <item>@string/invitebid_bid_company</item>
+        <item>@string/clarity_time</item>
+        <item>@string/clarity_address</item>
+        <item>@string/participants</item>
+        <item>@string/clarity_note</item>
+        <item>@string/other</item>
+    </string-array>
+    <string-array name="invitebid_answer_list_ids" parent="@array/table_column_ids_7" />
+    <string-array name="invitebid_quote_list_names">
+        <item>@string/index</item>
+        <item>@string/invitebid_bid_company</item>
+        <item>@string/invitebid_bid_department</item>
+        <item>@string/invitebid_bid_owner</item>
+        <item>@string/invitebid_bid_date</item>
+        <item>@string/invitebid_bid_quote_date</item>
+        <item>@string/invitebid_bid_quote_price</item>
+        <item>@string/project_duration</item>
+        <item>@string/note</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="invitebid_quote_dialog">
+        <item>@string/invitebid_bid_company</item>
+        <item>@string/invitebid_bid_department</item>
+        <item>@string/invitebid_bid_owner</item>
+        <item>@string/invitebid_bid_quote_date</item>
+        <item>@string/invitebid_bid_date</item>
+        <item>@string/invitebid_bid_quote_price</item>
+        <item>@string/project_duration</item>
+        <item>@string/telephone</item>
+        <item>@string/address</item>
+        <item>@string/company</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="invitebid_quote_list_ids" parent="@array/table_column_ids_10" />
+    <string-array name="invitebid_score_list_names">
+        <item>@string/index</item>
+        <item>@string/invitebid_bid_company</item>
+        <item>@string/score_expert</item>
+        <item>@string/tech_score</item>
+        <item>@string/commerce_score</item>
+        <item>@string/note</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="invitebid_score_dialog">
+        <item>@string/invitebid_bid_company</item>
+        <item>@string/score_expert</item>
+        <item>@string/tech_score</item>
+        <item>@string/commerce_score</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="invitebid_score_list_ids" parent="@array/table_column_ids_7" />
+    <string-array name="invitebid_invite_list_names">
+        <item>@string/index</item>
+        <item>@string/invitebid_invite_company</item>
+        <item>@string/contacts</item>
+        <item>@string/contact_number</item>
+        <item>@string/qualification_statement</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="invitebid_invite_list_ids" parent="@array/table_column_ids_6" />
+    <string-array name="invitebid_invite_dialog">
+        <item>@string/invitebid_invite_company</item>
+        <item>@string/contacts</item>
+        <item>@string/contact_number</item>
+        <item>@string/qualification_statement</item>
+    </string-array>
+    <string-array name="invitebid_bid_company_list_names">
+        <item>@string/index</item>
+        <item>@string/invitebid_invite_company</item>
+        <item>@string/contacts</item>
+        <item>@string/contact_number</item>
+        <item>@string/will_invite</item>
+        <item>@string/has_qualification</item>
+        <item>@string/qualification_statement</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="invitebid_bid_company_list_ids" parent="@array/table_column_ids_8" />
+    <string-array name="invitebid_bid_company_dialog">
+        <item>@string/invitebid_invite_company</item>
+        <item>@string/contacts</item>
+        <item>@string/contact_number</item>
+        <item>@string/will_invite</item>
+        <item>@string/has_qualification</item>
+        <item>@string/qualification_statement</item>
+    </string-array>
+    <string-array name="invitebid_pretrial_list_names">
+        <item>@string/index</item>
+        <item>@string/invitebid_bid_company</item>
+        <item>@string/review_expert</item>
+        <item>@string/review_status</item>
+        <item>@string/review_main_content</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="invitebid_pretrial_list_ids" parent="@array/table_column_ids_6" />
+    <string-array name="invitebid_pretrial_dialog">
+        <item>@string/invitebid_invite_company</item>
+        <item>@string/review_expert</item>
+        <item>@string/review_status</item>
+        <item>@string/review_main_content</item>
+    </string-array>
+    
+    <string-array name="combination_risk_dialog">
+        <item>@string/combination_risk_target</item>
+        <item>@string/combination_check_point</item>
+        <item>@string/combination_risk_description</item>
+        <item>@string/combination_risk_effect</item>
+        <item>@string/combination_handle_unit</item>
+        <item>@string/combination_check_owner</item>
+        <item>@string/combination_check_time</item>
+    </string-array>
+    <string-array name="combination_risk_list_names">
+        <item>@string/index</item>
+        <item>@string/combination_risk_target</item>
+        <item>@string/combination_check_point</item>
+        <item>@string/combination_risk_description</item>
+        <item>@string/combination_risk_effect</item>
+        <item>@string/combination_handle_unit</item>
+        <item>@string/combination_check_owner</item>
+        <item>@string/combination_check_time</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="safety_list_names">
+        <item>@string/index</item>
+        <item>@string/name</item>
+        <item>@string/type</item>
+        <item>@string/content</item>
+        <item>@string/happen_date</item>
+        <item>@string/attachment</item>
+        <item>@string/record</item>
+    </string-array>
+    <string-array name="safety_dialog_names">
+        <item>@string/name</item>
+        <item>@string/type</item>
+        <item>@string/content</item>
+        <item>@string/happen_date</item>
+    </string-array>
+    <string-array name="safety_list_ids">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+        <item>@id/tv7</item>
+    </string-array>
+    <string-array name="combination_risk_list_ids">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+        <item>@id/tv7</item>
+        <item>@id/tv8</item>
+        <item>@id/tv9</item>
+    </string-array>
+    <string-array name="purchase_manager_control">
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+        <item>@string/purchase_arrival</item>
+    </string-array>
+    <string-array name="purchase_manager_affirm">
+        <item>@string/details</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+        <item>@string/purchase_arrival</item>
+    </string-array>
+    <string-array name="purchase_manager_detail">
+        <item>@string/details</item>
+    </string-array>
+    <string-array name="purchase_manager_add_control">
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="purchase_dialog_product_list_ids">
+        <item>@id/product_name</item>
+        <item>@id/product_format</item>
+        <item>@id/product_type</item>
+        <item>@id/product_unit</item>
+        <item>@id/product_price</item>
+        <item>@id/product_supplier</item>
+    </string-array>
+    <string-array name="purchase_dialog_product_list">
+        <item>@string/good_name</item>
+        <item>@string/spec</item>
+        <item>@string/kind</item>
+        <item>@string/unit</item>
+        <item>@string/price</item>
+        <item>@string/supplier</item>
+    </string-array>
+    <string-array name="purchase_budget_search">
+        <item>@string/purchase_budget_no</item>
+        <item>@string/purchase_budget_name</item>
+        <item>@string/purchase_budget_creator</item>
+        <item>@string/purchase_budget_project</item>
+        <item>@string/purchase_budget_quantity</item>
+        <item>@string/purchase_budget_amount</item>
+        <item>@string/purchase_budget_date</item>
+    </string-array>
+    <string-array name="purchase_plan_search">
+        <item>@string/plan_number</item>
+        <item>@string/plan_name</item>
+        <item>@string/plan_owner</item>
+        <item>@string/used_project</item>
+        <item>@string/executor</item>
+        <item>@string/plan_amount</item>
+        <item>@string/declare_date</item>
+        <item>@string/plan_date</item>
+    </string-array>
+    <string-array name="purchase_executive_search">
+        <item>@string/purchase_number</item>
+        <item>@string/execute_plan</item>
+        <item>@string/status</item>
+        <item>@string/executed_contract</item>
+        <item>@string/purchase_amount</item>
+        <item>@string/purchase_date</item>
+    </string-array>
+    
+    <string-array name="project_pinner_items">
+        <item>@string/all_projects</item>
+        <item>@string/finished_projects</item>
+        <item>@string/over_due_projects</item>
+        <item>@string/start_projects</item>
+        <item>@string/not_start_projects</item>
+        <item>@string/latest_projects</item>
+    </string-array>
+
+    <!-- schedule navigation -->
+    <string-array name="schedule_navigation_names">
+        <item>@string/schedule_navigation_item_1</item>
+        <item>@string/schedule_navigation_item_2</item>
+        <!-- item>@string/schedule_navigation_item_3</item>-->
+        <!-- <item>任务查询</item> -->
+        <!-- <item>任务报告</item> -->
+    </string-array>
+    <!-- schedule navigation -->
+    <string-array name="schedule_navigation_ids">
+        <item>@drawable/ic_navigation_task_make</item>
+        <item>@drawable/ic_navigation_task_feedback</item>
+        <!--  item>@drawable/ic_navigation_task_shared</item>-->
+        <item>@drawable/ic_navigation_task_make_select</item>
+        <item>@drawable/ic_navigation_task_feedback_select</item>
+        <!-- item>@drawable/ic_navigation_task_shared_select</item>-->
+    </string-array>
+    <string-array name="task_feedback_tab_names">
+        <item>@string/work_schedule</item>
+        <item>@string/scene_picture</item>
+        <item>@string/work_log</item>
+        <item>@string/safety_monitor</item>
+        <item>@string/quality_civilization</item>
+    </string-array>
+
+    <!-- template navigation -->
+    <string-array name="template_navigation_titles">
+        <item>@string/plan_template</item>
+        <item>@string/document_template</item>
+    </string-array>
+    <string-array name="template_navigation_ids">
+        <item>@drawable/ic_navigation_template_plan</item>
+        <item>@drawable/ic_navigation_template_doc</item>
+        <item>@drawable/ic_navigation_template_plan_select</item>
+        <item>@drawable/ic_navigation_template_doc_select</item>
+    </string-array>
+
+    <!-- schedule navigation -->
+    <string-array name="announcement_titles">
+        <item>@string/annountcement_management</item>
+    </string-array>    
+    <string-array name="announcement_navigation_icons">
+        <item>@drawable/ic_navigation_announcement</item>
+    </string-array>    
+    
+    <string-array name="settings_navigation_titles">
+        <item>@string/project_datalog</item>
+        <item>@string/department_architecture</item>
+        <item>@string/role_manager</item>
+        <item>@string/user_manager</item>
+        <item>@string/approval_flow</item>
+        <item>@string/more_setting</item>
+    </string-array>
+    
+    <string-array name="settings_navigation_icons">
+        <item>@drawable/ic_navigation_setting_menu_eps</item>
+        <item>@drawable/ic_navigation_setting_menu_obs</item>
+        <item>@drawable/ic_navigation_role_manage</item>
+        <item>@drawable/ic_navigation_setting_menu_user</item>
+        <item>@drawable/ic_navigation_setting_approval_process</item>
+        <item>@drawable/ic_navigation_more_settings</item>
+        <item>@drawable/ic_navigation_setting_menu_eps_select</item>
+        <item>@drawable/ic_navigation_setting_menu_obs_select</item>
+        <item>@drawable/ic_navigation_role_manage_select</item>
+        <item>@drawable/ic_navigation_setting_menu_user_select</item>
+        <item>@drawable/ic_navigation_setting_approval_process_select</item>
+        <item>@drawable/ic_navigation_more_settings_select</item>
+    </string-array>
+    <string-array name="setting_contactunit_names">
+        <item>@string/company_name</item>
+        <item>@string/company_address</item>
+        <item>@string/contact_number</item>
+        <item>@string/project_role</item>
+    </string-array>
+    <string-array name="setting_contactunit_ids">
+        <item>@id/unit_name</item>
+        <item>@id/unit_address</item>
+        <item>@id/contact_phone</item>
+        <item>@id/character</item>
+    </string-array>
+    <string-array name="setting_contactunit_viewpager">
+        <item>@string/general</item>
+        <item>@string/contacts</item>
+    </string-array>
+    <string-array name="setting_contactunit_info_attr">
+        <item>@string/company_name</item>
+        <item>@string/company_address</item>
+        <item>@string/contact_number</item>
+        <item>@string/project_role</item>
+        <item>@string/company_account_bank</item>
+        <item>@string/company_account</item>
+        <item>@string/company_account_no</item>
+        <item>@string/company_duty_no</item>
+    </string-array>
+    <string-array name="setting_contactunit_contact_names">
+        <item>@string/index</item>
+        <item>@string/name</item>
+        <item>@string/company_position</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="setting_contactunit_contact_ids">
+        <item>@id/contact_unit_contact_id</item>
+        <item>@id/contact_unit_contact_name</item>
+        <item>@id/contact_unit_contact_office</item>
+        <item>@id/contact_unit_contact_department</item>
+        <item>@id/contact_unit_contact_phone</item>
+    </string-array>
+    <string-array name="setting_contactunit_contact_dialog_names">
+        <item>@string/name</item>
+        <item>@string/company_position</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="purchase_budget_add_item_names">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/brand</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/quantity</item>
+        <item>@string/purchase_reference_price</item>
+        <item>@string/purchase_amount</item>
+    </string-array>
+    <string-array name="purchase_budget_add_item_ids">
+        <item>@id/budget_add_consume_name</item>
+        <item>@id/budget_add_consume_type</item>
+        <item>@id/budget_add_brand</item>
+        <item>@id/budget_add_norms</item>
+        <item>@id/budget_add_unit</item>
+        <item>@id/budget_add_sum</item>
+        <item>@id/budget_add_unit_price</item>
+        <item>@id/budget_add_money</item>
+    </string-array>
+    <string-array name="purchase_plan_add_item_names">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/brand</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <item>@string/amount</item>
+        <item>@string/supplier</item>
+        <item>@string/approach_time</item>
+        <item>@string/contract_task_part</item>
+    </string-array>
+    <string-array name="purchase_plan_add_item_ids">
+        <item>@id/plan_add_consume_name</item>
+        <item>@id/plan_add_consume_type</item>
+        <item>@id/plan_add_brand</item>
+        <item>@id/plan_add_norms</item>
+        <item>@id/plan_add_unit</item>
+        <item>@id/plan_add_sum</item>
+        <item>@id/plan_add_unit_price</item>
+        <item>@id/plan_add_money</item>
+        <item>@id/plan_add_provider</item>
+        <item>@id/plan_add_indate</item>
+        <item>@id/plan_add_task</item>
+    </string-array>
+    <string-array name="purchase_executive_add_item_names">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/brand</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <item>@string/amount</item>
+        <item>@string/supplier</item>
+        <item>@string/status</item>
+        <item>@string/arrival_time</item>
+    </string-array>
+    <string-array name="purchase_executive_add_item_ids">
+        <item>@id/executive_add_consume_name</item>
+        <item>@id/executive_add_consume_type</item>
+        <item>@id/executive_add_brand</item>
+        <item>@id/executive_add_norms</item>
+        <item>@id/executive_add_unit</item>
+        <item>@id/executive_add_sum</item>
+        <item>@id/executive_add_unit_price</item>
+        <item>@id/executive_add_money</item>
+        <item>@id/executive_add_provider</item>
+        <item>@id/executive_add_status</item>
+        <item>@id/executive_add_arrive_time</item>
+    </string-array>
+    <!-- project -->
+    <string-array name="project_header_names">
+        <item>@string/project_name</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/project_status</item>
+        <item>@string/project_progress</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+        <item>@string/creater</item>
+    </string-array>
+    <string-array name="eps_maintain_pop">
+        <item>@string/directory_code</item>
+        <item>@string/directory_name</item>
+    </string-array>
+    <string-array name="cooperation_maintain_pop">
+        <item>@string/cooperation_projects</item>
+        <item>@string/cooperation_accept_company</item>
+        <item>@string/cooperation_accept_type</item>
+    </string-array>
+    <string-array name="mavin_maintain_pop">
+        <item>@string/personal_name</item>
+        <item>@string/sex</item>
+        <item>@string/birth</item>
+        <item>@string/work_seniority</item>
+        <item>@string/work_unit</item>
+        <item>@string/expert_type</item>
+        <item>@string/telephone</item>
+        <item>@string/professional_title</item>
+        <item>@string/profession</item>
+        <item>@string/education</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="wbstemplate_maintain_pop">
+        <item>@string/plan_name</item>
+        <item>@string/start_time</item>
+        <item>@string/finish_time</item>
+    </string-array>
+    <string-array name="directory_maintain_pop">
+        <item>@string/directory_name</item>
+    </string-array>
+    <string-array name="directory_relevance_pop">
+        <item>@string/directory_select_type</item>
+    </string-array>
+    <string-array name="material_type_maintain_pop">
+        <item>@string/material_type</item>
+    </string-array>
+    <string-array name="equipment_type_maintain_pop">
+        <item>@string/device_type</item>
+    </string-array>
+    <string-array name="contact_company_type_maintain_pop">
+        <item>@string/company_type</item>
+    </string-array>
+    <string-array name="lease_maintain_pop">
+        <item>@string/lease_type</item>
+    </string-array>
+    <string-array name="outsourcing_type_maintain_pop">
+        <item>@string/artificial_type</item>
+    </string-array>
+    <string-array name="contact_company_maintain_pop">
+        <item>@string/company_name</item>
+        <item>@string/address</item>
+        <item>@string/contact_number</item>
+        <item>@string/contacts</item>
+    </string-array>
+    <string-array name="add_lease_maintain_pop">
+        <item>@string/name</item>
+        <item>@string/type</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+    </string-array>
+    <string-array name="material_maintain_pop">
+        <item>@string/name</item>
+        <item>@string/job_type</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/brand</item>
+        <item>@string/model</item>
+    </string-array>
+    <string-array name="outsourcing_maintain_pop">
+        <item>@string/type</item>
+        <item>@string/subcontract_content</item>
+    </string-array>
+    <string-array name="wbs_maintain_pop">
+        <item>@string/wbs_code</item>
+        <item>@string/wbs_name</item>
+    </string-array>
+    <string-array name="wbs_task_pop">
+        <item>@string/task_name</item>
+    </string-array>
+    <string-array name="plan_template_dialog">
+        <item>@string/type</item>
+        <item>@string/name</item>
+        <item>@string/select_template_file</item>
+    </string-array>
+    <string-array name="plan_template_add_activity">
+        <item>@string/type</item>
+        <item>@string/name</item>
+    </string-array>
+    <string-array name="plan_template_list_names">
+        <item>@string/name</item>
+        <item>@string/task_duration</item>
+        <item>@string/start_time</item>
+        <item>@string/finish_time</item>
+    </string-array>
+    <string-array name="document_template_dialog">
+        <item>@string/document_template</item>
+        <item>@string/type</item>
+    </string-array>
+    <string-array name="project_column_names">
+        <item>project_name</item>
+        <item>start_time</item>
+        <item>end_time</item>
+        <item>actual_start_time</item>
+        <item>actual_end_time</item>
+        <item>status</item>
+        <item>progress</item>
+        <item>owner</item>
+        <item>department</item>
+        <item>creater</item>
+    </string-array>
+    <string-array name="project_item_ids">
+        <item>@id/project_name</item>
+        <item>@id/start_time</item>
+        <item>@id/end_time</item>
+        <item>@id/actual_start_time</item>
+        <item>@id/actual_end_time</item>
+        <item>@id/status</item>
+        <item>@id/progress</item>
+        <item>@id/owner</item>
+        <item>@id/department</item>
+        <item>@id/creater</item>
+    </string-array>
+
+    <!-- daily update -->
+    <string-array name="daily_update_header_names">
+        <item>@string/task_name</item>
+        <item>@string/status</item>
+        <item>@string/task_complete_percent</item>
+        <item>@string/task_feedback_content</item>
+        <item>@string/task_feedback_owner</item>
+        <item>@string/task_feedback_time</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="daily_update_item_ids">
+        <item>@id/task_name</item>
+        <item>@id/task_status</item>
+        <item>@id/task_percentage</item>
+        <item>@id/task_feedback_content</item>
+        <item>@id/task_feedback_man</item>
+        <item>@id/task_feedback_time</item>
+        <item>@id/task_attachement</item>
+    </string-array>
+    <string-array name="feedback_status">
+        <item>@string/not_start</item>
+        <item>@string/ongoing</item>
+        <item>@string/complete</item>
+    </string-array>
+    <string-array name="stuff_type">
+        <item>@string/manpower</item>
+        <item>@string/material</item>
+        <item>@string/equipment</item>
+    </string-array>
+    <!-- task update -->
+    <string-array name="task_update_header_names">
+        <item>@string/index</item>
+        <item>@string/plan_change_title</item>
+        <item>@string/plan_change_date</item>
+        <item>@string/plan_change_status</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="task_update_item_ids">
+        <item>@id/change_id</item>
+        <item>@id/change_title</item>
+        <item>@id/change_date</item>
+        <item>@id/change_state</item>
+        <item>@id/change_content</item>
+    </string-array>
+
+    <!-- task update content
+    <string-array name="task_update_content_header_names">
+        <item>@string/task_name</item>
+        <item>@string/owner</item>
+        <item>变更类型</item>
+        <item>计划开始</item>
+        <item>计划完成</item>
+        <item>变更开始</item>
+        <item>变更完成</item>
+        <item>申请人</item>
+        <item>申请日期</item>
+    </string-array>
+    <string-array name="task_update_content_item_ids">
+        <item>@id/task_name</item>
+        <item>@id/change_person</item>
+        <item>@id/change_type</item>
+        <item>@id/plan_start</item>
+        <item>@id/plan_end</item>
+        <item>@id/change_start</item>
+        <item>@id/change_end</item>
+        <item>@id/applicant</item>
+        <item>@id/applicant_data</item>
+    </string-array>
+    
+    <string-array name="task_update_content_common_names">
+        <item>@string/task_name</item>
+        <item>原定工期</item>
+        <item>计划开始</item>
+        <item>计划完成</item>
+        <item>@string/creater</item>
+        <item>@string/plan_department</item>
+        <item>@string/owner</item>
+        <item>@string/task_type</item>
+    </string-array>
+    -->
+    <string-array name="multi_task_owner_select">
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+    </string-array>
+	<string-array name="multi_task_type_select">
+        <item>@string/task_type</item>
+    </string-array>
+    
+    <!-- task update content attach -->
+    <string-array name="task_update_content_document_names">
+        <item>@string/title</item>
+        <item>@string/document_file</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="task_update_document_dialog_names">
+        <item>@string/title</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="combination_dialog_document_names">
+        <item>@string/combination_work_content</item>
+    </string-array>
+    <string-array name="task_consume_dialog_names">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+    </string-array>
+    <string-array name="task_consume_dialog_ids">
+        <item>@id/consume_name</item>
+        <item>@id/consume_type</item>
+        <item>@id/consume_spec</item>
+        <item>@id/consume_unit</item>
+    </string-array>
+    <string-array name="task_shared_titles">
+        <item>@string/share</item>
+        <item>@string/mount</item>
+    </string-array>
+
+    <!-- task feedback dialog -->
+    <string-array name="task_feedback_dialog_names">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/resource_type</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/plan_quantity</item>
+        <item>@string/ready_time</item>
+        <item>@string/lead_quantity</item>
+        <item>@string/actaul_quantity</item>
+    </string-array>
+    <string-array name="task_make_dialog_names">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/resource_type</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/plan_quantity</item>
+        <item>@string/use_time</item>
+    </string-array>
+    <string-array name="plan_make_dialog_names">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/plan_quantity</item>
+        <item>@string/unit</item>
+        <item>@string/price</item>
+    </string-array>
+    <string-array name="plan_make_logic_dialog_names">
+        <item>@string/task_name</item>
+        <item>@string/type</item>
+        <item>@string/time_interval</item>
+    </string-array>
+    <string-array name="task_update_content_popup_names">
+        <item>@string/task_name</item>
+        <item>@string/plan_change_date</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+        <item>@string/task_type</item>
+        <item>@string/sort_code</item>
+    </string-array>
+    <string-array name="task_feedback_names">
+        <item>@string/task_name</item>
+        <item>@string/plan_duration</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/status</item>
+        <item>@string/actual_duration</item>
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/task_progress</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+        <item>@string/task_type</item>
+    </string-array>
+    <string-array name="task_feedback_ids">
+        <item>@id/task_name</item>
+        <item>@id/plan_duration</item>
+        <item>@id/start_time</item>
+        <item>@id/end_time</item>
+        <item>@id/status</item>
+        <item>@id/actual_duration</item>
+        <item>@id/actual_start_time</item>
+        <item>@id/actual_end_time</item>
+        <item>@id/task_progress</item>
+        <item>@id/owner</item>
+        <item>@id/department</item>
+        <item>@id/task_type</item>
+    </string-array>
+    <string-array name="task_shared_names">
+        <item>@string/task_name</item>
+        <item>@string/plan_duration</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/status</item>
+        <item>@string/actual_duration</item>
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/task_progress</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+        <item>@string/task_type</item>
+        <item>@string/task_shared_status</item>
+    </string-array>
+    <string-array name="task_shared_ids">
+        <item>@id/task_name</item>
+        <item>@id/plan_duration</item>
+        <item>@id/start_time</item>
+        <item>@id/end_time</item>
+        <item>@id/status</item>
+        <item>@id/actual_duration</item>
+        <item>@id/actual_start_time</item>
+        <item>@id/actual_end_time</item>
+        <item>@id/task_progress</item>
+        <item>@id/owner</item>
+        <item>@id/department</item>
+        <item>@id/task_type</item>
+        <item>@id/task_shared_status</item>
+    </string-array>
+    <string-array name="task_mount_names">
+        <item>@string/task_name</item>
+        <item>@string/plan_duration</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/status</item>
+        <item>@string/actual_duration</item>
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/task_progress</item>
+        <item>@string/owner</item>
+        <item>@string/task_type</item>
+    </string-array>
+    <string-array name="task_mount_ids">
+        <item>@id/task_name</item>
+        <item>@id/plan_duration</item>
+        <item>@id/start_time</item>
+        <item>@id/end_time</item>
+        <item>@id/status</item>
+        <item>@id/actual_duration</item>
+        <item>@id/actual_start_time</item>
+        <item>@id/actual_end_time</item>
+        <item>@id/task_progress</item>
+        <item>@id/owner</item>
+        <item>@id/task_type</item>
+    </string-array>
+    <string-array name="task_feedback_listids">
+        <item>@id/icon</item>
+        <item>@id/task_name</item>
+        <item>@id/plan_duration</item>
+        <item>@id/start_time</item>
+        <item>@id/end_time</item>
+        <item>@id/status</item>
+        <item>@id/actual_duration</item>
+        <item>@id/actual_start_time</item>
+        <item>@id/actual_end_time</item>
+        <item>@id/task_progress</item>
+        <item>@id/owner</item>
+        <item>@id/department</item>
+        <item>@id/task_type</item>
+    </string-array>
+    <string-array name="task_feedback_doscroll_ids">
+        <item>@id/left_title_container</item>
+        <item>@id/plan_duration</item>
+        <item>@id/start_time</item>
+        <item>@id/end_time</item>
+        <item>@id/status</item>
+        <item>@id/actual_duration</item>
+        <item>@id/actual_start_time</item>
+        <item>@id/actual_end_time</item>
+        <item>@id/task_progress</item>
+        <item>@id/owner</item>
+        <item>@id/department</item>
+        <item>@id/task_type</item>
+    </string-array>
+    <string-array name="task_feedback_line_ids">
+        <item>@id/plan_duration_line</item>
+        <item>@id/start_time_line</item>
+        <item>@id/end_time_line</item>
+        <item>@id/status_line</item>
+    </string-array>
+    <!-- task_create -->
+    <string-array name="plan_make_names">
+        <item>@string/task_name</item>
+        <item>@string/plan_duration</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+        <item>@string/task_type</item>
+        <item>@string/task_edit_status</item>
+    </string-array>
+    <string-array name="plan_make_ids">
+        <item>@id/task_name</item>
+        <item>@id/plan_duration</item>
+        <item>@id/start_time</item>
+        <item>@id/end_time</item>
+        <item>@id/owner</item>
+        <item>@id/department</item>
+        <item>@id/task_type</item>
+        <item>@id/tv1</item>
+    </string-array>
+    <string-array name="plan_make_doscroll_ids">
+        <item>@id/left_title_container</item>
+        <item>@id/plan_duration</item>
+        <item>@id/start_time</item>
+        <item>@id/end_time</item>
+        <item>@id/owner</item>
+        <item>@id/department</item>
+        <item>@id/task_type</item>
+        <item>@id/tv1</item>
+    </string-array>
+    <string-array name="plan_make_listids">
+        <item>@id/icon</item>
+        <item>@id/task_name</item>
+        <item>@id/plan_duration</item>
+        <item>@id/start_time</item>
+        <item>@id/end_time</item>
+        <item>@id/owner</item>
+        <item>@id/department</item>
+        <item>@id/task_type</item>
+        <item>@id/tv1</item>
+    </string-array>
+    <string-array name="plan_change_names">
+        <item>@string/plan_change_title</item>
+        <item>@string/note</item>
+    </string-array>
+
+    <!-- task_make_info -->
+    <string-array name="task_make_info">
+        <item>@string/task_name</item>
+        <item>@string/plan_duration</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/status</item>
+        <item>@string/actual_duration</item>
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+        <item>@string/cc_user</item>
+        <item>@string/creater</item>
+        <item>@string/task_progress</item>
+        <item>@string/task_type</item>
+    </string-array>
+    <string-array name="task_make_info_attr">
+        <item>@string/task_name</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/plan_duration</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+        <item>@string/task_type</item>
+    </string-array>
+    <string-array name="task_feedback_info_attr">
+        <item>@string/task_name</item>
+        <item>@string/plan_duration</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/status</item>
+        <item>@string/actual_duration</item>
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+        <item>@string/task_progress</item>
+        <item>@string/task_type</item>
+    </string-array>
+    <string-array name="task_feedback_tab_attr">
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/task_complete_percent</item>
+        <item>@string/cc_user</item>
+        <item>@string/task_complete_status</item>
+        <item>@string/task_complete_descriptiion</item>
+    </string-array>
+    <string-array name="task_feedback_attachment_dialog_label_name">
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/task_complete_percent</item>
+        <item>@string/owner</item>
+        <item>@string/cc_user</item>
+        <item>@string/task_complete_status</item>
+        <item>@string/task_complete_descriptiion</item>
+    </string-array>
+    <string-array name="plan_make_add_task">
+        <item>@string/name</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+    </string-array>
+    <string-array name="task_feedback_add_task">
+        <item>@string/name</item>
+        <item>@string/plan_duration</item>
+        <item>@string/plan_start_time</item>
+        <item>@string/plan_end_time</item>
+        <item>@string/task_type</item>
+        <item>@string/actual_duration</item>
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/cc_user</item>
+        <item>@string/owner</item>
+        <item>@string/plan_department</item>
+    </string-array>
+    <string-array name="task_feedback_modify">
+        <item>@string/actual_start_time</item>
+        <item>@string/actual_end_time</item>
+        <item>@string/plan_progress</item>
+        <item>@string/cc_user</item>
+    </string-array>
+
+    <!-- task_make_feedback -->
+
+    <string-array name="task_feedback_add_names">
+        <item>@string/task_feedback_owner</item>
+        <item>@string/task_feedback_time</item>
+        <item>@string/task_feedback_content</item>
+        <item>@string/status</item>
+        <item>@string/task_complete_percent</item>
+    </string-array>
+    <string-array name="task_feedback_attr">
+        <item>@string/modify</item>
+        <item>@string/details</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="task_feedback_viewpager">
+        <item>@string/work_schedule</item>
+        <item>@string/scene_picture</item>
+        <item>@string/general</item>
+    </string-array>
+    <string-array name="zh_task_make_viewpager">
+        <item>@string/general</item>
+        <item>@string/combination_risk_target</item>
+    </string-array>
+    <string-array name="task_make_viewpager">
+        <item>@string/general</item>
+        <item>@string/reference_document</item>
+    </string-array>
+    <string-array name="bid_viewpager">
+        <item>@string/general</item>
+        <item>@string/work_log</item>
+        <item>@string/invitebid_invite_plan</item>
+    </string-array>
+    <string-array name="task_make_document_popup_attr">
+        <item>@string/view</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="cooperation_popup_attr">
+        <item>@string/cooperation_lunch</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="delete">
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="update">
+        <item>@string/modify</item>
+    </string-array>
+    <string-array name="cooperation_lunched_popup_attr">
+        <item>@string/delete</item>
+        <item>@string/lunch_contacts</item>
+        <item>@string/accept_contacts</item>
+    </string-array>
+    <string-array name="cooperation_complete_popup_attr">
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="cooperation_reveiver_popup_attr">
+        <item>@string/select_accept_project</item>
+    </string-array>
+    <string-array name="cooperation_accepted_popup_attr">
+        <item>@string/lunch_contacts</item>
+        <item>@string/accept_contacts</item>
+    </string-array>
+    <string-array name="task_update_version">
+        <item>@string/change_task</item>
+        <item>@string/modify</item>
+    </string-array>
+    <string-array name="task_publish_update_version">
+        <item>@string/delete</item>
+        <item>@string/generate_version</item>
+    </string-array>
+    <string-array name="task_version_update_version">
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="plan_make_attr_popup">
+        <item>@string/modify</item>
+        <item>@string/add</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="eps_make_attr_popup">
+        <item>@string/add</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="obs_make_attr_popup">
+        <item>@string/add</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="directory_make_attr_popup">
+        <item>@string/add_directory_title</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="wbs_make_attr_popup">
+        <item>@string/add_task</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="plan_make_publish_attr_popup">
+        <item>@string/more_attributes</item>
+    </string-array>
+    <string-array name="task_make_resource_popup_attr">
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="task_make_logic_popup_attr">
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="settings_popup_attr">
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+
+    <!-- task_feedback_attach -->
+    <string-array name="task_document_names_title">
+        <item>@string/index</item>
+        <item>@string/type</item>
+        <item>@string/document_title</item>
+        <item>@string/creater</item>
+        <item>@string/upload_time</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="task_document_ids_title">
+        <item>@id/task_make_document_id</item>
+        <item>@id/task_make_document_type</item>
+        <item>@id/task_make_document_title</item>
+        <item>@id/task_make_document_creater</item>
+        <item>@id/task_make_document_uploadtime</item>
+        <item>@id/task_make_document_ps</item>
+    </string-array>
+    <string-array name="document_names_title_with_record">
+        <item>@string/index</item>
+        <item>@string/type</item>
+        <item>@string/document_title</item>
+        <item>@string/creater</item>
+        <item>@string/upload_time</item>
+        <item>@string/note</item>
+        <item>@string/record</item>
+    </string-array>
+    <string-array name="task_document_ids_list">
+        <item>@id/task_make_document_id</item>
+        <item>@id/file_image</item>
+        <item>@id/task_make_document_title</item>
+        <item>@id/task_make_document_creater</item>
+        <item>@id/task_make_document_uploadtime</item>
+        <item>@id/task_make_document_ps</item>
+    </string-array>
+    <string-array name="document_ids_list_with_record">
+        <item>@id/task_make_document_id</item>
+        <item>@id/file_image</item>
+        <item>@id/task_make_document_title</item>
+        <item>@id/task_make_document_creater</item>
+        <item>@id/task_make_document_uploadtime</item>
+        <item>@id/task_make_document_ps</item>
+        <item>@id/task_make_document_record</item>
+    </string-array>
+    <string-array name="document_ids_title_with_record">
+        <item>@id/task_make_document_id</item>
+        <item>@id/task_make_document_type</item>
+        <item>@id/task_make_document_title</item>
+        <item>@id/task_make_document_creater</item>
+        <item>@id/task_make_document_uploadtime</item>
+        <item>@id/task_make_document_ps</item>
+        <item>@id/task_make_document_record</item>
+    </string-array>
+    <string-array name="combination_document_title_ids">
+        <item>@id/task_make_document_id</item>
+        <item>@id/task_make_document_ps</item>
+        <item>@id/task_make_document_creater</item>
+        <item>@id/task_make_document_uploadtime</item>
+        <item>@id/task_make_document_title</item>
+    </string-array>
+    <string-array name="combination_document_names">
+        <item>@string/index</item>
+        <item>@string/combination_work_content</item>
+        <item>@string/creater</item>
+        <item>@string/combination_input_date</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="combination_document_list_ids">
+        <item>@id/task_make_document_id</item>
+        <item>@id/task_make_document_ps</item>
+        <item>@id/task_make_document_creater</item>
+        <item>@id/task_make_document_uploadtime</item>
+        <item>@id/task_make_document_title</item>
+    </string-array>
+    <string-array name="task_make_resource_names">
+        <item>@string/index</item>
+        <item>@string/resource_type</item>
+        <item>@string/resource_number</item>
+    </string-array>
+    <string-array name="task_make_resource_ids">
+        <item>@id/task_make_resource_id</item>
+        <item>@id/task_make_resource_type</item>
+        <item>@id/task_make_resource_number</item>
+    </string-array>
+    <string-array name="task_make_logic_names">
+        <item>@string/index</item>
+        <item>@string/plan_front_logic</item>
+        <item>@string/type</item>
+        <item>@string/time_interval</item>
+    </string-array>
+    <string-array name="task_make_logic_ids">
+        <item>@id/task_make_logic_id</item>
+        <item>@id/task_make_logic_task_name</item>
+        <item>@id/task_make_logic_type</item>
+        <item>@id/task_make_logic_duration</item>
+    </string-array>
+    <!-- task_feedback_resource -->
+    <string-array name="task_feedback_resource_names">
+        <item>@string/index</item>
+        <item>@string/actaul_used_quantity</item>
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/resource_type</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/demand_quantity</item>
+        <item>@string/lead_quantity</item>
+        <item>@string/ready_time</item>
+    </string-array>
+    <string-array name="task_feedback_resource_ids">
+        <item>@id/task_feedback_resource_id</item>
+        <item>@id/task_feedback_resource_actual_sum</item>
+        <item>@id/task_feedback_resource_name</item>
+        <item>@id/task_feedback_resource_class</item>
+        <item>@id/task_feedback_resource_type</item>
+        <item>@id/task_feedback_resource_child_type</item>
+        <item>@id/task_feedback_resource_unit</item>
+        <item>@id/task_feedback_resource_plan_sum</item>
+        <item>@id/task_feedback_get_out_amount</item>
+        <item>@id/task_feedback_resource_arrive_time</item>
+    </string-array>
+    <string-array name="task_feedback_resource_popup_attr">
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+
+    <!-- document management -->
+    
+    <!-- document navigation -->
+    <string-array name="document_navigation_icons">
+        <item>@drawable/ic_doc_private_normal</item>
+        <item>@drawable/ic_doc_project_normal</item>
+        <item>@drawable/ic_doc_public_normal</item>
+        <item>@drawable/ic_doc_archive_normal</item>
+        <item>@drawable/ic_doc_private_selected</item>
+        <item>@drawable/ic_doc_project_selected</item>
+        <item>@drawable/ic_doc_public_selected</item>
+        <item>@drawable/ic_doc_archive_selected</item>
+    </string-array>
+    <string-array name="document_navigation_titiles">
+        <item>@string/private_document</item>
+        <item>@string/project_document</item>
+        <item>@string/public_document</item>
+        <item>@string/archive_document</item>
+    </string-array>
+    
+    <!-- document search result table -->
+    <string-array name="document_result_table_names">
+        <item>@string/document_title</item>
+        <item>@string/belong_project</item>
+        <item>@string/document_location</item>
+        <item>@string/create_date</item>
+    </string-array>
+    <string-array name="document_result_table_ids">
+        <item>@id/title</item>
+        <item>@id/belong_project</item>
+        <item>@id/belong_folder</item>
+        <item>@id/create_date</item>
+    </string-array>
+
+    <!-- document archive table -->
+    <string-array name="document_archive_manage_table_names">
+        <item>@string/document_title</item>
+        <item>@string/belong_project</item>
+        <item>@string/document_source</item>
+        <item>@string/creater</item>
+        <item>@string/create_date</item>
+        <item>@string/archive_status</item>
+    </string-array>
+    <string-array name="document_archive_manage_table_ids">
+        <item>@id/title</item>
+        <item>@id/belong_project</item>
+        <item>@id/dir_type</item>
+        <item>@id/author</item>
+        <item>@id/create_date</item>
+        <item>@id/archive</item>
+    </string-array>
+
+
+    <string-array name="document_tree_list_ids">
+        <item>@id/tree_layout</item>
+    </string-array>
+    <string-array name="document_personal_item_names">
+        <item>@string/document_title</item>
+        <item>@string/document_source</item>
+        <item>@string/creater</item>
+        <item>@string/create_date</item>
+    </string-array>
+    <string-array name="document_personal_item_ids">
+        <item>@id/title</item>
+        <item>@id/belong_project</item>
+        <item>@id/creater</item>
+        <item>@id/create_date</item>
+    </string-array>
+
+    <!-- document properties -->
+    <string-array name="document_properties_common_names">
+        <!-- <item>@string/code</item> -->
+        <item>@string/document_title</item>
+        <item>@string/approval_status</item>
+        <item>@string/document_version</item>
+        <item>@string/document_score</item>
+        <item>@string/create_date</item>
+        <item>@string/modify_date</item>
+    </string-array>
+    <string-array name="attachment_properties_names">
+        <item>@string/code</item>
+        <item>@string/document_title</item>
+        <item>@string/document_creator</item>
+        <item>@string/upload_time</item>
+        <item>@string/modify_date</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="directory_list_options_menu">
+        <item>@string/add</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="task_list_options_menu">
+        <item>@string/add</item>
+        <item>@string/insert</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="list_options_menu">
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="update_menu">
+        <item>@string/modify</item>
+    </string-array>
+
+    <!-- document search -->
+    <string-array name="document_search_document_type_keys">
+        <item>word</item>
+        <item>excel</item>
+        <item>picture</item>
+        <item>text</item>
+        <item>pdf</item>
+        <item>ppt</item>
+        <item>autocad</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="document_search_document_type_values">
+        <item>@string/type_word</item>
+        <item>@string/type_excel</item>
+        <item>@string/type_picture</item>
+        <item>@string/type_txt</item>
+        <item>@string/type_pdf</item>
+        <item>@string/type_powerpoint</item>
+        <item>@string/type_autoCAD</item>
+        <item>@string/other</item>
+    </string-array>
+
+    <!-- ESP Maintain -->
+    <string-array name="eps_names">
+        <item>@string/directory_code</item>
+        <item>@string/directory_name</item>
+    </string-array>
+    <string-array name="eps_ids">
+        <item>@id/eps_title</item>
+        <item>@id/eps_name</item>
+    </string-array>
+    <string-array name="eps_listitem_ids">
+        <item>@id/icon</item>
+        <item>@id/eps_title</item>
+        <item>@id/eps_name</item>
+    </string-array>
+
+    <!-- CooperationInitiator Maintain -->
+    <string-array name="cooperation_initiator_names">
+        <item>@string/cooperation_projects</item>
+        <item>@string/cooperation_accept_company</item>
+        <item>@string/company_type</item>
+        <item>@string/cooperation_accept_time</item>
+        <item>@string/cooperation_lunch_time</item>
+        <item>@string/status</item>
+        <item>@string/cooperation_lunch_person</item>
+    </string-array>
+    <string-array name="cooperation_received_names">
+        <item>@string/cooperation_projects</item>
+        <item>@string/cooperation_lunch_company</item>
+        <item>@string/company_type</item>
+        <item>@string/cooperation_lunch_time</item>
+        <item>@string/cooperation_accept_time</item>
+        <item>@string/status</item>
+        <item>@string/cooperation_acceptor</item>
+    </string-array>
+    <string-array name="cooperation_initiator_ids">
+        <item>@id/cooperation_project</item>
+        <item>@id/cooperation_unit</item>
+        <item>@id/cooperation_type</item>
+        <item>@id/accept_time</item>
+        <item>@id/lunch_time</item>
+        <item>@id/cooperation_state</item>
+        <item>@id/cooperation_person</item>
+    </string-array>
+    <string-array name="cooperation_initiator_listitem_ids">
+        <item>@id/cooperation_project</item>
+        <item>@id/cooperation_unit</item>
+        <item>@id/cooperation_type</item>
+        <item>@id/accept_time</item>
+        <item>@id/lunch_time</item>
+        <item>@id/cooperation_state</item>
+        <item>@id/cooperation_person</item>
+    </string-array>
+    <string-array name="cooperation_receive_people_list_name">
+        <item>@string/personal_name</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="cooperation_receive_people_list_ids">
+        <item>@id/cooperation_receive_people_name</item>
+        <item>@id/cooperation_receive_people_department</item>
+        <item>@id/cooperation_receive_people_telphone</item>
+    </string-array>
+    <string-array name="directory_ids">
+        <item>@id/directory_title</item>
+    </string-array>
+
+    <!-- plan template Maintain -->
+    <string-array name="plantemplate_names">
+        <item>@string/code</item>
+        <item>@string/plan_template</item>
+        <item>@string/type</item>
+    </string-array>
+    <string-array name="document_template_names">
+        <item>@string/code</item>
+        <item>@string/document_template</item>
+        <item>@string/type</item>
+    </string-array>
+    <string-array name="plantemplate_ids">
+        <item>@id/plan_template_number</item>
+        <item>@id/plan_template_name</item>
+        <item>@id/plan_template_type</item>
+    </string-array>
+
+    <!-- WBS Maintain -->
+    <string-array name="wbs_names">
+        <item>@string/wbs_code</item>
+        <item>@string/wbs_name</item>
+    </string-array>
+    <string-array name="wbs_names2">
+        <item>@string/wbs_name</item>
+    </string-array>
+    <string-array name="wbs_ids">
+        <item>@id/wbs_title</item>
+        <item>@id/wbs_name</item>
+    </string-array>
+
+    <!-- USER RIGHTS title -->
+    <string-array name="user_rights_title">
+        <item>@string/index</item>
+        <item>@string/login_name_1</item>
+        <item>@string/personal_name</item>
+        <item>@string/role</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/telephone</item>
+    </string-array>
+
+    <!-- USER RIGHTS title -->
+    <string-array name="user_rights_title_ids">
+        <item>@id/serial_number</item>
+        <item>@id/user_name</item>
+        <item>@id/full_name</item>
+        <item>@id/role_name</item>
+        <item>@id/obs_name</item>
+        <item>@id/mobile</item>
+    </string-array>
+    <string-array name="user_rights_add_user">
+        <item>@string/login_name_1</item>
+        <item>@string/personal_pwd</item>
+        <item>@string/personal_name</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/role</item>
+    </string-array>
+    <string-array name="user_select_list_name">
+        <item>@string/index</item>
+        <item>@string/personal_name</item>
+        <item>@string/role</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="document_score">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="user_info">
+        <item>@string/login_name_1</item>
+        <item>@string/personal_pwd</item>
+        <item>@string/personal_name</item>
+        <item>@string/sex</item>
+        <item>@string/birth</item>
+        <item>@string/office_phone</item>
+        <item>@string/home_address</item>
+        <item>@string/home_phone</item>
+        <item>@string/mobile</item>
+        <item>@string/email</item>
+        <item>@string/email_pwd</item>
+        <item>@string/allocation_epartment</item>
+    </string-array>
+    <string-array name="user_sex">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+    <string-array name="user_options_menu">
+        <item>@string/details</item>
+        <item>@string/modify</item>
+        <item>@string/distribute_role</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="user_options_menu2">
+        <item>@string/details</item>
+        <item>@string/modify</item>
+    </string-array>
+    <string-array name="select_obs_names">
+        <item>@string/obs_code</item>
+        <item>@string/obs_name</item>
+    </string-array>
+    <string-array name="select_obs_ids">
+        <item>@id/obs_code</item>
+        <item>@id/obs_name</item>
+    </string-array>
+    <string-array name="obs_names">
+        <item>@string/obs_code_1</item>
+        <item>@string/obs_name_1</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="obs_ids">
+        <item>@id/obs_code</item>
+        <item>@id/obs_name</item>
+        <item>@id/obs_telephone</item>
+    </string-array>
+    <string-array name="obs_listitem_ids">
+        <item>@id/icon</item>
+        <item>@id/obs_code</item>
+        <item>@id/obs_name</item>
+        <item>@id/obs_telephone</item>
+    </string-array>
+    <string-array name="obs_add">
+        <item>@string/obs_code</item>
+        <item>@string/obs_name</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="dict_add">
+        <item>@string/add</item>
+        <item>@string/code</item>
+        <item>@string/name</item>
+    </string-array>
+    <string-array name="role_names">
+        <item>@string/index</item>
+        <item>@string/role_code</item>
+        <item>@string/role_name</item>
+        <item>@string/permission_assignment</item>
+    </string-array>
+    <string-array name="role_ids">
+        <item>@id/serial_number</item>
+        <item>@id/role_code</item>
+        <item>@id/role_permission_name</item>
+        <item>@id/role_permission_assigned</item>
+    </string-array>
+    <string-array name="role_options_menu">
+        <item>@string/role_dialog_title</item>
+    </string-array>
+    
+    <!-- home -->
+    <string-array name="home_titles">
+        <item>@string/project_management</item>
+        <item>@string/plan_management</item>
+        <item>@string/document_management</item>
+        <item>@string/subcontract_management</item>
+        <item>@string/lease_management</item>
+        <item>@string/purchase_management</item>
+        <item>@string/cost_manager</item>
+        <item>@string/inventory_management</item>
+        <item>@string/resource_management</item>
+        <item>@string/template_management</item>
+        <item>@string/settings_management</item>
+        <item>@string/change_management</item>
+        <item>@string/contract_manager</item>
+        <item>@string/registration_management</item>
+        <item>@string/fund_management</item>
+        <item>@string/combination_management</item>
+        <item>@string/cooperation_management</item>
+        <item>@string/email_management</item>
+        <item>@string/security_management</item>
+        <item>@string/quality_management</item>
+        <item>@string/completion_management</item>
+        <item>@string/monitor_management</item>
+        <item>@string/investment_management</item>
+        <item>@string/invitebid_management</item>
+        <item>@string/annountcement_management</item>
+    </string-array>
+
+    <integer-array name="home_module_ids">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+    </integer-array>
+
+    <string-array name="home_portal_model_titles">
+        <item>@string/todo_list</item>
+        <item>@string/my_task</item>
+        <item>@string/image_progress</item>
+        <item>@string/latest_feedback</item>
+        <item>@string/company_announcement</item>
+        <item>@string/latest_document</item>
+    </string-array>
+    <string-array name="portal_todo_names">
+        <item>@string/index</item>
+        <item>@string/title</item>
+        <item>@string/time</item>
+        <item>@string/type</item>
+    </string-array>
+    <string-array name="portal_todo_spinner_items">
+        <item>@string/all</item>
+        <item>@string/change_approval</item>
+        <item>@string/subcontract_payment_approval</item>
+        <item>@string/purchase_contract_payment_approval</item>
+        <item>@string/purchase_plan_approval</item>
+        <item>@string/purchase_arrival_1</item>
+        <item>@string/employee_loan_approval</item>
+        <item>@string/outsource_artificial_approval</item>
+        <item>@string/purchase_implement</item>
+        <item>@string/contract_payment_approval</item>
+        <item>@string/purchase_plan_countersignl</item>
+        <item>@string/subcontract_payment_countersignl</item>
+        <item>@string/purchase_contract_payment_countersignl</item>
+    </string-array>
+    <string-array name="project_info">
+        <item>@string/project_name</item>
+        <item>@string/work_task</item>
+    </string-array>
+    <string-array name="zuhe_info">
+        <item>@string/project_name</item>
+        <item>@string/node_name</item>
+        <item>@string/work_task</item>
+    </string-array>
+    <string-array name="portal_my_task_names">
+        <item>@string/index</item>
+        <item>@string/belong_project</item>
+        <item>@string/task_name</item>
+        <item>@string/started_or_stopped_time</item>
+        <item>@string/task_complete_status</item>
+    </string-array>
+    <string-array name="portal_feedback_names">
+        <item>@string/index</item>
+        <item>@string/belong_project</item>
+        <item>@string/title</item>
+        <item>@string/invitebid_owner</item>
+        <item>@string/type</item>
+        <item>@string/task_feedback_time</item>
+    </string-array>
+    <string-array name="portal_documents_names">
+        <item>@string/index</item>
+        <item>@string/title</item>
+        <item>@string/publish_time</item>
+    </string-array>
+
+    <!-- project -->
+    <string-array name="project_view_spinner_items">
+        <item>@string/latest_open_project</item>
+        <item>@string/project_datalog</item>
+        <item>@string/unassorted</item>
+    </string-array>
+    <string-array name="project_stage_items">
+        <item>@string/suggest</item>
+        <item>@string/research</item>
+        <item>@string/establishment</item>
+        <item>@string/desigh</item>
+        <item>@string/construction</item>
+        <item>@string/acceptance</item>
+        <item>@string/completion</item>
+    </string-array>
+    <string-array name="project_constructor_content_tab_labels">
+        <item>@string/common</item>
+        <item>@string/project_member</item>
+        <item>@string/cooperation_company</item>
+        <item>@string/project_store</item>
+    </string-array>
+    <string-array name="project_management_content_tab_labels">
+        <item>@string/common</item>
+        <item>@string/project_member</item>
+        <item>@string/cooperation_company</item>
+    </string-array>
+    <string-array name="project_table_names">
+        <item>@string/project_datalog</item>
+        <item>@string/project_number</item>
+        <item>@string/project_stage</item>
+        <item>@string/project_image_progress_1</item>
+        <item>@string/project_start_date</item>
+        <item>@string/project_end_date</item>
+    </string-array>
+
+    <integer-array name="project_table_widths">
+        <item>240</item>
+        <item>160</item>
+        <item>150</item>
+        <item>164</item>
+        <item>140</item>
+        <item>140</item>
+    </integer-array>
+
+    <string-array name="project_member_table_names">
+        <item>@string/personal_name</item>
+        <item>@string/project_role</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/telephone</item>
+    </string-array>
+
+    <integer-array name="project_member_table_widths">
+        <item>130</item>
+        <item>264</item>
+        <item>150</item>
+        <item>150</item>
+    </integer-array>
+
+    <string-array name="project_cooperation_table_names">
+        <item>@string/company_type</item>
+        <item>@string/company_name </item>
+        <item>@string/contacts</item>
+        <item>@string/telephone</item>
+        <item>@string/cooperation_contacts</item>
+        <item>@string/address </item>
+    </string-array>
+
+    <integer-array name="project_cooperation_table_widths">
+        <item>80</item>
+        <item>154</item>
+        <item>80</item>
+        <item>120</item>
+        <item>70</item>
+        <item>190</item>
+    </integer-array>
+
+    <string-array name="project_storehouse_table_names">
+        <item>@string/index</item>
+        <item>@string/project_storehouse_name</item>
+    </string-array>
+
+    <integer-array name="project_storehouse_table_widths">
+        <item>60</item>
+        <item>632</item>
+    </integer-array>
+
+    <string-array name="project_add_company_table_names">
+        <item>@string/project_role</item>
+        <item>@string/company_name</item>
+    </string-array>
+
+    <integer-array name="project_add_company_table_widths">
+        <item>166</item>
+        <item>378</item>
+    </integer-array>
+
+    <string-array name="project_department_table_names">
+        <item>OBS</item>
+    </string-array>
+
+    <integer-array name="project_department_table_widths">
+        <item>580</item>
+    </integer-array>
+
+    <!-- message -->
+    <string-array name="message_tablabels">
+        <item>@string/my_task</item>
+        <item>@string/my_todo_list</item>
+        <item>@string/latest_feedback</item>
+        <item>@string/latest_document</item>
+        <item>@string/email_management</item>
+        <item>@string/announcement</item>
+    </string-array>
+    <string-array name="message_activity_tablabels">
+        <item>@string/my_task</item>
+        <item>@string/my_todo_list</item>
+        <item>@string/latest_feedback</item>
+        <item>@string/latest_document</item>
+        <item>@string/announcement</item>
+    </string-array>
+    <string-array name="message_types">
+        <item>@string/change_approval</item>
+        <item>@string/contract_payment_approval</item>
+        <item>@string/contract_payment_countersignl</item>
+        <item>@string/contract_change_approval</item>
+        <item>@string/contract_change_countersignl</item>
+        <item>@string/employee_loan_approval</item>
+        <item>@string/outsource_artificial_approval</item>
+        <item>@string/plan_publish_1</item>
+        <item>@string/progress_feedback</item>
+        <item>@string/scene_picture</item>
+        <item>@string/public_document</item>
+        <item>@string/company_announcement</item>
+        <item>@string/purchase_implement</item>
+        <item>@string/contract_payment_approval</item>
+        <item>@string/email_management</item>
+        <item>@string/task_publish</item>
+        <item>@string/schedule_navigation_item_2</item>
+        <item>@string/safety_monitor</item>
+        <item>@string/quality_civilization</item>
+        <item>@string/risk_identification</item>
+        <item>@string/image_result</item>
+        <item>@string/purchase_plan_countersignl</item>
+        <item>@string/subcontract_payment_countersignl</item>
+        <item>@string/purchase_contract_payment_countersignl</item>
+        <item>@string/project_document</item>
+        <item>@string/email_attachment</item>
+        <item>@string/scene_picture</item>
+        <item>@string/image_result</item>
+        <item>@string/safety_monitor</item>
+        <item>@string/quality_civilization</item>
+        <item>@string/top_comment</item>
+        <item>@string/cooperation_invite</item>
+        <item>@string/task_shared</item>
+    </string-array>
+    <string-array name="message_tab2_tablabels">
+        <item>@string/untreated</item>
+        <item>@string/processed</item>
+    </string-array>
+
+    <!-- cost -->
+    <string-array name="cost_navigation_titiles">
+        <item>@string/cost_accounting</item>
+        <!-- <item>预算管理</item> -->
+    </string-array>
+
+    <!-- contract -->
+    <string-array name="contract_navigation_titiles">
+        <item>@string/income_contract_select</item>
+        <item>@string/outcome_contract_select</item>
+        <item>@string/contract_change</item>
+        <item>@string/contract_change_apply</item>
+    </string-array>
+    <string-array name="contract_navigation_icons">
+        <item>@drawable/income_contract</item>
+        <item>@drawable/payment_contract</item>
+        <item>@drawable/change_contract</item>
+        <item>@drawable/change_contract_approval</item>
+        <item>@drawable/income_contract_select</item>
+        <item>@drawable/payment_contract_select</item>
+        <item>@drawable/change_contract_select</item>
+        <item>@drawable/change_contract_approval_select</item>
+    </string-array>
+    <string-array name="contract_search">
+        <item>@string/contract_type</item>
+        <item>@string/project_name</item>
+        <item>@string/contract_code</item>
+        <item>@string/contract_name</item>
+        <item>@string/contract_total</item>
+        <item>@string/contract_sign_date</item>
+    </string-array>
+    <string-array name="contract_income_list_header_names">
+        <item>@string/contract_code</item>
+        <item>@string/contract_name</item>
+        <item>@string/original_contract_value</item>
+        <item>@string/contract_change_count</item>
+        <item>@string/current_contract_value</item>
+        <item>@string/contract_payment_collection</item>
+        <item>@string/contract_payment_residue</item>
+        <item>@string/contract_collection_precent</item>
+        <item>@string/contract_type</item>
+    </string-array>
+    <string-array name="contract_outcome_list_header_names">
+        <item>@string/contract_code</item>
+        <item>@string/contract_name</item>
+        <item>@string/original_contract_value</item>
+        <item>@string/contract_change_count</item>
+        <item>@string/current_contract_value</item>
+        <item>@string/contract_payment</item>
+        <item>@string/contract_payment_residue</item>
+        <item>@string/contract_payment_precent</item>
+        <item>@string/contract_type</item>
+    </string-array>
+    <string-array name="contract_change_apply_list_header_names">
+        <item>@string/contract_change_number</item>
+        <item>@string/contract_change_name</item>
+        <item>@string/contract_change_lunch</item>
+        <item>@string/contract_change_accept</item>
+        <item>@string/contract_apply_date</item>
+        <item>@string/contract_change_cost_amount</item>
+        <item>@string/status</item>
+        <item>@string/cooperation_record</item>
+    </string-array>
+    <string-array name="contract_change_list_header_names">
+        <item>@string/contract_change_number</item>
+        <item>@string/contract_change_name</item>
+        <item>@string/contract_apply_date</item>
+        <item>@string/contract_availability_date</item>
+        <item>@string/contract_change_cost_amount</item>
+        <item>@string/cooperation_record</item>
+    </string-array>
+    <string-array name="contract_project_basic_info_lables">
+        <item>@string/contract_code</item>
+        <item>@string/contract_sign_date</item>
+        <item>@string/contract_name</item>
+        <item>@string/contract_sign_adress</item>
+        <item>@string/contract_total</item>
+        <item>@string/contract_availability_date</item>
+        <item>@string/contract_currency</item>
+        <item>@string/contract_start_date</item>
+        <item>@string/owner</item>
+        <item>@string/contract_end_date</item>
+        <item>@string/contract_p_adress</item>
+        <item>@string/contract_duration</item>
+        <item>@string/contract_first_party</item>
+        <item>@string/contract_second_party</item>
+        <item>@string/contract_type</item>
+        <item>@string/contract_p_content</item>
+        <item>@string/contract_quality_standard</item>
+    </string-array>
+    <string-array name="contract_purchase_basic_info_lables">
+        <item>@string/contract_code</item>
+        <item>@string/supplier</item>
+        <item>@string/contract_name</item>
+        <item>@string/company_address</item>
+        <item>@string/contract_total</item>
+        <item>@string/contacts</item>
+        <item>@string/contract_currency</item>
+        <item>@string/contact_number</item>
+        <item>@string/owner</item>
+        <item>@string/note</item>
+        <item>@string/contract_type</item>
+    </string-array>
+    <string-array name="contract_change_add_basic_info_lables">
+        <item>@string/contract_code</item>
+        <item>@string/contract_name</item>
+        <item>@string/contract_change_number</item>
+        <item>@string/contract_change_name</item>
+        <item>@string/contract_apply_date</item>
+        <item>@string/contract_change_finish_time</item>
+        <item>@string/contract_change_cost_amount</item>
+        <item>@string/contract_change_duration</item>
+        <item>@string/contract_change_lunch</item>
+        <item>@string/contract_change_accept</item>
+        <item>@string/cooperation_lunch_contact_window</item>
+        <item>@string/cooperation_accept_contact_window</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="contract_summary_lables">
+        <item>@string/contract_code</item>
+        <item>@string/contract_name</item>
+        <item>@string/owner</item>
+        <item>@string/contract_party_A_company</item>
+        <item>@string/original_contract_value</item>
+        <item>@string/contract_current_change_amount</item>
+        <item>@string/contract_applied_change_amount</item>
+        <item>@string/contract_original_finish_time</item>
+        <item>@string/current_contract_value</item>
+        <item>@string/contract_change_finish_time</item>
+    </string-array>
+    <string-array name="contract_summary2_lables">
+        <item>@string/contract_code</item>
+        <item>@string/contract_name</item>
+        <item>@string/owner</item>
+        <item>@string/contract_party_B_company</item>
+        <item>@string/original_contract_value</item>
+        <item>@string/contract_current_change_amount</item>
+        <item>@string/contract_applied_change_amount</item>
+        <item>@string/contract_original_finish_time</item>
+        <item>@string/current_contract_value</item>
+        <item>@string/contract_change_finish_time</item>
+    </string-array>
+    <string-array name="contract_change_attribute_lables">
+        <item>@string/contract_change_number</item>
+        <item>@string/contract_change_name</item>
+        <item>@string/contract_apply_date</item>
+        <item>@string/contract_change_finish_time</item>
+        <item>@string/contract_availability_date</item>
+        <item>@string/contract_change_duration</item>
+        <item>@string/contract_change_lunch</item>
+        <item>@string/contract_change_accept</item>
+        <item>@string/cooperation_lunch_contact_window</item>
+        <item>@string/cooperation_accept_contact_window</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="contract2_header_ids">
+        <item>@id/contract_name</item>
+        <item>@id/contract_number</item>
+        <item>@id/contract_total</item>
+        <item>@id/paymented</item>
+        <item>@id/unpayment</item>
+        <item>@id/change_record</item>
+        <item>@id/owner</item>
+        <item>@id/type</item>
+    </string-array>
+    <string-array name="contract_list_header_ids">
+        <item>@id/contract_code</item>
+        <item>@id/contract_name</item>
+        <item>@id/contract_original_totle_money</item>
+        <item>@id/contract_change_totle_money</item>
+        <item>@id/contract_last_totle_money</item>
+        <item>@id/contract_returned_money</item>
+        <item>@id/contract_rest_money</item>
+        <item>@id/contract_returned_percent</item>
+        <item>@id/contract_type</item>
+    </string-array>
+    <string-array name="contract_change_apply_list_header_ids">
+        <item>@id/contract_change_code</item>
+        <item>@id/contract_change_name</item>
+        <item>@id/contract_change_sender</item>
+        <item>@id/contract_change_reciever</item>
+        <item>@id/contract_change_apply_date</item>
+        <item>@id/contract_change_money</item>
+        <item>@id/contract_change_status</item>
+        <item>@id/contract_change_contact_record</item>
+    </string-array>
+    <string-array name="contract_change_list_header_ids">
+        <item>@id/contract_change_code</item>
+        <item>@id/contract_change_name</item>
+        <item>@id/contract_change_apply_date</item>
+        <item>@id/contract_change_pass_date</item>
+        <item>@id/contract_change_money</item>
+        <item>@id/contract_change_contact_record</item>
+    </string-array>
+    <string-array name="accounting_detail_tablabels">
+        <item>@string/current_project_cost_details</item>
+        <item>@string/current_project_analysis_diagram</item>
+        <!--
+             <item>列表中所有项目对比1</item>
+             <item>当前项目所用部位对比2</item>
+        -->
+    </string-array>
+    <string-array name="income_contract_view_pager_titles">
+        <item>@string/common</item>
+        <item>@string/contract_list_item</item>
+        <item>@string/received_payment_item</item>
+        <item>@string/contract_attachment</item>
+    </string-array>
+    <string-array name="outcome_contract_view_pager_titles">
+        <item>@string/common</item>
+        <item>@string/contract_list_item</item>
+        <item>@string/payment_item</item>
+        <item>@string/contract_attachment</item>
+    </string-array>
+    <string-array name="change_contract_view_pager_titles">
+        <item>@string/common</item>
+        <item>@string/contract_list_item</item>
+        <item>@string/change_attachment</item>
+    </string-array>
+    <string-array name="contract_pay_table_names">
+        <item>@string/payment_name</item>
+        <item>@string/payment_type</item>
+        <item>@string/payment_o_payment</item>
+        <item>@string/payment_e_pay_date</item>
+        <item>@string/contract_payment_ratio</item>
+        <item>@string/contract_payment_residue</item>
+    </string-array>
+    <string-array name="contract_owner_table_names">
+        <item>@string/personal_name</item>
+        <item>@string/role</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="contract_dialog_lables_names">
+        <item>@string/contract_code</item>
+        <item>@string/contract_name</item>
+        <item>@string/contract_total</item>
+        <item>@string/contract_payment</item>
+        <item>@string/contract_payment_residue</item>
+        <item>@string/change_record</item>
+        <item>@string/owner</item>
+        <item>@string/type</item>
+    </string-array>
+
+    <!-- 合同添加 -->
+    <string-array name="contract_detail_item_header_names">
+        <item>@string/contract_list_item_name</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <!-- <item>参考价格</item> -->
+        <item>@string/contract_total_amount</item>
+        <item>@string/attachment</item>
+        <item>@string/contract_change_number</item>
+    </string-array>
+    <string-array name="contract_change_detail_item_header_names">
+        <item>@string/contract_list_item_name</item>
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <item>@string/contract_total_amount</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="contract_change_detail_dialog_lable_names">
+        <item>@string/contract_list_item_name</item>
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <item>@string/contract_total_amount</item>
+    </string-array>
+    <string-array name="contract_detail_dialog_lable_names">
+        <item>@string/contract_list_item_name</item>
+        <item>@string/contract_project_characteristic</item>
+        <item>@string/unit</item>
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <item>@string/contract_total_amount</item>
+    </string-array>
+    <string-array name="contract_detail_dialog_lables_names">
+        <item>@string/contract_list_item_name</item>
+        <item>@string/contract_project_characteristic</item>
+        <item>@string/unit</item>
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <!-- <item>参考价格</item> -->
+        <item>@string/contract_total_amount</item>
+    </string-array>
+    <string-array name="contract_detail_item_header_ids">
+        <item>@id/contract_detail_item_name</item>
+        <item>@id/contract_detail_item_spec</item>
+        <item>@id/contract_detail_item_unit</item>
+        <item>@id/contract_detail_item_number</item>
+        <item>@id/contract_detail_item_unit_price</item>
+        <!-- <item>@id/contract_detail_item_reference_price</item> -->
+        <item>@id/contract_detail_totle_money</item>
+        <item>@id/contract_detail_attachment</item>
+        <item>@id/contract_detail_change_code</item>
+    </string-array>
+    <string-array name="contract_change_detail_item_header_ids">
+        <item>@id/contract_detail_item_name</item>
+        <item>@id/contract_detail_item_number</item>
+        <item>@id/contract_detail_item_unit_price</item>
+        <item>@id/contract_detail_totle_money</item>
+        <item>@id/contract_detail_attachment</item>
+    </string-array>
+    <string-array name="contract_payment_item_header_names">
+        <item>@string/payment_number</item>
+        <item>@string/payment_name</item>
+        <item>@string/payment_o_payment</item>
+        <item>@string/payment_e_pay_date</item>
+        <item>@string/payment_a_payment</item>
+        <item>@string/payment_a_pay_date</item>
+        <item>@string/status</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="contract_payment_dialog_lables_names">
+        <item>@string/payment_number</item>
+        <item>@string/payment_name</item>
+        <item>@string/payment_o_payment</item>
+        <item>@string/payment_e_pay_date</item>
+        <item>@string/payment_a_payment</item>
+        <item>@string/payment_a_pay_date</item>
+        <item>@string/status</item>
+    </string-array>
+    <string-array name="contract_return_money_item_header_names">
+        <item>@string/received_payment_number</item>
+        <item>@string/received_payment_name</item>
+        <item>@string/should_received_payment_amount</item>
+        <item>@string/plan_received_payment_date</item>
+        <item>@string/actual_received_payment_amount</item>
+        <item>@string/actual_received_payment_date</item>
+        <item>@string/delay</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="contract_return_money_dialog_lables_names">
+        <item>@string/received_payment_number</item>
+        <item>@string/received_payment_name</item>
+        <item>@string/should_received_payment_amount</item>
+        <item>@string/plan_received_payment_date</item>
+        <item>@string/actual_received_payment_amount</item>
+        <item>@string/actual_received_payment_date</item>
+        <item>@string/delay</item>
+    </string-array>
+    <string-array name="contract_payment_item_ids">
+        <item>@id/contract_payment_item_code</item>
+        <item>@id/contract_payment_item_name</item>
+        <item>@id/contract_payment_item_should_pay</item>
+        <item>@id/contract_payment_item_expect_pay_date</item>
+        <item>@id/contract_payment_item_real_pay</item>
+        <item>@id/contract_payment_item_real_pay_date</item>
+        <item>@id/contract_payment_item_delay_date</item>
+        <item>@id/contract_payment_item_attachments</item>
+    </string-array>
+
+    <!-- 合同 -->
+    <string-array name="contract_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="contract_new_option_menu_names">
+        <item>@string/common</item>
+        <item>@string/contract_list</item>
+        <item>@string/received_payment</item>
+        <item>@string/attachment</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="contract_new_option_menu2_names">
+        <item>@string/common</item>
+        <item>@string/contract_list</item>
+        <item>@string/received_payment</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="outcome_contract_new_option_menu_names">
+        <item>@string/common</item>
+        <item>@string/contract_list</item>
+        <item>@string/payment</item>
+        <item>@string/attachment</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="outcome_contract_new_option_menu2_names">
+        <item>@string/common</item>
+        <item>@string/contract_list</item>
+        <item>@string/payment</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="contract_change_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/contract_list</item>
+        <item>@string/attachment</item>
+        <item>@string/delete</item>
+        <item>@string/submit</item>
+    </string-array>
+    <string-array name="contract_change_base_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/contract_list</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="contract_payment_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+        <item>@string/submit</item>
+    </string-array>
+    <string-array name="contract_change_no_delete_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/contract_list</item>
+        <item>@string/attachment</item>
+        <item>@string/submit</item>
+    </string-array>
+    <string-array name="contract_option_menu2_names">
+        <item>@string/details</item>
+        <item>@string/contract_list</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="pass_option_menu_names">
+        <item>@string/details</item>
+    </string-array>
+    <string-array name="approval_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/approve</item>
+    </string-array>
+    <string-array name="contract_change_option_menu2_names">
+        <item>@string/details</item>
+        <item>@string/contract_list</item>
+        <item>@string/attachment</item>
+        <item>@string/contract_effective</item>
+        <item>@string/cooperation</item>
+    </string-array>
+    <string-array name="contract_change_has_cooperation_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/contract_list</item>
+        <item>@string/attachment</item>
+        <item>@string/contract_effective</item>
+    </string-array>
+    <string-array name="contract_change_has_submit_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/contract_list</item>
+        <item>@string/attachment</item>
+        <item>@string/approve</item>
+    </string-array>
+    <string-array name="attachment_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/view</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="attachment_reject_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/modify</item>
+        <item>@string/submit</item>
+    </string-array>
+    <string-array name="attachment_option_menu_readonly">
+        <item>@string/details</item>
+        <item>@string/view</item>
+    </string-array>
+    <string-array name="owner_select_table_names">
+        <item>@string/personal_name</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/company_1</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="unit_select_table_names">
+        <item>@string/company_type</item>
+        <item>@string/company_name</item>
+        <item>@string/contacts</item>
+        <item>@string/telephone</item>
+        <item>@string/address</item>
+    </string-array>
+
+    <integer-array name="unit_select_table_widths">
+        <item>100</item>
+        <item>260</item>
+        <item>120</item>
+        <item>120</item>
+        <item>260</item>
+    </integer-array>
+    <integer-array name="contract_owner_table_widths">
+        <item>100</item>
+        <item>240</item>
+        <item>120</item>
+        <item>140</item>
+    </integer-array>
+    <integer-array name="stakeholder_table_widths">
+        <item>100</item>
+        <item>205</item>
+        <item>120</item>
+        <item>180</item>
+    </integer-array>
+    <integer-array name="owner_select_table_widths">
+        <item>100</item>
+        <item>120</item>
+        <item>230</item>
+        <item>150</item>
+    </integer-array>
+
+    <string-array name="accounting_table_names">
+        <item>@string/category</item>
+        <item>@string/job_type</item>
+        <item>@string/amount</item>
+        <item>@string/note</item>
+    </string-array>
+
+    <integer-array name="accounting_table_widths">
+        <item>140</item>
+        <item>180</item>
+        <item>160</item>
+        <item>322</item>
+    </integer-array>
+
+    <!-- coin types -->
+    <string-array name="coin_types">
+        <item>CNY-人民币</item>
+        <item>ZWD-津巴布韦元</item>
+        <item>USK-美元</item>
+        <item>EUR-欧元</item>
+        <item>SUR-卢布</item>
+        <item>GBP-英镑</item>
+        <item>CHF-瑞士法郎</item>
+    </string-array>
+    
+    <string-array name="purchase_budget_add_dialog">
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+    </string-array>
+    <string-array name="purchase_plan_add_dialog">
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <item>@string/supplier</item>
+        <item>@string/approach_time</item>
+        <item>@string/contract_task_part</item>
+    </string-array>
+    <string-array name="purchase_budget_add_title">
+        <item>@string/purchase_budget_no</item>
+        <item>@string/purchase_budget_name</item>
+        <item>@string/purchase_budget_quantity</item>
+        <item>@string/purchase_budget_position</item>
+    </string-array>
+    <string-array name="purchase_plan_add_title">
+        <item>@string/plan_number</item>
+        <item>@string/plan_name</item>
+        <item>@string/executor</item>
+        <item>@string/declare_date</item>
+        <item>@string/plan_date</item>
+        <item>@string/select_project</item>
+    </string-array>
+    <string-array name="purchase_executive_add_title">
+        <item>@string/purchase_number</item>
+        <item>@string/execute_plan</item>
+        <item>@string/exe_contract</item>
+        <item>@string/inventory_storehouse</item>
+        <item>@string/storekeeper</item>
+    </string-array>
+    <string-array name="purchase_budget_names">
+        <item>@string/purchase_budget_no</item>
+        <item>@string/purchase_budget_name</item>
+        <item>@string/purchase_budget_position</item>
+        <item>@string/purchase_budget_quantity</item>
+        <item>@string/purchase_budget_amount</item>
+        <item>@string/purchase_budget_project</item>
+        <item>@string/purchase_budget_creator</item>
+        <item>@string/purchase_budget_date</item>
+        <item>@string/approval_status</item>
+    </string-array>
+    <string-array name="purchase_budget_ids">
+        <item>@id/budget_id</item>
+        <item>@id/budget_name</item>
+        <item>@id/budget_task</item>
+        <item>@id/budget_task_sum</item>
+        <item>@id/total_money</item>
+        <item>@id/purchase_item</item>
+        <item>@id/budget_maker</item>
+        <item>@id/budget_make_time</item>
+        <item>@id/status</item>
+    </string-array>
+    <string-array name="purchase_plan_names">
+        <item>@string/plan_number</item>
+        <item>@string/plan_name</item>
+        <item>@string/belong_project</item>
+        <item>@string/amount</item>
+        <item>@string/plan_person</item>
+        <item>@string/executor</item>
+        <item>@string/declare_date</item>
+        <item>@string/plan_date</item>
+        <item>@string/approval_status</item>
+    </string-array>
+    <string-array name="purchase_plan_ids">
+        <item>@id/purchase_plan_id</item>
+        <item>@id/purchase_plan_name</item>
+        <item>@id/purchase_plan_task</item>
+        <item>@id/purchase_plan_money</item>
+        <item>@id/purchase_plan_creater</item>
+        <item>@id/purchase_plan_executor</item>
+        <item>@id/purchase_plan_make_time</item>
+        <item>@id/purchase_plan_plan_time</item>
+        <item>@id/purchase_plan_status</item>
+    </string-array>
+    <string-array name="purchase_executive_names">
+        <item>@string/purchase_number</item>
+        <item>@string/execute_plan</item>
+        <item>@string/exe_contract</item>
+        <item>@string/purchase_amount</item>
+        <item>@string/status</item>
+        <item>@string/create_date</item>
+    </string-array>
+    <string-array name="purchase_executive_ids">
+        <item>@id/purchase_executive_id</item>
+        <item>@id/purchase_plan_name</item>
+        <item>@id/purchase_executive_contract</item>
+        <item>@id/purchase_executive_money</item>
+        <item>@id/purchase_executive_status</item>
+        <item>@id/purchase_executive_create_time</item>
+    </string-array>
+    <string-array name="purchase_request_names">
+        <item>@string/index</item>
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/spec</item>
+        <item>@string/purchase_count</item>
+        <item></item>
+        <item>@string/reason</item>
+        <item>@string/purchase_project_user</item>
+        <item>@string/use_time</item>
+    </string-array>
+    <string-array name="purchase_request_ids">
+        <item>@id/serial_number</item>
+        <item>@id/purchase_product_name</item>
+        <item>@id/purchase_type</item>
+        <item>@id/purchase_product_specification</item>
+        <item>@id/purchase_number</item>
+        <item>@id/purchase_unit</item>
+        <item>@id/purchase_reason</item>
+        <item>@id/purchase_project_user</item>
+        <item>@id/purchase_arrival_expect</item>
+    </string-array>
+    <string-array name="purchase_edit_ids">
+        <item>@id/purchase_number_edit</item>
+        <item>@id/purchase_reason_edit</item>
+        <item>@id/purchase_user_edit</item>
+    </string-array>
+    <string-array name="inventory_spinner">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <!-- <item>@string/status</item> -->
+    </string-array>
+    <string-array name="inventory_navigation_titiles">
+        <item>@string/stock</item>
+        <item>@string/stock_in</item>
+        <item>@string/stock_out</item>
+    </string-array>
+    <string-array name="inventory_stockin_option_menu_names">
+        <item>@string/stock_in</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="inventory_stockin_option_menu_names_2">
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="inventory_navigation_icons">
+        <item>@drawable/ic_navigation_inventory_storage_manager_normal</item>
+        <item>@drawable/ic_navigation_inventory_put_in_normal</item>
+        <item>@drawable/ic_navigation_inventory_put_out_normal</item>
+        <item>@drawable/ic_navigation_inventory_storage_manager_selected</item>
+        <item>@drawable/ic_navigation_inventory_put_in_selected</item>
+        <item>@drawable/ic_navigation_inventory_put_out_selected</item>
+    </string-array>
+    <string-array name="inventory_KC_search">
+        <item>@string/material_name</item>
+        <item>@string/material_type</item>
+        <item>@string/brand</item>
+        <item>@string/spec</item>
+    </string-array>
+    <string-array name="inventory_RK_search">
+        <item>@string/material_name</item>
+        <item>@string/material_type</item>
+        <item>@string/all_projects</item>
+        <item>@string/inventory_storehouse_address</item>
+        <item>@string/brand</item>
+        <item>@string/spec</item>
+        <item>@string/stock_in_time</item>
+    </string-array>
+    <string-array name="inventory_CK_search">
+        <item>@string/inventory_out_number</item>
+        <item>@string/all_projects</item>
+        <item>@string/inventory_store_man</item>
+        <item>@string/inventory_user</item>
+        <item>@string/inventory_out_address</item>
+        <item>@string/inventory_out_date</item>
+    </string-array>
+    <string-array name="purchase_navigation_titles">
+        <item>@string/purchase_budget_1</item>
+        <item>@string/purchase_plan</item>
+        <item>@string/purchase_implement</item>
+        <item>@string/subcontract_artificial</item>
+    </string-array>
+    <string-array name="purchase_navigation_icons">
+        <item>@drawable/ic_navigation_purchase_budget</item>
+        <item>@drawable/ic_navigation_purchase_plan</item>
+        <item>@drawable/ic_navigation_purchase_executive</item>
+        <item>@drawable/ic_navigation_subcontract</item>
+    </string-array>
+    <string-array name="inventory_content_header_names">
+        <item>@string/index</item>
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/stock_size</item>
+    </string-array>
+    <string-array name="inventory_content_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/material_name</item>
+        <item>@id/material_type</item>
+        <item>@id/specification</item>
+        <item>@id/unit</item>
+        <item>@id/quantity</item>
+    </string-array>
+    
+    <!-- 入库 -->
+    <string-array name="inventory_pas_floating_menu">
+        <item>@string/stock_in</item>
+    </string-array>
+    <string-array name="inventory_pas_names">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/brand</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/budgeted_quantity</item>
+        <item>@string/purchase_count</item>
+        <item>@string/stock_in_count</item>
+        <item>@string/inventory_storehouse</item>
+        <item>@string/contract</item>
+        <item>@string/operator</item>
+        <item>@string/stock_in_time</item>
+        <item>@string/status</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="inventory_pas_ids">
+        <item>@id/resource_name</item>
+        <item>@id/resource_type</item>
+        <item>@id/brand</item>
+        <item>@id/specs</item>
+        <item>@id/unit</item>
+        <item>@id/plan_amount</item>
+        <item>@id/purchase_amount</item>
+        <item>@id/stock_in_amount</item>
+        <item>@id/store_house</item>
+        <item>@id/contract</item>
+        <item>@id/operator</item>
+        <item>@id/stockin_date</item>
+        <item>@id/status</item>
+        <item>@id/attachment</item>
+    </string-array>
+
+    <!-- 出库 -->
+    <string-array name="inventory_putout_floating_menu">
+        <item>@string/new_add</item>
+    </string-array>
+    <string-array name="inventory_putout_options_menu">
+        <item>@string/details</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="inventory_putout_storage_items">
+        <item>@string/inventory_out_number</item>
+        <item>@string/inventory_storehouse</item>
+        <item>@string/storekeeper</item>
+        <item>@string/inventory_user</item>
+        <item>@string/inventory_out_date</item>
+    </string-array>
+    <string-array name="inventory_putout_storage_ids">
+        <item>@id/stockout_number</item>
+        <item>@id/store_house</item>
+        <item>@id/store_manager</item>
+        <item>@id/use_person</item>
+        <item>@id/stockout_date</item>
+    </string-array>
+    <string-array name="inventory_stock_out_ticket_names">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/brand</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/inventory_out_count</item>
+    </string-array>
+    <string-array name="inventory_stock_out_ticket_ids">
+        <item>@id/resource_name</item>
+        <item>@id/resource_type</item>
+        <item>@id/brand</item>
+        <item>@id/specs</item>
+        <item>@id/unit</item>
+        <item>@id/amount</item>
+    </string-array>
+    <string-array name="inventory_stock_out_ticket_labels">
+        <item>@string/inventory_out_number</item>
+        <item>@string/contract_task_part</item>
+        <item>@string/inventory_storehouse</item>
+        <item>@string/inventory_user</item>
+    </string-array>
+    
+    <!-- 采购 -->
+    <string-array name="purchase_manager_spinner">
+        <item>@string/purchase_department</item>
+        <item>@string/purchase_staff</item>
+        <item>@string/purchase_status</item>
+    </string-array>
+    <string-array name="purchase_apply_names">
+        <item>@string/index</item>
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/spec</item>
+        <item>@string/purchase_count</item>
+        <item></item>
+        <item>@string/reason</item>
+        <item>@string/proposer</item>
+        <item>@string/approver</item>
+        <item>@string/purchase_project_user</item>
+        <item>@string/use_time</item>
+        <item>@string/purchase_apply_time</item>
+        <item>@string/status</item>
+    </string-array>
+    <string-array name="purchase_apply_ids">
+        <item>@id/serial_number</item>
+        <item>@id/purchase_product_name</item>
+        <item>@id/purchase_type</item>
+        <item>@id/purchase_product_specification</item>
+        <item>@id/purchase_number</item>
+        <item>@id/purchase_unit</item>
+        <item>@id/purchase_reason</item>
+        <item>@id/purchase_proposer</item>
+        <item>@id/purchase_approver</item>
+        <item>@id/purchase_project_user</item>
+        <item>@id/purchase_arrival_expect</item>
+        <item>@id/purchase_apply_time</item>
+        <item>@id/purchase_status</item>
+    </string-array>
+    <string-array name="purchase_apply_spinner">
+        <item>@string/resource_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/status</item>
+    </string-array>
+    <string-array name="suppliers_title">
+        <item>@string/supplier</item>
+        <item>@string/contacts</item>
+        <item>@string/contact_number</item>
+        <item>@string/address</item>
+    </string-array>
+    <string-array name="suppliers_title_ids">
+        <item>@id/supplier_name</item>
+        <item>@id/supplier_contacts</item>
+        <item>@id/supplier_tel</item>
+        <item>@id/supplier_addr</item>
+    </string-array>
+    <string-array name="suppliers_list_options_menu">
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="commodity_info_title">
+        <item>@string/material_name</item>
+        <item>@string/resource_type</item>
+        <item>@string/resource_type</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+        <item>@string/price</item>
+        <item>@string/supplier</item>
+    </string-array>
+    <string-array name="commodity_info_title_ids">
+        <item>@id/material_name</item>
+        <item>@id/resource_classification</item>
+        <item>@id/resource_type</item>
+        <item>@id/specification</item>
+        <item>@id/unit</item>
+        <item>@id/unit_price</item>
+        <item>@id/supplier_name</item>
+    </string-array>
+    <string-array name="comodity_list_options_menu">
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+
+    <!-- 资源维护 -->
+    <string-array name="resource_navigation_icons">
+        <item>@drawable/ic_navigation_resource_material_normal</item>
+        <item>@drawable/ic_navigation_resource_equipment_normal</item>
+        <item>@drawable/ic_navigation_resource_labor_normal</item>
+        <item>@drawable/ic_navigation_resource_lease_normal</item>
+        <item>@drawable/ic_navigation_resource_unit_normal</item>
+        <item>@drawable/ic_navigation_resource_expert_normal</item>
+        <item>@drawable/ic_navigation_resource_risk_normal</item>
+        <item>@drawable/ic_navigation_resource_material_selected</item>
+        <item>@drawable/ic_navigation_resource_equipment_selected</item>
+        <item>@drawable/ic_navigation_resource_labor_selected</item>
+        <item>@drawable/ic_navigation_resource_lease_selected</item>
+        <item>@drawable/ic_navigation_resource_unit_selected</item>
+        <item>@drawable/ic_navigation_resource_expert_selected</item>
+        <item>@drawable/ic_navigation_resource_risk_selected</item>
+    </string-array>
+    <string-array name="resource_navigation_titles">
+        <item>@string/material_info</item>
+        <item>@string/device_info</item>
+        <item>@string/outsource_content</item>
+        <item>@string/lease_info</item>
+        <item>@string/contact_company</item>
+        <item>@string/expert_lib</item>
+        <item>@string/risk_lib</item>
+    </string-array>
+    <!-- 资源维护 -->
+    <string-array name="tree_item_ids">
+        <item>@id/icon</item>
+        <item>@id/type</item>
+        <item>@id/text</item>
+    </string-array>
+    <string-array name="dir_item_ids">
+        <item>@id/text</item>
+    </string-array>
+    <string-array name="material_content_header_names">
+        <item>@string/index</item>
+        <item>@string/material_name</item>
+        <item>@string/job_type</item>
+        <item>@string/spec</item>
+        <item>@string/brand</item>
+        <item>@string/unit</item>
+        <item>@string/model</item>
+    </string-array>
+    <string-array name="equipment_content_header_names">
+        <item>@string/index</item>
+        <item>@string/device_name</item>
+        <item>@string/job_type</item>
+        <item>@string/spec</item>
+        <item>@string/brand</item>
+        <item>@string/unit</item>
+        <item>@string/model</item>
+    </string-array>
+    <string-array name="material_content_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/material_name</item>
+        <item>@id/material_type</item>
+        <item>@id/specification</item>
+        <item>@id/brand</item>
+        <item>@id/unit</item>
+        <item>@id/model_number</item>
+    </string-array>
+    <string-array name="user_select_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+    </string-array>
+    <string-array name="mavin_lib_header_names">
+        <item>@string/index</item>
+        <item>@string/personal_name</item>
+        <item>@string/sex</item>
+        <item>@string/birth</item>
+        <item>@string/work_seniority</item>
+        <item>@string/work_unit</item>
+        <item>@string/expert_type</item>
+        <item>@string/telephone</item>
+        <item>@string/professional_title</item>
+        <item>@string/profession</item>
+        <item>@string/education</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="mavin_lib__header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/mavin_name</item>
+        <item>@id/mavin_sex</item>
+        <item>@id/mavin_birthday</item>
+        <item>@id/mavin_workstart</item>
+        <item>@id/mavin_company</item>
+        <item>@id/mavin_type</item>
+        <item>@id/mavin_tel</item>
+        <item>@id/mavin_title</item>
+        <item>@id/mavin_major</item>
+        <item>@id/mavin_degree</item>
+        <item>@id/mavin_mark</item>
+    </string-array>
+    <string-array name="contact_company_content_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/contact_company_name</item>
+        <item>@id/contact_address</item>
+        <item>@id/contact_tel</item>
+        <item>@id/key_person</item>
+    </string-array>
+    <string-array name="outsourcing_content_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/outsourcing_type</item>
+        <item>@id/outsourcing_content</item>
+    </string-array>
+    <string-array name="contact_company_content_header_names">
+        <item>@string/index</item>
+        <item>@string/company_name</item>
+        <item>@string/address</item>
+        <item>@string/contact_number</item>
+        <item>@string/contacts</item>
+    </string-array>
+    <string-array name="lease_content_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/lease_name</item>
+        <item>@id/lease_type</item>
+        <item>@id/lease_spec</item>
+        <item>@id/lease_unit</item>
+    </string-array>
+    <string-array name="lease_content_header_names">
+        <item>@string/index</item>
+        <item>@string/name</item>
+        <item>@string/type</item>
+        <item>@string/spec</item>
+        <item>@string/unit</item>
+    </string-array>
+    <string-array name="outsourcing_content_header_names">
+        <item>@string/index</item>
+        <item>@string/job_type</item>
+        <item>@string/subcontract_content</item>
+    </string-array>
+    <string-array name="subcontrat_navigation_titiles">
+        <item>@string/subcontract_artificial</item>
+    </string-array>
+    <string-array name="subcontract_header_names">
+        <item>@string/index</item>
+        <item>@string/subcontract_number</item>
+        <item>@string/exe_contract</item>
+        <item>@string/amount</item>
+        <item>@string/creater</item>
+        <item>@string/create_date</item>
+        <item>@string/approval_status</item>
+    </string-array>
+    <string-array name="subcontract_header_ids">
+        <item>@id/subcontract_serial_number</item>
+        <item>@id/wbrg_number</item>
+        <item>@id/subcontract_contract</item>
+        <item>@id/subcontract_total_money</item>
+        <item>@id/creater</item>
+        <item>@id/create_date</item>
+        <item>@id/subcontract_status</item>
+    </string-array>
+    <string-array name="subcontract_header_title_names">
+        <item>@string/index</item>
+        <item>@string/job_type</item>
+        <item>@string/subcontract_content</item>
+        <item>@string/unit</item>
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <item>@string/amount</item>
+        <item>@string/construction_team</item>
+        <item>@string/contract_task_part</item>
+        <item>@string/approach_time</item>
+        <item>@string/exit_time</item>
+    </string-array>
+    <string-array name="subcontract_header_title_ids">
+        <item>@id/serial_number</item>
+        <item>@id/work_type</item>
+        <item>@id/subcontract_content</item>
+        <item>@id/unit</item>
+        <item>@id/amount</item>
+        <item>@id/unit_price</item>
+        <item>@id/total_price</item>
+        <item>@id/construction</item>
+        <item>@id/use_place</item>
+        <item>@id/approach_time</item>
+        <item>@id/out_time</item>
+    </string-array>
+    <string-array name="add_subcontract">
+        <item>@string/job_type</item>
+        <item>@string/subcontract_content</item>
+        <item>@string/unit</item>
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <item>@string/amount</item>
+        <item>@string/construction_team</item>
+        <item>@string/contract_task_part</item>
+        <item>@string/approach_time</item>
+        <item>@string/exit_time</item>
+    </string-array>
+    <string-array name="subcontract_options_menu">
+        <item>@string/details</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="subcontract_readonly_options_menu">
+        <item>@string/details</item>
+    </string-array>
+    <string-array name="subcontract_wbrgd_options_menu">
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="subcontract_add_dialog">
+        <item>@string/quantity</item>
+        <item>@string/price</item>
+        <item>@string/construction_team</item>
+        <item>@string/contract_task_part</item>
+        <item>@string/approach_time</item>
+        <item>@string/exit_time</item>
+    </string-array>
+    <string-array name="subcontract_search">
+        <item>@string/subcontract_number</item>
+        <item>@string/exe_contract</item>
+        <item>@string/amount</item>
+        <item>@string/date</item>
+    </string-array>
+    <string-array name="plan_template_spinner_type">
+        <item>@string/template_installation</item>
+        <item>@string/template_construction</item>
+        <item>@string/template_ornament</item>
+        <item>@string/template_environment</item>
+        <item>@string/other</item>
+    </string-array>
+    <string-array name="document_template_spinner_type">
+        <item>@string/template_installation</item>
+        <item>@string/template_construction</item>
+        <item>@string/template_ornament</item>
+        <item>@string/template_environment</item>
+        <item>@string/other</item>
+    </string-array>
+    <string-array name="material_equipment_search_titles">
+        <item>@string/name</item>
+        <item>@string/job_type</item>
+        <item>@string/brand</item>
+        <item>@string/spec</item>
+    </string-array>
+    <string-array name="risk_control_dialog_lable_names">
+        <item>@string/title</item>
+        <item>@string/content</item>
+        <item>@string/measure</item>
+    </string-array>
+    <string-array name="risk_control_list_header_names">
+        <item>@string/index</item>
+        <item>@string/title</item>
+        <item>@string/content</item>
+        <item>@string/measure</item>
+        <item>@string/attachment</item>
+    </string-array>
+    <string-array name="risk_control_list_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/risk_control_title</item>
+        <item>@id/risk_control_content</item>
+        <item>@id/risk_control_step</item>
+        <item>@id/risk_control_attachment</item>
+    </string-array>
+    <string-array name="labour_search_titles">
+        <item>@string/job_type</item>
+        <item>@string/content</item>
+    </string-array>
+    <string-array name="mavin_search_titles">
+        <item>@string/type</item>
+        <item>@string/personal_name</item>
+    </string-array>
+    <string-array name="risk_control_search_titles">
+        <item>@string/title</item>
+        <item>@string/content</item>
+    </string-array>
+    <string-array name="lease_search_titles">
+        <item>@string/kind</item>
+        <item>@string/name</item>
+    </string-array>
+    <string-array name="contact_search_titles">
+        <item>@string/company_name</item>
+    </string-array>
+
+    <!-- 签证 -->
+    <string-array name="change_navigation_titiles">
+        <item>@string/change_document</item>
+    </string-array>
+    <string-array name="change_table_names">
+        <item>@string/change_number</item>
+        <item>@string/change_name</item>
+    </string-array>
+
+    <integer-array name="change_table_widths">
+        <item>380</item>
+        <item>423</item>
+    </integer-array>
+
+    <!-- 审批流程管理 -->
+    <string-array name="approval_process_option_menu_names">
+        <item>@string/close</item>
+        <item>@string/modify</item>
+    </string-array>
+    <string-array name="approval_process_option_open">
+        <item>@string/open</item>
+    </string-array>
+    <string-array name="approval_process_dialog_lable_names">
+        <item>@string/status</item>
+        <item>@string/flow_name</item>
+        <item>@string/flow_level_1</item>
+        <item>@string/flow_level_2</item>
+        <item>@string/flow_level_3</item>
+        <item>@string/flow_level_4</item>
+        <item>@string/flow_level_5</item>
+    </string-array>
+    <string-array name="approval_process_list_header_names">
+        <item>@string/index</item>
+        <item>@string/flow_name</item>
+        <item>@string/status</item>
+    </string-array>
+    <string-array name="approval_process_list_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/flow_name</item>
+        <item>@id/flow_enble</item>
+    </string-array>
+    <string-array name="user_cooperation_list_header_names">
+        <item>@string/personal_name</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/company_1</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="user_cooperation_list_header_ids">
+        <item>@id/user_name</item>
+        <item>@id/obs_name</item>
+        <item>@id/company_name</item>
+        <item>@id/mobile</item>
+    </string-array>
+    <string-array name="approval_process_status">
+        <item>@string/enable</item>
+        <item>@string/close</item>
+    </string-array>
+    <string-array name="registration_info_dialog_title_names">
+        <item>@string/index</item>
+        <item>@string/registration_name</item>
+        <item>@string/registration_time</item>
+        <item>@string/registration_type</item>
+        <item>@string/registration_addr</item>
+    </string-array>
+    <string-array name="registration_info_dialog_list_header_ids">
+        <item>@id/registration_id</item>
+        <item>@id/registration_name</item>
+        <item>@id/registration_time</item>
+        <item>@id/registration_type</item>
+        <item>@id/registration_addr</item>
+    </string-array>
+    <string-array name="announcement_list_header_names">
+        <item>@string/index</item>
+        <item>@string/title</item>
+        <item>@string/publish_owner</item>
+        <item>@string/publish_time</item>
+        <item>@string/status</item>
+    </string-array>
+    <string-array name="announcement_list_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/title</item>
+        <item>@id/creater</item>
+        <item>@id/publish_time</item>
+        <item>@id/status</item>
+    </string-array>
+    <string-array name="announcement_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/modify</item>
+        <item>@string/delete</item>
+        <item>@string/publish</item>
+    </string-array>
+    <string-array name="announcement_pub_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="task_mount_option_menu_names">
+        <item>@string/details</item>
+        <item>@string/mount</item>
+    </string-array>
+    <!-- 公告 -->
+    <string-array name="announcement_dialog_lable_names">
+        <item>@string/title</item>
+    </string-array>
+
+    <!-- 反馈 -->
+    <string-array name="feedback_dialog_lable_names">
+        <item>@string/feedback_type</item>
+        <item>@string/feedback_and_suggestion</item>
+    </string-array>
+    <string-array name="feedback_xc_dialog_lable_names">
+        <item>@string/title</item>
+        <item>@string/note</item>
+    </string-array>
+
+    <!-- 模板管理 -->
+    <string-array name="doc_template_list_header_names">
+        <item>@string/index</item>
+        <item>@string/template_name</item>
+    </string-array>
+    <string-array name="doc_template_list_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/template_name</item>
+    </string-array>
+    <string-array name="doc_template_option_menu_names">
+        <item>@string/view</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="doc_template_dialog_lable_names">
+        <item>@string/document_file</item>
+    </string-array>
+
+    <!-- 协作管理 -->
+    <string-array name="cooperation_navigation_titles">
+        <item>@string/cooperation_lunching</item>
+        <item>@string/cooperation_accepting</item>
+    </string-array>
+    <string-array name="cooperation_navigation_icons">
+        <item>@drawable/cooperation_navigation_initiator_normal</item>
+        <item>@drawable/cooperation_navigation_receiver_normal</item>
+        <item>@drawable/cooperation_navigation_initiator_selected</item>
+        <item>@drawable/cooperation_navigation_receiver_selected</item>
+    </string-array>
+    <string-array name="unit_select_activity_names">
+        <item>@string/company_type</item>
+        <item>@string/company_name</item>
+        <item>@string/contacts</item>
+        <item>@string/telephone</item>
+        <item>@string/address</item>
+    </string-array>
+    <string-array name="unit_select_activity_ids">
+        <item>@id/unit_type</item>
+        <item>@id/unit_name</item>
+        <item>@id/unit_person</item>
+        <item>@id/unit_tel</item>
+        <item>@id/unit_addr</item>
+    </string-array>
+
+    <!-- 租赁管理 -->
+    <string-array name="lease_navigation_titles">
+        <item>@string/lease_checkin</item>
+        <item>@string/lease_checkout</item>
+    </string-array>
+    <string-array name="lease_navigation_icon">
+        <item>@drawable/ic_navigation_lease</item>
+        <item>@drawable/ic_navigation_rent</item>
+        <item>@drawable/ic_navigation_lease_select</item>
+        <item>@drawable/ic_navigation_rent_select</item>
+    </string-array>
+    <string-array name="lease_top_names">
+        <item>@string/lease_number</item>
+        <item>@string/lease_project</item>
+        <item>@string/exe_contract</item>
+        <item>@string/lease_company</item>
+        <item>@string/operator</item>
+        <item>@string/storehouse</item>
+        <item>@string/storekeeper</item>
+    </string-array>
+    <string-array name="rent_top_names">
+        <item>@string/lease_returned_number</item>
+        <item>@string/operator</item>
+    </string-array>    
+    <string-array name="lease_header_names">
+        <item>@string/index</item>
+        <item>@string/lease_number</item>
+        <item>@string/lease_project</item>
+        <item>@string/exe_contract</item>
+        <item>@string/lease_cost_amount</item>
+        <item>@string/lease_company</item>
+        <item>@string/ticket_detail</item>
+        <item>@string/operator</item>
+        <item>@string/create_date</item>
+        <item>@string/storehouse</item>
+        <item>@string/storekeeper</item>
+    </string-array>
+    <string-array name="lease_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/lease_number</item>
+        <item>@id/lease_project</item>
+        <item>@id/lease_contract</item>
+        <item>@id/lease_total_money</item>
+        <item>@id/lease_company</item>
+        <item>@id/lease_documents</item>
+        <item>@id/creater</item>
+        <item>@id/create_date</item>
+        <item>@id/storehouse</item>
+        <item>@id/warehouse_keeper</item>
+    </string-array>
+    <string-array name="lease_header_title_names">
+        <item>@string/index</item>
+        <item>@string/type</item>
+        <item>@string/name</item>
+        <item>@string/spec</item>
+        <item>@string/quantity</item>
+        <item>@string/unit</item>
+        <item>@string/daily_hire</item>
+        <item>@string/lease_start_time</item>
+        <item>@string/lease_end_time</item>
+        <item>@string/amount</item>
+    </string-array>
+    <string-array name="lease_header_title_ids">
+        <item>@id/serial_number</item>
+        <item>@id/work_type</item>
+        <item>@id/name</item>
+        <item>@id/specifications</item>
+        <item>@id/amount</item>
+        <item>@id/zl_unit</item>
+        <item>@id/unit_price</item>
+        <item>@id/start_date</item>
+        <item>@id/end_time</item>
+        <item>@id/total_price</item>
+    </string-array>
+    <string-array name="select_lease_header_title_names">
+        <item>@string/index</item>
+        <item>@string/lease_number</item>
+        <item>@string/type</item>
+        <item>@string/name</item>
+        <item>@string/spec</item>
+        <item>@string/not_returned_count</item>
+        <item>@string/daily_hire</item>
+        <item>@string/operator</item>
+        <item>@string/lease_start_time</item>
+        <item>@string/lease_end_time</item>
+    </string-array>
+    <string-array name="select_lease_header_title_ids">
+        <item>@id/serial_number</item>
+        <item>@id/lease_number</item>
+        <item>@id/work_type</item>
+        <item>@id/name</item>
+        <item>@id/specifications</item>
+        <item>@id/amount</item>
+        <item>@id/unit_price</item>
+        <item>@id/operator</item>
+        <item>@id/start_date</item>
+        <item>@id/end_time</item>
+    </string-array>
+    <string-array name="lease_add_dialog">
+        <item>@string/quantity</item>
+        <item>@string/daily_hire</item>
+        <item>@string/lease_start_time</item>
+        <item>@string/lease_end_time</item>
+    </string-array>
+    <string-array name="rent_header_names">
+        <item>@string/index</item>
+        <item>@string/lease_returned_number</item>
+        <item>@string/ticket_detail</item>
+        <item>@string/operator</item>
+        <item>@string/lease_operation_date</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="rent_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/rent_number</item>
+        <item>@id/rent_documents</item>
+        <item>@id/creater</item>
+        <item>@id/create_date</item>
+        <item>@id/rent_mark</item>
+    </string-array>
+    <string-array name="rent_header_title_names">
+        <item>@string/index</item>
+        <item>@string/type</item>
+        <item>@string/name</item>
+        <item>@string/spec</item>
+        <item>@string/lease_number</item>
+        <item>@string/quantity</item>
+        <item>@string/lease_company</item>
+        <item>@string/lease_returned_owner</item>
+        <item>@string/lease_returned_date</item>
+    </string-array>
+    <string-array name="rent_header_title_ids">
+        <item>@id/serial_number</item>
+        <item>@id/work_type</item>
+        <item>@id/name</item>
+        <item>@id/specifications</item>
+        <item>@id/lease_number</item>
+        <item>@id/amount</item>
+        <item>@id/rent_company</item>
+        <item>@id/rent_person</item>
+        <item>@id/rent_time</item>
+    </string-array>
+    <string-array name="rent_add_dialog">
+        <item>@string/quantity</item>
+        <item>@string/lease_returned_owner</item>
+        <item>@string/lease_returned_date</item>
+    </string-array>
+    <string-array name="cooperation_list_item_ids">
+        <item>@id/serial_number</item>
+        <item>@id/company_name</item>
+        <item>@id/company_type</item>
+        <item>@id/contacts</item>
+        <item>@id/tel</item>
+        <item>@id/address</item>
+        <item>@id/permission</item>
+    </string-array>
+    <string-array name="cooperation_list_title_names">
+        <item>@string/index</item>
+        <item>@string/company_name</item>
+        <item>@string/company_type</item>
+        <item>@string/contacts</item>
+        <item>@string/telephone</item>
+        <item>@string/address</item>
+        <item>@string/cooperation_sub_system_permission</item>
+    </string-array>
+    <string-array name="cooperation_dialog_lables">
+        <item>@string/company_name</item>
+        <item>@string/company_type</item>
+        <item>@string/contacts</item>
+        <item>@string/telephone</item>
+        <item>@string/address</item>
+        <item>@string/cooperation_sub_system_permission</item>
+    </string-array>
+
+    <!-- 邮件管理 -->
+    <string-array name="email_navigation_icons">
+        <item>@drawable/email_inbox</item>
+        <item>@drawable/email_outbox</item>
+        <item>@drawable/email_draftbox</item>
+        <item>@drawable/email_inbox_select</item>
+        <item>@drawable/email_outbox_select</item>
+        <item>@drawable/email_draftbox_select</item>
+    </string-array>
+    <string-array name="email_navigation_titles">
+        <item>@string/email_receive</item>
+        <item>@string/email_send</item>
+        <item>@string/email_draft</item>
+    </string-array>
+    <string-array name="email_floating_menu_icons">
+        <item>@drawable/email_write</item>
+        <item>@drawable/email_edit</item>
+        <item>@drawable/email_reply</item>
+        <item>@drawable/email_reply_all</item>
+        <item>@drawable/email_transmit</item>
+    </string-array>
+    <string-array name="email_floating_menu_tips">
+        <item>@string/email_write</item>
+        <item>@string/email_edit</item>
+        <item>@string/email_replying</item>
+        <item>@string/email_reply_all</item>
+        <item>@string/email_forword_1</item>
+    </string-array>
+    <string-array name="email_edit_icons">
+        <item>@drawable/email_write</item>
+        <item>@drawable/email_edit</item>
+    </string-array>
+    <string-array name="email_edit_tips">
+        <item>@string/email_write</item>
+        <item>@string/email_edit</item>
+    </string-array>
+    <string-array name="email_write_icons">
+        <item>@drawable/email_write</item>
+    </string-array>
+    <string-array name="email_write_tips">
+        <item>@string/email_write</item>
+    </string-array>
+    <string-array name="email_listitem_ids">
+        <item>@id/email_list_read_flag</item>
+        <item>@id/email_list_sender</item>
+        <item>@id/email_list_time</item>
+        <item>@id/email_list_title</item>
+    </string-array>
+    <string-array name="email_contact_table_names">
+        <item>@string/personal_name</item>
+        <item>@string/role</item>
+        <item>@string/personal_obs_name</item>
+        <item>@string/telephone</item>
+    </string-array>
+    <string-array name="email_contact_table_ids">
+        <item>@id/name</item>
+        <item>@id/role</item>
+        <item>@id/department</item>
+        <item>@id/mobile</item>
+    </string-array>
+    <string-array name="email_search_titles">
+        <item>@string/email_sender</item>
+        <item>@string/email_reciever</item>
+        <item>@string/email_title</item>
+        <item>@string/email_main_content</item>
+    </string-array>
+    <string-array name="estimate_header_names">
+        <item>@string/index</item>
+        <item>@string/estimate_number</item>
+        <item>@string/estimate_name</item>
+        <item>@string/estimate_year</item>
+        <item>@string/investment_estimate_amount</item>
+        <item>@string/ticket_detail</item>
+        <item>@string/note</item>
+        <item>@string/status</item>
+        <item>@string/creater</item>
+        <item>@string/create_date</item>
+    </string-array>
+    <string-array name="estimate_header_ids">
+        <item>@id/serial_number</item>
+        <item>@id/estimate_number</item>
+        <item>@id/estimate_name</item>
+        <item>@id/estimate_year</item>
+        <item>@id/estimates</item>
+        <item>@id/estimates_items</item>
+        <item>@id/estimates_mark</item>
+        <item>@id/status</item>
+        <item>@id/creater</item>
+        <item>@id/create_date</item>
+    </string-array>
+    <string-array name="estimate_header_title_names">
+        <item>@string/index</item>
+        <item>@string/cost_name</item>
+        <item>@string/construction_cost</item>
+        <item>@string/installation_cost</item>
+        <item>@string/other_cost</item>
+        <item>@string/accounting_total</item>
+        <item>@string/unit</item>
+        <item>@string/quantity_or_area</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="estimate_header_title_ids">
+        <item>@id/serial_number</item>
+        <item>@id/cost_name</item>
+        <item>@id/construction_cost</item>
+        <item>@id/install_cost</item>
+        <item>@id/other_cost</item>
+        <item>@id/sum</item>
+        <item>@id/unit</item>
+        <item>@id/amount</item>
+        <item>@id/mark</item>
+    </string-array>
+    <string-array name="estimate_add_dialog">
+        <item>@string/cost_name</item>
+        <item>@string/construction_cost</item>
+        <item>@string/installation_cost</item>
+        <item>@string/other_cost</item>
+        <!-- <item>@string/accounting_total</item> -->
+        <item>@string/unit</item>
+        <item>@string/quantity_or_area</item>
+        <item>@string/note</item>
+    </string-array>
+    <string-array name="contract_detail_item_ids">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+        <item>@id/tv7</item>
+        <item>@id/tv8</item>
+        <item>@id/tv9</item>
+    </string-array>
+    <string-array name="contract_detail_item_name">
+        <item>@string/contract_position</item>
+        <item>@string/payment_name</item>
+        <item>@string/payment_type</item>
+        <item>@string/payment_o_payment</item>
+        <item>@string/payment_e_pay_date</item>
+        <item>@string/payment_a_payment</item>
+        <item>@string/payment_a_pay_date</item>
+        <item>@string/contract_payment_residue</item>
+        <item>@string/owner</item>
+    </string-array>
+    <string-array name="contract_name_item_ids">
+        <item>@id/tv1</item>
+    </string-array>
+    <string-array name="contract_name_item_name">
+        <item>@string/project_name</item>
+    </string-array>
+    <string-array name="lease_contract_list_header_names">
+        <item>@string/contract_code</item>
+        <item>@string/contract_name</item>
+        <item>@string/contract_value</item>
+        <item>@string/create_date</item>
+    </string-array>
+    <string-array name="lease_contract_list_header_ids">
+        <item>@id/contract_code</item>
+        <item>@id/contract_name</item>
+        <item>@id/contract_totle_money</item>
+        <item>@id/create_time</item>
+    </string-array>
+    
+	<string-array name="portal_my_task_menu">
+        <item>@string/not_start</item>
+        <item>@string/ongoing</item>
+        <item>@string/delay</item>
+        <item>@string/expire_today</item>
+        <item>@string/expire_this_week</item>
+        <item>@string/expire_this_month</item>
+    </string-array>
+</resources>

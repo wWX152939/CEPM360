@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_dialog_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ticket_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/list_view"
+        android:layout_width="@dimen/dp800_w"
+        android:layout_height="@dimen/dp380_h"
+        android:layout_below="@id/title"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="@dimen/dp800_w"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_view"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dp10_h"
+        android:gravity="center_horizontal">
+
+	    <Button
+	        android:id="@+id/exit_Button"
+	        android:layout_width="@dimen/dp100_w"
+            android:layout_height="@dimen/dp36_h"
+	        android:layout_marginBottom="@dimen/dp10_h"
+	        android:layout_marginRight="@dimen/dp32_w"
+	        android:background="@drawable/button_corners_blue_bg"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        android:text="@string/cancel" />
+	
+	    <Button
+	        android:id="@+id/import_button"
+	        android:layout_width="@dimen/dp100_w"
+            android:layout_height="@dimen/dp36_h"
+	        android:background="@drawable/button_corners_blue_bg"
+	        android:gravity="center"
+	        android:text="@string/import_data" />
+	
+	    <Button
+	        android:id="@+id/first_Button"
+	        android:layout_width="@dimen/dp100_w"
+            android:layout_height="@dimen/dp36_h"
+	        android:layout_marginRight="@dimen/dp32_w"
+	        android:layout_marginLeft="@dimen/dp32_w"
+	        android:background="@drawable/button_corners_blue_bg"
+	        android:gravity="center"
+	        android:text="@string/delete" />
+	
+	    <Button
+	        android:id="@+id/save_Button"
+	        android:layout_width="@dimen/dp100_w"
+            android:layout_height="@dimen/dp36_h"
+	        android:background="@drawable/button_corners_blue_bg"
+	        android:gravity="center"
+	        android:text="@string/save" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

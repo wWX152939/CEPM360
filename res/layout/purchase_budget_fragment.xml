@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/purchase_budget_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/table_marginLeft"
+    android:layout_marginRight="@dimen/table_marginRight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 列表头布局 -->
+
+            <include
+                android:id="@+id/purchase_manager_listhead"
+                layout="@layout/purchase_budget_title_list_item" />
+
+            <!-- 列表布局 -->
+
+            <ListView
+                android:id="@+id/purchase_budget_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/table_bg"
+                android:divider="#c5707070"
+                android:dividerHeight="@dimen/dp1_w">
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1_h"
+                android:background="#2e3442"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+        <com.pm360.cepm360.app.common.view.FloatingMenuView
+            android:id="@+id/floating_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/dp16_h"
+            android:layout_marginEnd="@dimen/dp164_w"
+            android:clickable="true"
+            android:src="@drawable/btn_add" />
+
+
+</FrameLayout>

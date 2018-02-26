@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/setting_list_title_height"
+    android:background="@drawable/setting_list_title_rightcorn_background"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/setting_list_divider"
+        android:visibility="visible" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/unit_address"
+                android:layout_width="@dimen/dp250_w"
+                android:layout_height="match_parent"
+                android:textColor="@color/setting_list_text_color"
+                android:gravity="center"
+                android:textSize="@dimen/sp16_s"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/setting_list_divider"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/contact_phone"
+                android:layout_width="@dimen/dp150_w"
+                android:layout_height="match_parent"
+                android:textColor="@color/setting_list_text_color"
+                android:gravity="center"
+                android:textSize="@dimen/sp16_s"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/setting_list_divider"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/character"
+                android:layout_width="@dimen/dp150_w"
+                android:layout_height="match_parent"
+                android:textColor="@color/setting_list_text_color"
+                android:gravity="center"
+                android:textSize="@dimen/sp16_s"/>
+
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+</LinearLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp420_h"
+    android:background="@android:color/white">
+    
+    <LinearLayout
+	    android:id="@+id/title_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/dp46_h"
+	    android:background="@color/dialog_title_bg"
+	    android:orientation="horizontal" >
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/dp46_h"
+	        android:gravity="center_vertical|left"
+	        android:layout_weight="1"
+	        android:paddingLeft="@dimen/dp18_w"         
+	        android:text="@string/document_upload"
+	        android:textColor="@android:color/white"
+	        android:textStyle="bold" 
+	        android:textSize="@dimen/dialog_title_textsize"/>
+	    
+	    <ImageView
+	        android:id="@+id/close"
+	        android:layout_width="@dimen/dp46_h"
+	        android:layout_height="@dimen/dp46_h"
+	        android:padding="@dimen/dp10_h"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="@dimen/dp8_h"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:src="@drawable/popup_exit"
+	        android:background="@drawable/dialog_button_close_bg"
+	        android:contentDescription="@string/app_name"/>
+	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginTop="@dimen/dp16_h"
+        android:orientation="vertical" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp42_h"	        
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:id="@+id/node_name_text"
+	            android:layout_width="@dimen/dp120_w"
+	            android:layout_height="match_parent"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="@dimen/dp30_w"
+	            android:text="@string/combination_node_name"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/sp16_s" />
+	        <EditText 
+	            android:id="@+id/node_name_edit"
+	            android:layout_width="@dimen/dp330_w"           
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="@dimen/dp10_w"
+	            android:background="@drawable/combination_edit_text_bg"
+	            android:textCursorDrawable="@null"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="@dimen/dp10_w"
+	            android:textSize="@dimen/sp16_s"
+	            android:textColor="@color/black" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/checkbox_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/dp20_h"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:id="@+id/node_attribute_text"
+	            android:layout_width="@dimen/dp120_w"
+	            android:layout_height="match_parent"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="@dimen/dp30_w"
+	            android:text="@string/combination_node_attribute"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/sp16_s" />
+
+	        <RelativeLayout
+	            android:layout_width="@dimen/dp330_w"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/dp10_w"
+	            android:background="@drawable/combination_edit_text_bg"
+	            android:paddingLeft="@dimen/dp20_w" 
+	            android:paddingRight="@dimen/dp20_w"
+	            android:paddingTop="@dimen/dp20_h"
+	            android:paddingBottom="@dimen/dp20_h">
+
+	            <CheckBox
+	                android:id="@+id/cb1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/dp25_w"
+	                android:button="@drawable/checkbox_bg"
+	                android:checked="true"
+	                android:paddingLeft="@dimen/dp10_w"
+	                android:textSize="@dimen/sp16_s"
+	                android:textColor="@color/black" />
+
+	            <CheckBox 
+	                android:id="@+id/cb2"
+	                android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cb1"
+                    android:layout_alignTop="@id/cb1"
+	                android:layout_marginLeft="@dimen/dp40_w"
+	                android:textColor="@color/black"
+	                android:checked="true"	           
+	                android:textSize="@dimen/sp16_s"     
+	                android:paddingLeft="@dimen/dp10_w"
+	                android:button="@drawable/checkbox_bg"/>
+
+	            <CheckBox
+	                android:id="@+id/cb3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@id/cb1"
+	                android:layout_below="@id/cb1"
+                    android:layout_marginTop="@dimen/dp20_h"
+	                android:button="@drawable/checkbox_bg"
+	                android:checked="true"
+	                android:textSize="@dimen/sp16_s"
+	                android:paddingLeft="@dimen/dp10_w"
+	                android:textColor="@color/black" />
+
+	            <CheckBox 
+	                android:id="@+id/cb4"
+	                android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/cb2"
+                    android:layout_alignTop="@+id/cb3"
+	                android:textColor="@color/black"
+	                android:checked="true"
+	                android:textSize="@dimen/sp16_s"
+	                android:paddingLeft="@dimen/dp10_w"
+	                android:button="@drawable/checkbox_bg"/>
+	            
+	            <CheckBox 
+	                android:id="@+id/cb5"
+	                android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20_h"
+                    android:layout_alignLeft="@id/cb3"
+                    android:layout_below="@id/cb3"
+	                android:textColor="@color/black"
+	                android:paddingLeft="@dimen/dp10_w"
+	                android:checked="true"
+	                android:textSize="@dimen/sp16_s"
+	                android:button="@drawable/checkbox_bg"/>
+
+	            <CheckBox
+	                android:id="@+id/cb6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBottom="@+id/cb5"
+	                android:layout_alignLeft="@+id/cb4"
+	                android:button="@drawable/checkbox_bg"
+	                android:checked="true"
+	                android:textSize="@dimen/sp16_s"
+	                android:paddingLeft="@dimen/dp10_w"
+	                android:textColor="@color/black" />
+	            
+	        </RelativeLayout>
+	    </LinearLayout>
+	    
+		<LinearLayout
+	        android:id="@+id/node_safety_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp42_h"
+	        android:layout_marginTop="@dimen/dp20_h"	        
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="@dimen/dp120_w"
+	            android:layout_height="match_parent"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="@dimen/dp30_w"
+	            android:text="@string/combination_safety"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/sp16_s" />
+	        
+	        <RelativeLayout 
+	            android:layout_width="@dimen/dp330_w"           
+	            android:layout_height="match_parent"
+		        android:layout_marginLeft="@dimen/dp10_w">
+		        <TextView 
+		            android:id="@+id/node_safety_edit"
+		            android:layout_width="match_parent"           
+		            android:layout_height="match_parent"
+		            android:background="@drawable/combination_edit_text_bg"
+		            android:gravity="center_vertical"
+		            android:paddingLeft="@dimen/dp10_w"
+		            android:textSize="@dimen/sp16_s"
+		            android:textColor="@color/black" />
+
+		        <ImageView
+		            android:layout_width="@dimen/dp25_w"
+		            android:layout_height="@dimen/dp25_h"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="@dimen/dp10_w"
+		            android:src="@drawable/contact_header" />
+
+	        </RelativeLayout>
+	    </LinearLayout>	 
+	    
+		<LinearLayout
+	        android:id="@+id/node_quality_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp42_h"
+	        android:layout_marginTop="@dimen/dp20_h"	        
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="@dimen/dp120_w"
+	            android:layout_height="match_parent"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="@dimen/dp30_w"
+	            android:text="@string/combination_quality"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/sp16_s" />
+	        
+	        <RelativeLayout 
+	            android:layout_width="@dimen/dp330_w"           
+	            android:layout_height="match_parent"
+		        android:layout_marginLeft="@dimen/dp10_w">
+		        <TextView 
+		            android:id="@+id/node_quality_edit"
+		            android:layout_width="match_parent"           
+		            android:layout_height="match_parent"
+		            android:background="@drawable/combination_edit_text_bg"
+		            android:gravity="center_vertical"
+		            android:paddingLeft="@dimen/dp10_w"
+		            android:textSize="@dimen/sp16_s"
+		            android:textColor="@color/black" />
+
+		        <ImageView
+		            android:layout_width="@dimen/dp25_w"
+		            android:layout_height="@dimen/dp25_h"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="@dimen/dp10_w"
+		            android:src="@drawable/contact_header" />
+
+	        </RelativeLayout>	        
+	    </LinearLayout>		
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@id/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp20_h"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_previous"
+            style="@style/DialogButtonStyle_Small"
+            android:layout_width="@dimen/dp120_w"
+            android:layout_height="@dimen/dp36_h"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:text="@string/previous" />
+
+        <Button
+            android:id="@+id/button_next"
+            style="@style/DialogButtonStyle_Small"
+            android:layout_width="@dimen/dp120_w"
+            android:layout_height="@dimen/dp36_h"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:text="@string/next" />
+
+        <Button
+            android:id="@+id/button_finish"
+            style="@style/DialogButtonStyle_Small"
+            android:layout_width="@dimen/dp120_w"
+            android:layout_height="@dimen/dp36_h"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/menu"
+       	android:layout_width="@dimen/dp60_w"
+        android:layout_height="@dimen/dp60_h"
+       	android:clickable="true"
+        android:paddingTop="@dimen/dp10_h"
+        android:paddingBottom="@dimen/dp10_h"
+        android:paddingLeft="@dimen/dp10_w"
+        android:paddingRight="@dimen/dp10_w"
+        android:src="@drawable/btn_add"/>   
+
+</FrameLayout>

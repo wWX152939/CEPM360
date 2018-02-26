@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plan_make_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/task_home_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/task_table_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/dp200_w"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/left_title_container"
+                android:layout_width="@dimen/dp200_w"
+                android:layout_height="@dimen/schedule_title_table_height"
+                android:paddingLeft="@dimen/dp10_w"
+                android:layout_gravity="center_vertical"
+                android:background="@color/task_home_list_title"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/task_name"
+                    android:layout_width="@dimen/dp140_w"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/task_name"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/task_home_list_title_text"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <ImageView
+                    android:id="@+id/attr_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@id/task_name"
+                    android:paddingBottom="@dimen/schedule_attr_button_padding_height"
+                    android:paddingTop="@dimen/schedule_attr_button_padding_height"
+                    android:paddingRight="@dimen/dp10_w"
+                    android:src="@drawable/arrow_double_right" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1_h"
+                android:background="@color/task_home_list_line" />
+
+            <ListView
+                android:id="@+id/left_container_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/task_home_list_line"
+                android:dividerHeight="@dimen/dp1_h"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/right_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            	android:background="@color/task_navigation_space"
+                android:paddingRight="@dimen/dp3_w"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/right_title_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_title_table_height"
+                    layout="@layout/task_make_title_list_item"
+                    android:orientation="horizontal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1_h"
+                    android:background="@color/task_home_list_line" />
+
+                <ListView
+                    android:id="@+id/right_container_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/task_home_list_line"
+            		android:background="@color/task_home_list_table"
+                    android:dividerHeight="@dimen/dp1_h"
+                    android:listSelector="@android:color/transparent" >
+                </ListView>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/baseViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/base_view_pager"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.pm360.cepm360.app.common.view.FloatingMenuView
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/dp164_w"
+        android:clickable="true"
+        android:src="@drawable/btn_add" />
+
+</FrameLayout>

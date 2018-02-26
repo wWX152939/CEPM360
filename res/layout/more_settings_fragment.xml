@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tree_listview_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60_h"            
+            android:gravity="center"
+            android:text="@string/more_setting"            
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20_s" >
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10_h" />
+        <!--
+        <include
+            android:id="@+id/more_item_only_wifi_connect"
+            layout="@layout/more_settings_item_list" />
+        
+        <include
+            android:id="@+id/more_item_clear_cache"
+            layout="@layout/more_settings_item_list" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10_h"/>
+        -->
+
+        <include
+            android:id="@+id/more_item_version_check"
+            layout="@layout/more_settings_item_list" />
+
+        <include
+            android:id="@+id/more_item_about_cepm360"
+            layout="@layout/more_settings_item_list" />
+
+        <include
+            android:id="@+id/more_item_feedback_and_suggestion"
+            layout="@layout/more_settings_item_list" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp20_h" />
+
+        <TextView
+            android:id="@+id/exit_app"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44_h"
+            android:gravity="center"
+            android:text="@string/exit_login"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:textSize="@dimen/sp20_s" >
+        </TextView>
+    </LinearLayout>
+
+</FrameLayout>

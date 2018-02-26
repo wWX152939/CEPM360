@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/dp4_w"
+    android:paddingStart="@dimen/dp4_w"
+    android:orientation="vertical" >
+    
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="@dimen/dp714_w"
+        android:layout_height="@dimen/dp48_h"
+        android:divider="@null"
+        android:paddingTop="@dimen/dp8_h"/>
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tab_content_bg" >
+
+        <include
+            android:id="@+id/tab1"
+            layout="@layout/project_tab_common" />
+
+        <include
+            android:id="@+id/tab2"
+            layout="@layout/project_table4" />
+
+        <include
+            android:id="@+id/tab3"
+            layout="@layout/project_table4" />
+    </FrameLayout>
+
+</LinearLayout>

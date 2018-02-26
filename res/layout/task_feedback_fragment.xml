@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_feedback_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/task_table_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/dp200_w"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/left_title_container"
+                android:layout_width="@dimen/dp200_w"
+                android:layout_height="@dimen/schedule_title_table_height"
+                android:layout_gravity="center_vertical"
+                android:background="@color/task_home_list_title"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp20_w">
+
+                <TextView
+                    android:id="@+id/task_name"
+                    android:layout_width="@dimen/dp100_w"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="任务名称"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <LinearLayout
+                    android:id="@+id/switch_button"
+                    android:layout_width="@dimen/dp50_w"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp30_w"
+                        android:layout_height="@dimen/dp25_h"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp10_w"
+                        android:background="@drawable/task_switch_view_bg" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/attr_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="@dimen/schedule_attr_button_padding_height"
+                    android:paddingRight="@dimen/dp10_w"
+                    android:paddingTop="@dimen/schedule_attr_button_padding_height"
+                    android:src="@drawable/arrow_double_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1_h"
+                android:background="@color/task_home_list_line" />
+
+            <ListView
+                android:id="@+id/left_container_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/task_home_list_line"
+                android:dividerHeight="@dimen/dp1_h"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/right_list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/task_navigation_space"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dp3_w">
+
+                <include
+                    android:id="@+id/right_title_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_title_table_height"
+                    layout="@layout/task_feedback_title_list_item"
+                    android:orientation="horizontal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1_h"
+                    android:background="@color/task_home_list_line" />
+
+                <ListView
+                    android:id="@+id/right_container_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/task_home_list_table"
+                    android:divider="@color/task_home_list_line"
+                    android:dividerHeight="@dimen/dp1_h"
+                    android:listSelector="@android:color/transparent" >
+                </ListView>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/baseViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/base_view_pager"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

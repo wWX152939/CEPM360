@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/table_height"
+    android:background="@color/content_listview_header_bg"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/plan_template_number"
+        android:layout_width="@dimen/dp100_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/table_content_textsize"/>
+
+    <TextView
+        android:id="@+id/plan_template_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/table_content_textsize"/>
+
+    <TextView
+        android:id="@+id/plan_template_type"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/table_content_textsize"/>
+</LinearLayout>

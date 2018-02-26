@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_dialog_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ticket_dialog_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/dialog_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp6_h"
+            android:layout_marginRight="@dimen/dp6_h"
+            android:layout_marginTop="@dimen/dp6_h"
+            android:orientation="vertical" >
+
+            <!-- 列表头布局 -->
+
+            <include
+                android:id="@+id/cooperation_receive_people_listhead"
+                layout="@layout/cooperation_receive_people_list_item"/>
+            
+
+            <!-- 列表布局 -->
+
+            <ListView
+                android:id="@+id/cooperation_receive_people_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/table_bg" >
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/content_listview_edge_bg"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

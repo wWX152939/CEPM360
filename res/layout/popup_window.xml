@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_line"
+    android:layout_width="@dimen/dp200_w"
+    android:layout_height="fill_parent"
+    android:background="@color/popup_window_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+</LinearLayout>

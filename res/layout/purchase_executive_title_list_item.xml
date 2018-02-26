@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/table_height"
+    android:background="@drawable/table_header_bg"
+    android:orientation="horizontal" >
+
+    <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+        android:id="@+id/purchase_executive_id"
+        android:layout_width="@dimen/dp140_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textSize="@dimen/table_content_textsize"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divider"
+        android:visibility="visible" />
+
+    <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+        android:id="@+id/purchase_plan_name"
+        android:layout_width="@dimen/dp180_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/table_content_textsize"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="#c5707070"
+        android:visibility="visible" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="18"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/purchase_executive_contract"
+                android:layout_width="@dimen/dp180_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_content_textsize"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/purchase_executive_money"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:paddingRight="@dimen/table_padding_left"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_content_textsize"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/purchase_executive_status"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+        		android:paddingLeft="@dimen/table_padding_left"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_content_textsize"/>
+            
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/purchase_executive_create_time"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_content_textsize"/>
+
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

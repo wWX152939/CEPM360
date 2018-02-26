@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/purchase_add_bg">  
+
+	    <View
+	        android:id="@+id/view"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp1_h"
+	        android:background="@color/divider"
+	        android:visibility="visible" />
+
+	    <include 
+	        android:id="@+id/list_header"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/schedule_table_height"
+	        android:layout_below="@id/view"
+	        layout="@layout/plan_template_add_list_item">
+	    </include>
+	    
+	    <View
+	        android:id="@+id/view2"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp1_h"
+	        android:layout_below="@id/list_header"
+	        android:background="@color/divider"
+	        android:visibility="visible" />
+	    
+	    <com.pm360.cepm360.app.common.view.DragView
+	        android:id="@+id/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/view2"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:clickable="true"
+	        android:divider="@color/divider"
+	        android:dividerHeight="@dimen/dp1_h"
+	        android:focusable="false"
+	        android:scrollbars="none" />
+	</RelativeLayout>
+	
+    <Button
+        android:id="@+id/template_add_addlist"
+        android:layout_width="@dimen/dp100_w"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/button_bg"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/dp16_w"
+        android:clickable="true"
+        android:text="@string/new_add"
+        android:src="@drawable/btn_add" />	
+        
+</FrameLayout>

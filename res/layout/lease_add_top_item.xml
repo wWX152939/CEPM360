@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="@dimen/dp40_h"
+                android:gravity="center_vertical"
+                android:text="@string/lease_number"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+
+            <TextView
+                android:id="@+id/lease_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40_h"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp6_w"
+                android:paddingRight="@dimen/dp6_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="@dimen/dp40_h"
+                android:gravity="center_vertical"
+                android:text="@string/lease_project"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+
+            <TextView
+                android:id="@+id/lease_project"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40_h"
+                android:background="@drawable/dialog_spinner_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp6_w"
+                android:paddingRight="@dimen/dp6_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="@dimen/dp40_h"
+                android:gravity="center_vertical"
+                android:text="@string/exe_contract"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+
+            <EditText
+                android:id="@+id/lease_contract"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40_h"
+                android:background="@drawable/dialog_spinner_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp6_w"
+                android:paddingRight="@dimen/dp6_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="@dimen/dp40_h"
+                android:gravity="center_vertical"
+                android:text="@string/lease_company"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+
+            <TextView
+                android:id="@+id/lease_company"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40_h"
+                android:background="@drawable/dialog_spinner_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp6_w"
+                android:paddingRight="@dimen/dp6_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="@dimen/dp40_h"
+                android:gravity="center_vertical"
+                android:text="@string/operator"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+
+            <TextView
+                android:id="@+id/creater"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40_h"
+                android:background="@drawable/dialog_spinner_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp6_w"
+                android:paddingRight="@dimen/dp6_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/lease_addlist"
+                android:layout_width="@dimen/dp180_w"
+                android:layout_height="@dimen/dp40_h"
+                android:layout_marginBottom="@dimen/dp15_h"
+                android:layout_marginLeft="@dimen/dp15_w"
+                android:layout_marginRight="@dimen/dp15_w"
+                android:layout_marginTop="@dimen/dp15_h"
+                android:background="@drawable/ticket_button_bg"
+                android:clickable="true"
+                android:text="@string/select_lease_equipent"
+                android:textSize="@dimen/table_title_textsize"
+                android:textColor="@android:color/black"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="@dimen/dp40_h"
+                android:gravity="center_vertical"
+                android:text="@string/storehouse"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+
+            <TextView
+                android:id="@+id/storehouse"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40_h"
+                android:background="@drawable/dialog_spinner_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp6_w"
+                android:paddingRight="@dimen/dp6_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="@dimen/dp40_h"
+                android:gravity="center_vertical"
+                android:text="@string/storekeeper"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+
+            <TextView
+                android:id="@+id/warehouse_keeper"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40_h"
+                android:background="@drawable/dialog_spinner_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp6_w"
+                android:paddingRight="@dimen/dp6_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_title_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4_w"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

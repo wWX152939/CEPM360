@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp48_h"
+    android:layout_marginBottom="@dimen/dp8_h"
+    android:layout_marginEnd="@dimen/dp12_w"
+    android:layout_marginTop="@dimen/dp8_h"
+    android:orientation="horizontal" >
+
+    <com.pm360.cepm360.app.common.view.CustomProgressBar
+        android:id="@+id/progress_bar1"
+        style="@style/MyHorizontalProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp16_h"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp20_w"
+        android:layout_marginStart="@dimen/dp20_w"
+        android:layout_marginTop="@dimen/dp16_h"
+        android:layout_toLeftOf="@+id/btn_left"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp2_h"
+        android:layout_marginRight="@dimen/dp8_w"
+        android:layout_marginTop="@dimen/dp2_h"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp4_h"
+        android:paddingEnd="@dimen/dp32_w"
+        android:paddingStart="@dimen/dp32_w"
+        android:paddingTop="@dimen/dp4_h"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="@dimen/dp120_w"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp2_h"
+        android:layout_marginRight="@dimen/dp16_w"
+        android:layout_marginTop="@dimen/dp2_h"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp4_h"
+        android:paddingEnd="@dimen/dp32_w"
+        android:paddingStart="@dimen/dp32_w"
+        android:paddingTop="@dimen/dp4_h"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" />
+
+</RelativeLayout>

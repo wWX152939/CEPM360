@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+        
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/dp20_w"
+            android:paddingRight="@dimen/dp20_w"
+            android:paddingTop="@dimen/dp20_h"
+            android:paddingBottom="@dimen/dp20_h"
+            android:scaleType="centerCrop" />
+        
+        <ImageView
+            android:id="@+id/delete_markView"
+            android:layout_width="@dimen/dp30_w"
+            android:layout_height="@dimen/dp30_h"
+            android:adjustViewBounds="true"
+            android:layout_gravity="right|top"
+            android:src="@drawable/icon_delete"
+           />
+    </FrameLayout>
+</RelativeLayout>

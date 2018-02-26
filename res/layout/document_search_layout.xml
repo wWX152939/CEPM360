@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_marginLeft="@dimen/dp8_w"
+    android:layout_marginRight="@dimen/dp8_w" 
+    android:orientation="vertical" >
+    
+    <!-- 查询结果  -->        
+    <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dp60_h" >
+
+<!--       <Button
+          android:id="@+id/button_attr"
+          android:layout_width="@dimen/dp80_w"
+          android:layout_height="@dimen/dp28_h"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_margin="@dimen/dp4_w"
+          android:background="@drawable/document_action_button_bg"
+          android:text="置顶"
+          android:textColor="#089D67" />
+
+      <Button
+          android:id="@+id/button_delete"
+          android:layout_width="@dimen/dp80_w"
+          android:layout_height="@dimen/dp28_h"
+          android:layout_alignBaseline="@+id/button_attr"
+          android:layout_margin="@dimen/dp4_w"
+          android:layout_toLeftOf="@+id/button_attr"
+          android:background="@drawable/document_action_button_bg"
+          android:text="归档"
+          android:textColor="#089D67" />
+
+      <Button
+          android:id="@+id/button_view"
+          android:layout_width="@dimen/dp80_w"
+          android:layout_height="@dimen/dp28_h"
+          android:layout_alignBaseline="@+id/button_delete"
+          android:layout_toLeftOf="@+id/button_delete"
+          android:layout_margin="@dimen/dp4_w"           
+          android:background="@drawable/document_action_button_bg"
+          android:text="查看"
+          android:textColor="#089D67" /> -->
+      
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/dp12_w"
+          android:gravity="center_vertical"
+          android:textSize="@dimen/sp20_s"
+          android:textColor="#089D67"
+          android:text="@string/email_search_list"/>
+
+    </RelativeLayout>
+
+	<include
+	    android:id="@+id/listHeaderView"
+	    layout="@layout/document_search_result_list_item" />
+	 
+	<ListView
+	    android:id="@+id/file_list_item"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:clickable="true"
+	    android:divider="@color/divider"
+	    android:dividerHeight="@dimen/dp1_h"
+	    android:focusable="false"
+	    android:scrollbars="none"/>
+	        
+</LinearLayout>

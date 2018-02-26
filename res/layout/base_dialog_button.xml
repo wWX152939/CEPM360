@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Button xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="@dimen/dp120_w"
+     android:layout_height="@dimen/dp40_h"
+     android:layout_gravity="center_vertical"
+     android:gravity="center"
+     android:background="#73d342"
+     android:textColor="@color/white"
+     android:textSize="@dimen/sp16_s"/>
+

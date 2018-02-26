@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp40_h"
+    android:background="@drawable/table_header_background"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divider"
+        android:visibility="visible" />
+
+        <RelativeLayout
+    	android:layout_width="@dimen/dp300_w"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center_vertical"
+    		android:orientation="horizontal" >
+
+    		<ImageView
+        		android:id="@+id/icon"
+        		android:layout_width="wrap_content"
+        		android:layout_height="fill_parent"
+        		android:layout_alignParentBottom="true"
+        		android:layout_alignParentTop="true"
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="6.0dip" />
+
+    		<TextView
+        		android:id="@+id/wbs_title"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:layout_alignParentBottom="true"
+        		android:layout_alignParentTop="true"
+        		android:layout_centerVertical="true"
+        		android:layout_toRightOf="@id/icon"
+        		android:gravity="center_vertical"
+        		android:textSize="@dimen/sp16_s"
+        		android:textAppearance="?android:textAppearanceMedium"
+        		android:textColor="#ffffff" />
+
+		</RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dp1_w"
+            android:layout_height="match_parent"
+      	    android:background="@color/divider"
+      	    android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/wbs_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp16_s"
+            android:layout_marginStart="@dimen/dp6_w"
+	   	 	android:textColor="#ffffff"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>        
+</LinearLayout>

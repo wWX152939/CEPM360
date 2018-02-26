@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+		<TextView
+		    android:id="@+id/number"
+		    android:layout_width="@dimen/dp50_w"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+android:layout_marginLeft="@dimen/dp15_w"
+android:layout_marginRight="@dimen/dp15_w"
+android:layout_marginBottom="@dimen/dp15_h"
+android:layout_marginTop="@dimen/dp15_h"
+		    android:text="@string/index"
+			android:textColor="#ffffff"
+	    	android:textSize="@dimen/sp14_s"/>
+
+		<TextView
+		    android:id="@+id/version_number"
+		    android:layout_width="@dimen/dp100_w"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+android:layout_marginLeft="@dimen/dp15_w"
+android:layout_marginRight="@dimen/dp15_w"
+android:layout_marginBottom="@dimen/dp15_h"
+android:layout_marginTop="@dimen/dp15_h"
+		    android:text="@string/version_code"
+			android:textColor="#ffffff"
+    		android:textSize="@dimen/sp14_s"/>
+	    
+		<TextView
+		    android:id="@+id/version_description"
+		    android:layout_width="@dimen/dp200_w"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+android:layout_marginLeft="@dimen/dp15_w"
+android:layout_marginRight="@dimen/dp15_w"
+android:layout_marginBottom="@dimen/dp15_h"
+android:layout_marginTop="@dimen/dp15_h"
+		    android:text="@string/version_depiction"
+			android:textColor="#ffffff"
+	    	android:textSize="@dimen/sp14_s"/>
+
+		<TextView
+		    android:id="@+id/modifi_people"
+		    android:layout_width="@dimen/dp80_w"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+android:layout_marginLeft="@dimen/dp15_w"
+android:layout_marginRight="@dimen/dp15_w"
+android:layout_marginBottom="@dimen/dp15_h"
+android:layout_marginTop="@dimen/dp15_h"
+		    android:text="@string/modifier"
+			android:textColor="#ffffff"
+	    	android:textSize="@dimen/sp14_s"/>
+	    
+		<TextView
+		    android:id="@+id/modifi_date"
+		    android:layout_width="@dimen/dp100_w"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+android:layout_marginLeft="@dimen/dp15_w"
+android:layout_marginRight="@dimen/dp15_w"
+android:layout_marginBottom="@dimen/dp15_h"
+android:layout_marginTop="@dimen/dp15_h"
+		    android:text="@string/modify_date"
+			android:textColor="#ffffff"
+	    	android:textSize="@dimen/sp14_s"/>
+
+</LinearLayout>

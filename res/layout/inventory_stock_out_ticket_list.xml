@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ticket_table_height"
+    android:background="@color/table_title"
+    android:orientation="horizontal" >
+ 
+    <View
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:background="@color/divider"
+        android:visibility="visible" />
+    
+    <TextView
+        android:id="@+id/resource_name"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:layout_weight="3"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp16_s"/>
+            
+    <TextView
+        android:id="@+id/resource_type"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp16_s"/>
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp16_s"/>
+
+    <TextView
+        android:id="@+id/specs"
+        android:layout_width="@dimen/dp60_w"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp16_s"/>
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="@dimen/dp60_w"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp16_s"/>
+     
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:layout_marginEnd="@dimen/dp10_w"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/sp16_s"/>
+    
+    <View
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:background="@color/divider"
+        android:visibility="visible" />
+</LinearLayout>
+

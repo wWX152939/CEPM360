@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flow_approval_activity_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/flow_approval_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp10_h"
+    android:paddingLeft="@dimen/dp10_w"
+    android:paddingRight="@dimen/dp10_w">
+
+    <ScrollView
+        android:id="@+id/scrollViewContent"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:paddingBottom="@dimen/dp10_h"
+	    android:fillViewport="true">
+		<LinearLayout
+		    android:id="@+id/approval_content_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/dp300_h"
+		    android:orientation="vertical" >
+		    <include 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        layout="@layout/flow_approval_needapproval_unit"/>
+		</LinearLayout>
+	</ScrollView>
+	
+	<LinearLayout 
+	    android:id="@+id/button_content"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:animateLayoutChanges="true"
+	    android:layout_marginBottom="@dimen/dp10_h">
+
+		<Button
+		    android:id="@+id/countersign_button"
+		    android:layout_width="@dimen/dp80_w"
+		    android:layout_height="@dimen/dp30_h"
+		    android:layout_marginLeft="@dimen/dp20_w"
+		    android:layout_marginRight="@dimen/dp20_w"
+		    android:background="@drawable/flow_approval_button_noclick_bg"
+		    android:text="@string/countersign"
+		    android:textSize="@dimen/sp14_s"
+		    android:drawableLeft="@drawable/people_add_white"
+		    android:gravity="center"
+		    android:paddingLeft="@dimen/dp15_h"
+		    android:paddingRight="@dimen/dp10_h"/>		
+
+		<Button
+		    android:id="@+id/pass_button"
+		    android:layout_width="@dimen/dp80_w"
+		    android:layout_height="@dimen/dp30_h"
+		    android:layout_marginLeft="@dimen/dp20_w"
+		    android:layout_marginRight="@dimen/dp20_w"
+		    android:background="@drawable/flow_approval_button_noclick_bg"
+		    android:text="@string/pass"
+		    android:textSize="@dimen/sp14_s"/>		
+
+		<Button
+		    android:id="@+id/rejected_button"
+		    android:layout_width="@dimen/dp80_w"
+		    android:layout_height="@dimen/dp30_h"
+		    android:layout_marginLeft="@dimen/dp20_w"
+		    android:layout_marginRight="@dimen/dp20_w"		    
+		    android:background="@drawable/flow_approval_button_noclick_bg"
+		    android:text="@string/rejected"
+		    android:textSize="@dimen/sp14_s"/>
+		
+		<Button
+		    android:id="@+id/submit_button"
+		    android:layout_width="@dimen/dp80_w"
+		    android:layout_height="@dimen/dp30_h"
+		    android:layout_marginLeft="@dimen/dp20_w"
+		    android:layout_marginRight="@dimen/dp20_w"		    
+		    android:background="@drawable/flow_approval_button_noclick_bg"
+		    android:text="@string/submit"
+		    android:visibility="gone"
+		    android:textSize="@dimen/sp14_s"/>		
+
+		<Button
+		    android:id="@+id/exit_button"
+		    android:layout_width="@dimen/dp80_w"
+		    android:layout_height="@dimen/dp30_h"
+		    android:layout_marginLeft="@dimen/dp20_w"
+		    android:layout_marginRight="@dimen/dp20_w"		    
+		    android:background="@drawable/flow_approval_button_noclick_bg"
+		    android:text="@string/close"
+		    android:textSize="@dimen/sp14_s" />		
+	    
+	</LinearLayout>
+
+</LinearLayout>

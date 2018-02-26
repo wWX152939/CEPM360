@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+    
+    <!-- 表单头 -->
+    <LinearLayout
+        android:id="@+id/ticket_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical" >
+        
+        <!-- 第一行， 通常最多加入3个item -->
+        <LinearLayout
+	        android:id="@+id/ticket_header_row_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/ticket_header_margin_top"
+	        android:layout_marginLeft="@dimen/ticket_header_margin_left"
+	        android:layout_marginRight="@dimen/ticket_header_margin_right"
+	        android:orientation="horizontal" >
+	        
+            <include
+		        android:id="@+id/item1"
+		        layout="@layout/inventory_ticket_table_layout" />
+            <include
+                android:id="@+id/item2"
+                layout="@layout/inventory_ticket_table_layout" />
+            <include
+                android:id="@+id/item3"
+                layout="@layout/inventory_ticket_table_layout" />                      
+	    </LinearLayout>
+	        
+	    <!-- 第一行， 通常最多加入3个item, 或为空 -->    
+        <LinearLayout
+            android:id="@+id/ticket_header_row_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16_h"
+            android:layout_marginLeft="@dimen/dp10_w"
+            android:layout_marginRight="@dimen/dp10_w"
+            android:orientation="horizontal" >
+            
+            <include
+                android:id="@+id/item4"
+                layout="@layout/inventory_ticket_table_layout" />
+            <include
+                android:id="@+id/item5"
+                layout="@layout/inventory_ticket_table_layout" />
+            <include
+                android:id="@+id/item6"
+                layout="@layout/inventory_ticket_table_layout" />   
+        </LinearLayout>  
+    </LinearLayout>
+
+    
+    <!-- 表单列表 -->
+    <LinearLayout
+        android:id="@+id/ticket_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp328_h"
+        android:layout_marginTop="@dimen/ticket_list_margin_top"
+        android:layout_marginLeft="@dimen/ticket_list_margin_left"
+        android:layout_marginRight="@dimen/ticket_list_margin_right"
+        android:layout_below="@+id/ticket_header_layout"
+        android:orientation="vertical" >
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1_h"
+            android:background="@color/divider"
+            android:visibility="visible" />
+                
+        <LinearLayout
+            android:id="@+id/ticket_table_list_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp36_h"
+            android:orientation="horizontal" />
+                     
+        <ListView
+            android:id="@+id/ticket_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="@null"
+            android:focusable="false"
+            android:scrollbars="none" >
+        </ListView>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1_h"
+            android:background="@color/divider"
+            android:visibility="visible" />
+    </LinearLayout>
+    
+    <!-- 表单统计-->
+    <LinearLayout
+        android:id="@+id/ticket_statistics_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20_w"
+        android:layout_marginRight="@dimen/dp20_w"
+        android:layout_below="@+id/ticket_list_layout">       
+        <include
+            android:id="@+id/inventory_manager_add_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/purchase_budget_add_bottom_item" />
+    </LinearLayout>
+           
+    <!-- 表单按钮-->
+    <include
+        android:id="@+id/ticket_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48_h"
+        android:layout_marginRight="@dimen/dp6_w"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:layout_alignParentBottom="true"
+        layout="@layout/dialog_button_bar_layout" />
+
+</RelativeLayout>

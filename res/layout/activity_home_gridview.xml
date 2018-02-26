@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical" >
+    
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="@dimen/dp720_w"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:horizontalSpacing="@dimen/dp60_w"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dp48_h">
+    </GridView>
+</RelativeLayout>

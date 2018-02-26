@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical" android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/role_checkBox0"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp32_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/role_item0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp8_w"
+            android:text="@string/role_permission_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16_s"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/role_checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp32_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/role_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp8_w"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16_s"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/role_checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp32_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/role_item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp8_w"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16_s"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/role_checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp32_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/role_item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp8_w"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16_s"/>
+    </LinearLayout>
+
+</LinearLayout>

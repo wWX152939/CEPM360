@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp4_w" 
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="@dimen/dp140_w"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp4_w"
+        android:paddingTop="@dimen/dp10_w"
+        android:paddingBottom="@dimen/dp10_w"
+        android:columnWidth="@dimen/dp140_w"
+        android:gravity="center|top"
+        android:horizontalSpacing="@dimen/dp1_w"
+        android:numColumns="1"
+        android:stretchMode="none"
+        android:verticalSpacing="@dimen/dp1_h"
+        android:background="@color/system_left_navigation_bg" >
+    </GridView>
+
+    <FrameLayout
+        android:id="@+id/picture_pick_action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp4_w"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" >
+
+        <com.pm360.cepm360.app.common.view.ZoomImageView
+            android:id="@+id/content_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/system_left_navigation_bg"
+            android:gravity="center"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/forward1"
+            android:layout_width="@dimen/dp48_w"
+            android:layout_height="@dimen/dp68_h"
+            android:layout_gravity="center|left"
+            android:background="@drawable/change_attachment_forward_bg"
+            android:gravity="center"
+            android:src="@drawable/change_attachment_forward"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/next1"
+            android:layout_width="@dimen/dp48_w"
+            android:layout_height="@dimen/dp68_h"
+            android:layout_gravity="center|right"
+            android:background="@drawable/change_attachment_next_bg"
+            android:gravity="center"
+            android:src="@drawable/change_attachment_next"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

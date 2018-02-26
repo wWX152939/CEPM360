@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pm360.cepm360.app.common.view.TextProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/project_image_progress"
+    style="@android:style/Widget.ProgressBar.Horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:indeterminateOnly="false"
+    android:max="100"
+    android:maxHeight="@dimen/dp24_h"
+    android:minHeight="@dimen/dp24_h"
+    android:padding="@dimen/dp4_w"
+    android:progress="0"
+    android:progressDrawable="@drawable/progress_color_horizontal" />

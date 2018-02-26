@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/mapmode"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50_h"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/dp25_w"
+        android:layout_marginTop="@dimen/dp10_h"
+        android:textSize="@dimen/sp18_s" />
+    
+    <Button
+        android:id="@+id/mylocation"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50_h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp55_h"
+        android:layout_marginRight="@dimen/dp25_w"
+        android:textSize="@dimen/sp18_s"
+        android:text="@string/my_location_info" />
+    
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50_h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp110_h"
+        android:layout_marginRight="@dimen/dp25_w"
+        android:textSize="@dimen/sp18_s"
+        android:text="@string/registration_log" />
+
+    <Button
+        android:id="@+id/gobackhome"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50_h"
+        android:layout_above="@+id/registration"
+        android:layout_alignRight="@+id/registration"
+        android:layout_marginBottom="@dimen/dp15_h"
+        android:textSize="@dimen/sp18_s"
+        android:text="@string/gohome_registration" />
+
+    <Button
+        android:id="@+id/startwork"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50_h"
+        android:layout_above="@+id/gobackhome"
+        android:layout_alignRight="@+id/gobackhome"
+        android:layout_marginBottom="@dimen/dp15_h"
+        android:text="@string/start_work_registration"
+        android:textSize="@dimen/sp18_s"/>
+
+    <Button
+        android:id="@+id/map_type"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50_h"
+        android:layout_alignRight="@+id/mapmode"
+        android:layout_below="@+id/mapmode"
+        android:layout_marginTop="@dimen/dp22_h"
+        android:text="@string/normal_map"
+        android:textSize="@dimen/sp18_s"/>
+
+</RelativeLayout>

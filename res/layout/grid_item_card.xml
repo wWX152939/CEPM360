@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_item_kard"
+    android:layout_width="@dimen/dp180_w"
+    android:layout_height="fill_parent"
+    android:paddingTop="@dimen/dp10_h"
+    android:paddingBottom="@dimen/dp30_h"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_width="@dimen/dp170_w"
+        android:layout_height="@dimen/dp350_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="70dp"
+        android:paddingBottom="30dp"
+        android:visibility="invisible"
+        android:textSize="@dimen/sp16_s"
+        android:background="@drawable/unititem_text_bg"
+        android:text="a:\nb:\nc:\nd:\n"
+        android:lineSpacingMultiplier="1.5"
+        android:textColor="#535657"/>
+    
+    <com.pm360.cepm360.app.common.view.AlwaysMarqueeTextView
+        android:id="@+id/item_title"
+        android:layout_width="@dimen/dp180_w"
+        android:layout_height="@dimen/dp180_h"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/unititem_titlebg_nostart_selector"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="@dimen/dp20_h"
+        android:paddingLeft="@dimen/dp25_w"
+        android:paddingRight="@dimen/dp25_w"
+        android:singleLine="true"
+        android:text="@string/desigh"
+        android:textColor="#535657"
+        android:textSize="@dimen/sp18_s"
+        android:textStyle="bold" />
+        
+	<TextView
+        android:id="@+id/item_title_rate"
+        android:layout_width="@dimen/dp180_w"
+        android:layout_height="@dimen/dp180_h"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp18_h"
+        android:singleLine="true"
+        android:text="@string/not_start"
+        android:textColor="#535657"
+        android:textSize="@dimen/sp18_s"/>    
+
+    <ImageView
+        android:id="@+id/item_mode_icon"
+        android:layout_width="@dimen/dp30_w"
+        android:layout_height="@dimen/dp30_h"
+        android:layout_alignRight="@+id/item_title"
+        android:layout_alignTop="@+id/item_title"
+        android:src="@drawable/edit_icon" />
+
+    <ImageView
+        android:id="@+id/item_progressbar"
+        android:layout_width="@dimen/dp30_w"
+        android:layout_height="@dimen/dp30_h"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/progressbar_indeterminate_new" />
+
+</RelativeLayout>

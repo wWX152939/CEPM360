@@ -1,0 +1,569 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:listPopupWindowStyle">@style/listPopupWindowStyle</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="AppStartLoad" parent="AppTheme">  
+	    <item name="android:windowBackground">@color/system_login_bg</item>  
+	    <item name="android:windowNoTitle">true</item>  
+	</style>
+    <style name="ScheduleTheme" parent="@android:style/Theme.Holo">
+        <item name="android:buttonBarStyle">@android:style/Holo.Light.ButtonBar.AlertDialog</item>
+    </style>
+
+    <style name="listPopupWindowStyle" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_popup_bg</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+    <style name="alertactivity_style" parent="@android:style/Theme.Holo">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="activity_dialog_style" parent="@android:style/Theme.Holo">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>        
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:listPopupWindowStyle">@style/listPopupWindowStyle</item>
+    </style>
+
+    <!-- lock pattern start -->
+    <!-- STYLES -->
+
+    <style name="Alp_42447968"></style>
+
+    <style name="Alp_42447968.BaseThemeResources" parent="@style/Alp_42447968">
+        <item name="alp_42447968_button_bar_style">@null</item>
+        <item name="alp_42447968_button_bar_button_style">@null</item>
+    </style>
+
+    <!-- THEME RESOURCES DARK -->
+
+    <style name="Alp_42447968.BaseThemeResources.Dark" parent="@style/Alp_42447968.BaseThemeResources"></style>
+
+    <style name="Alp_42447968.ThemeResources.Dark" parent="@style/Alp_42447968.BaseThemeResources.Dark">
+
+        <!-- AOSP -->
+
+        <item name="android:windowBackground">@color/alp_42447968_aosp_background_material_dark</item>
+
+        <!-- android-lockpattern -->
+        
+        <item name="alp_42447968_theme_dialog">@style/Alp_42447968.Theme.Dialog.Dark</item>
+        <item name="alp_42447968_selector_ic_action_lockpattern">@drawable/alp_42447968_selector_ic_action_lockpattern_light</item>
+        <item name="alp_42447968_color_lock_pattern_view_regular">@color/alp_42447968_lock_pattern_view_regular_light</item>
+        <item name="alp_42447968_color_lock_pattern_view_success">@color/alp_42447968_lock_pattern_view_success_light</item>
+        <item name="alp_42447968_color_lock_pattern_view_error">@color/alp_42447968_lock_pattern_view_error_light</item>
+    </style>
+
+    <!-- THEME RESOURCES LIGHT -->
+
+    <style name="Alp_42447968.BaseThemeResources.Light" parent="@style/Alp_42447968.BaseThemeResources"></style>
+
+    <style name="Alp_42447968.ThemeResources.Light" parent="@style/Alp_42447968.BaseThemeResources.Light">
+
+        <!-- AOSP -->
+
+        <item name="android:windowBackground">@color/alp_42447968_aosp_background_material_light</item>
+
+        <!-- android-lockpattern -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="alp_42447968_theme_dialog">@style/Alp_42447968.Theme.Dialog.Light</item>
+        <item name="alp_42447968_selector_ic_action_lockpattern">@drawable/alp_42447968_selector_ic_action_lockpattern_dark</item>
+        <item name="alp_42447968_color_lock_pattern_view_regular">@color/alp_42447968_lock_pattern_view_regular_dark</item>
+        <item name="alp_42447968_color_lock_pattern_view_success">@color/alp_42447968_lock_pattern_view_success_dark</item>
+        <item name="alp_42447968_color_lock_pattern_view_error">@color/alp_42447968_lock_pattern_view_error_dark</item>
+    </style>
+
+    <!-- THEME RESOURCES DIALOG DARK -->
+
+    <style name="Alp_42447968.BaseThemeResources.Dialog" parent="@style/Alp_42447968.BaseThemeResources"></style>
+
+    <style name="Alp_42447968.BaseThemeResources.Dialog.Dark" parent="@style/Alp_42447968.BaseThemeResources.Dialog"></style>
+
+    <style name="Alp_42447968.ThemeResources.Dialog.Dark" parent="@style/Alp_42447968.BaseThemeResources.Dialog.Dark">
+
+        <!-- AOSP -->
+
+        <item name="android:windowBackground">@drawable/alp_42447968_aosp_dialog_full_holo_dark</item>
+
+        <!-- android-lockpattern -->
+
+        <item name="alp_42447968_theme_dialog">@style/Alp_42447968.Theme.Dialog.Dark</item>
+        <item name="alp_42447968_selector_ic_action_lockpattern">@drawable/alp_42447968_selector_ic_action_lockpattern_light</item>
+        <item name="alp_42447968_color_lock_pattern_view_regular">@color/alp_42447968_lock_pattern_view_regular_light</item>
+        <item name="alp_42447968_color_lock_pattern_view_success">@color/alp_42447968_lock_pattern_view_success_light</item>
+        <item name="alp_42447968_color_lock_pattern_view_error">@color/alp_42447968_lock_pattern_view_error_light</item>
+    </style>
+
+    <!-- THEME RESOURCES DIALOG LIGHT -->
+
+    <style name="Alp_42447968.BaseThemeResources.Dialog.Light" parent="@style/Alp_42447968.BaseThemeResources.Dialog">
+
+        <!-- AOSP -->
+
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@style/Alp_42447968.AOSP_DialogWindowTitle</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="Alp_42447968.ThemeResources.Dialog.Light" parent="@style/Alp_42447968.BaseThemeResources.Dialog.Light">
+
+        <!-- AOSP -->
+
+        <item name="android:windowBackground">@drawable/alp_42447968_aosp_dialog_full_holo_light</item>
+
+        <!-- android-lockpattern -->
+
+        <item name="alp_42447968_theme_dialog">@style/Alp_42447968.Theme.Dialog.Light</item>
+        <item name="alp_42447968_selector_ic_action_lockpattern">@drawable/alp_42447968_selector_ic_action_lockpattern_dark</item>
+        <item name="alp_42447968_color_lock_pattern_view_regular">@color/alp_42447968_lock_pattern_view_regular_dark</item>
+        <item name="alp_42447968_color_lock_pattern_view_success">@color/alp_42447968_lock_pattern_view_success_dark</item>
+        <item name="alp_42447968_color_lock_pattern_view_error">@color/alp_42447968_lock_pattern_view_error_dark</item>
+    </style>
+
+    <!-- THEME DARK -->
+
+    <style name="Alp_42447968.BaseTheme.Dark" parent="@android:style/Theme" />
+
+    <style name="Alp_42447968.Theme.Dark" parent="@style/Alp_42447968.BaseTheme.Dark">
+
+        <!-- android-lockpattern -->
+
+        <item name="alp_42447968_theme_resources">@style/Alp_42447968.ThemeResources.Dark</item>
+    </style>
+
+    <!-- THEME LIGHT -->
+
+    <style name="Alp_42447968.BaseTheme.Light" parent="@android:style/Theme.Light" />
+
+    <style name="Alp_42447968.Theme.Light" parent="@style/Alp_42447968.BaseTheme.Light">
+
+        <!-- android-lockpattern -->
+
+        <item name="alp_42447968_theme_resources">@style/Alp_42447968.ThemeResources.Light</item>
+    </style>
+
+    <!-- THEME LIGHT, DARK ACTION BAR -->
+
+    <style name="Alp_42447968.BaseTheme.Light.DarkActionBar" parent="@style/Alp_42447968.Theme.Light"></style>
+
+    <style name="Alp_42447968.Theme.Light.DarkActionBar" parent="@style/Alp_42447968.BaseTheme.Light.DarkActionBar">
+
+        <!-- android-lockpattern -->
+
+        <item name="alp_42447968_theme_resources">@style/Alp_42447968.ThemeResources.Light</item>
+    </style>
+
+    <!-- THEME DIALOG DARK -->
+
+    <style name="Alp_42447968.BaseTheme.Dialog.Dark" parent="@android:style/Theme.Dialog"></style>
+
+    <style name="Alp_42447968.Theme.Dialog.Dark" parent="@style/Alp_42447968.BaseTheme.Dialog.Dark">
+
+        <!-- android-lockpattern -->
+
+        <item name="alp_42447968_theme_resources">@style/Alp_42447968.ThemeResources.Dialog.Dark</item>
+    </style>
+
+    <!-- THEME DIALOG LIGHT -->
+
+    <style name="Alp_42447968.BaseTheme.Dialog.Light" parent="@android:style/Theme.Light"></style>
+
+    <style name="Alp_42447968.Theme.Dialog.Light" parent="@style/Alp_42447968.BaseTheme.Dialog.Light">
+
+        <!-- android-lockpattern -->
+
+        <item name="alp_42447968_theme_resources">@style/Alp_42447968.ThemeResources.Dialog.Light</item>
+    </style>
+
+    <!-- THEME DIALOG WHEN LARGE, LIGHT -->
+
+    <style name="Alp_42447968.BaseTheme.DialogWhenLarge.Light" parent="@style/Alp_42447968.Theme.Light"></style>
+
+    <style name="Alp_42447968.Theme.DialogWhenLarge.Light" parent="@style/Alp_42447968.BaseTheme.DialogWhenLarge.Light">
+
+        <!-- android-lockpattern -->
+
+        <item name="alp_42447968_theme_resources">@style/Alp_42447968.ThemeResources.Light</item>
+    </style>
+
+    <!-- THEME DIALOG WHEN LARGE, DARK -->
+
+    <style name="Alp_42447968.BaseTheme.DialogWhenLarge.Dark" parent="@style/Alp_42447968.Theme.Dark"></style>
+
+    <style name="Alp_42447968.Theme.DialogWhenLarge.Dark" parent="@style/Alp_42447968.BaseTheme.DialogWhenLarge.Dark">
+
+        <!-- android-lockpattern -->
+
+        <item name="alp_42447968_theme_resources">@style/Alp_42447968.ThemeResources.Dark</item>
+    </style>
+
+    <style name="Alp_42447968.AOSP_DialogWindowTitle" parent="@style/Alp_42447968">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+    </style>
+
+    <declare-styleable name="Alp_42447968.LockPatternView">
+
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect" format="string" />
+        <!-- Color to use when drawing LockPatternView paths. -->
+        <attr name="pathColor" format="color|reference" />
+        <!-- The regular pattern color -->
+        <attr name="regularColor" format="color|reference" />
+        <!-- The error color -->
+        <attr name="errorColor" format="color|reference" />
+        <!-- The success color -->
+        <attr name="successColor" format="color|reference" />
+    </declare-styleable>
+
+    <attr name="alp_42447968_button_bar_style" format="reference" />
+    <attr name="alp_42447968_button_bar_button_style" format="reference" />
+    <attr name="alp_42447968_theme_dialog" format="reference" />
+    <attr name="alp_42447968_theme_resources" format="reference" />
+    <!-- lock pattern end -->
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="DeepStyle">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="OrangeStyle">
+        <item name="android:shadowColor">#742061</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="GreenStyle">
+        <item name="android:shadowColor">#003300</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="HomeButtonStytle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dip</item>
+    </style>
+
+    <style name="FileViewToolbarButtonStytle">
+        <item name="android:padding">10dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="FileViewOperationButtonStytle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/operation_button_background</item>
+    </style>
+
+    <style name="FileViewOperationMoveButtonStytle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:background">@drawable/remote_button_bg</item>
+    </style>
+
+    <style name="CategoryButtonStyle">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="CategoryButtonIconStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">3px</item>
+    </style>
+
+    <style name="CategoryButtonTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">19px</item>
+        <item name="android:textColor">#111111</item>
+    </style>
+
+    <style name="CategoryButtonCountTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">15px</item>
+        <item name="android:textColor">#A6A6A6</item>
+    </style>
+
+    <style name="InformationItemTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">60dip</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">14dip</item>
+    </style>
+
+    <style name="InformationItemContentStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+    </style>
+
+    <style name="InformationItemStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="InformationTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textSize">12dip</item>
+    </style>
+
+    <style name="CategoryLegendStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:drawablePadding">5px</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:layout_marginLeft">2dip</item>
+    </style>
+
+    <style name="InformationDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+    </style>
+
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.ActionButton</item>
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance"></style>
+
+    <style name="TextAppearance.ActionButton">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="BottomButton">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:shadowColor">#80ffffff</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/btn_bottom</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="BottomButton.Left">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">#52787698</item>
+    </style>
+
+    <style name="BottomButton.Right">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">#52787698</item>
+    </style>
+
+    <style name="BottomButtonBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">#b5626678</item>
+    </style>
+
+    <style name="MyDialogStyle">        
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    
+    <style name="MyDialogStyle2">    
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    
+    <style name="SearchDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <style name="transparent_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="ContextMenuAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>    
+    
+    <style name="MyHorizontalProgressBar">  
+       <item name="android:indeterminateOnly">false</item>  
+       <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>  
+       <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>  
+       <item name="android:minHeight">20dip</item>  
+       <item name="android:maxHeight">20dip</item> 
+    </style>
+    
+    <style name="GlobalSearchAnimation" >          
+        <item name="android:windowEnterAnimation">@anim/search_show</item>     
+        <item name="android:windowExitAnimation">@anim/search_exit</item>     
+    </style>
+    
+    <style name="GlobalPopWindowAnimation" >          
+        <item name="android:windowEnterAnimation">@anim/message_popup_show</item>     
+        <item name="android:windowExitAnimation">@anim/message_popup_exit</item>     
+    </style>
+    
+    <!-- NumberProgressBar进度条相关style -->
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">0</item>
+        <item name="android:thumb">@drawable/thumb_bar</item>
+        <item name="android:focusable">false</item>
+        <item name="android:maxHeight">4dip</item>
+        <item name="android:minHeight">4dip</item>
+		<item name="android:progressDrawable">@drawable/numberseekbar_background</item>
+    </style>
+    
+    <style name="popupwindow_animation_upin_rightout">
+        <item name="android:windowEnterAnimation">@anim/popup_up_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_right_fade</item>
+    </style>
+    
+    <style name="popupwindow_animation_downin_rightout">
+        <item name="android:windowEnterAnimation">@anim/popup_down_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_right_fade</item>
+    </style>
+    
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+    
+    <!-- 偏平化风格 -->
+    <style name="DialogButtonStyle_Small">
+        <item name="android:layout_height">@dimen/dp100_w</item>
+        <item name="android:layout_width">@dimen/dp36_h</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/button_corners_blue_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp16_s</item>
+        <item name="android:layout_marginLeft">@dimen/dp8_w</item>
+        <item name="android:layout_marginRight">@dimen/dp8_w</item>
+    </style>
+    
+    <style name="DialogButtonStyle_Normal">
+        <item name="android:layout_height">@dimen/dp120_w</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/button_corners_blue_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp17_s</item>
+        <item name="android:layout_marginLeft">@dimen/dp8_w</item>
+        <item name="android:layout_marginRight">@dimen/dp8_w</item>
+    </style>
+    
+    <style name="DialogButtonStyle_Big">
+        <item name="android:layout_height">@dimen/dp140_w</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/button_corners_blue_bg</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp17_s</item>
+        <item name="android:layout_marginLeft">@dimen/dp8_w</item>
+        <item name="android:layout_marginRight">@dimen/dp8_w</item>
+    </style>   
+
+</resources>

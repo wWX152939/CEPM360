@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/take_make_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_content_background"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginEnd="@dimen/dp6_w"
+                android:background="@color/divider"
+                android:visibility="visible" />
+        <include
+            android:id="@+id/listHeaderView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55_h"
+            layout="@layout/wbs_maintain_list_item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider"
+                android:visibility="visible" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@color/divider"
+                android:dividerHeight="1px"
+                android:focusable="false"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

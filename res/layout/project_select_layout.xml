@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#17181d" android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp4_w"
+        android:background="@drawable/page_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64_h"
+            android:background="@drawable/table_title_background" >
+
+            <LinearLayout
+                android:id="@+id/project_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp36_h"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp10_w"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp10_w"
+                    android:text="选择项目"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp16_w"
+                    android:background="@drawable/arrow_down" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/project_type_position"
+                android:layout_width="@dimen/dp300_w"
+                android:layout_height="1px"
+                android:layout_alignBottom="@id/project_type"
+                android:layout_alignLeft="@id/project_type"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/project_select_position"
+                android:layout_width="@dimen/dp300_w"
+                android:layout_height="1px"
+                android:layout_alignBottom="@id/project_type"
+                android:layout_toRightOf="@id/project_type_position"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/project_toggle_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp20_w"
+                android:background="@drawable/project_image" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/project_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/listHeaderView"
+                    layout="@layout/project_list_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1_h"
+                    android:background="#217f7f9c" />
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:clickable="true"
+                    android:divider="#217f7f9c"
+                    android:dividerHeight="@dimen/dp1_w"
+                    android:focusable="false"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/project_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"                
+                 >
+                
+                <WebView
+                    android:id="@+id/webView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginLeft="-12dp"
+                    android:layout_marginRight="-12dp"
+                    android:layout_marginTop="-7dp"
+                    android:layout_weight="2"
+                    android:layerType="software" />
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="7" >
+
+                    <View
+                        android:id="@+id/View04"
+                        android:layout_width="@dimen/dp20_w"
+                        android:layout_height="@dimen/dp20_h"
+                        android:layout_alignLeft="@+id/View05"
+                        android:layout_below="@+id/View05"
+                        android:layout_marginTop="@dimen/dp18_h"
+                        android:background="#b79017" />
+
+                    <View
+                        android:id="@+id/View02"
+                        android:layout_width="@dimen/dp20_w"
+                        android:layout_height="@dimen/dp20_h"
+                        android:layout_alignLeft="@+id/View04"
+                        android:layout_below="@+id/View04"
+                        android:layout_marginTop="@dimen/dp17_h"
+                        android:background="#8b1117" />
+
+                    <View
+                        android:id="@+id/View05"
+                        android:layout_width="@dimen/dp20_w"
+                        android:layout_height="@dimen/dp20_h"
+                        android:layout_alignLeft="@+id/View03"
+                        android:layout_below="@+id/View03"
+                        android:layout_marginTop="@dimen/dp21_h"
+                        android:background="#231270" />
+
+                    <View
+                        android:id="@+id/View01"
+                        android:layout_width="@dimen/dp20_w"
+                        android:layout_height="@dimen/dp20_h"
+                        android:layout_alignLeft="@+id/view1"
+                        android:layout_below="@+id/view1"
+                        android:layout_marginTop="@dimen/dp17_h"
+                        android:background="#12701c" />
+
+                    <View
+                        android:id="@+id/View03"
+                        android:layout_width="@dimen/dp20_w"
+                        android:layout_height="@dimen/dp20_h"
+                        android:layout_alignLeft="@+id/View01"
+                        android:layout_below="@+id/View01"
+                        android:layout_marginTop="@dimen/dp18_h"
+                        android:background="#63126f" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="@dimen/dp80_w"
+                        android:layout_height="@dimen/dp30_h"
+                        android:layout_above="@+id/View03"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:gravity="bottom|left|center"
+                        android:text="完成百分比"
+                        android:textSize="@dimen/sp18_s"/>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="@dimen/dp80_w"
+                        android:layout_height="@dimen/dp30_h"
+                        android:layout_above="@+id/View05"
+                        android:layout_alignLeft="@+id/textView2"
+                        android:clickable="true"
+                        android:gravity="bottom|left|center"
+                        android:text="投入人力"
+                        android:textSize="@dimen/sp18_s"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="@dimen/dp80_w"
+                        android:layout_height="@dimen/dp30_h"
+                        android:layout_alignBottom="@+id/View05"
+                        android:layout_alignLeft="@+id/textView3"
+                        android:clickable="true"
+                        android:gravity="bottom|left|center"
+                        android:text="文档数量"
+                        android:textSize="@dimen/sp18_s"/>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="@dimen/dp80_w"
+                        android:layout_height="@dimen/dp30_h"
+                        android:layout_alignBottom="@+id/View02"
+                        android:layout_alignLeft="@+id/textView5"
+                        android:clickable="true"
+                        android:gravity="bottom|left|center"
+                        android:text="财务支出"
+                        android:textSize="@dimen/sp18_s"/>
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="@dimen/dp20_w"
+                        android:layout_height="@dimen/dp20_h"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/dp54_w"
+                        android:layout_marginTop="@dimen/dp60_h"
+                        android:background="#b5bcc6" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="@dimen/dp80_w"
+                        android:layout_height="@dimen/dp30_h"
+                        android:layout_alignBottom="@+id/view1"
+                        android:layout_marginLeft="@dimen/dp21_w"
+                        android:layout_toRightOf="@+id/view1"
+                        android:clickable="true"
+                        android:gravity="bottom|left|center"
+                        android:text="消耗资源"
+                        android:textSize="@dimen/sp18_s"/>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="@dimen/dp80_w"
+                        android:layout_height="@dimen/dp30_h"
+                        android:layout_above="@+id/View02"
+                        android:layout_alignLeft="@+id/textView4"
+                        android:clickable="true"
+                        android:gravity="bottom|left|center"
+                        android:text="财务收入"
+                        android:textSize="@dimen/sp18_s"/>
+               
+                </RelativeLayout>                
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="@dimen/dp10_w"
+    	android:paddingTop="@dimen/dp10_w"
+        >
+	    <TextView 
+	        android:id="@+id/contract_name_title"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/contract_name"/>  
+	    <TextView 
+	        android:id="@+id/contract_name"
+	    	android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginLeft="@dimen/dp10_w"
+	    	android:text="@string/contract_name"/>	    	  
+	
+	    <TextView 
+	        android:id="@+id/contract_amount_title"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/contract_total"/> 
+	    <TextView 
+	        android:id="@+id/contract_amount"
+	    	android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginLeft="@dimen/dp10_w"
+	    	android:text="@string/contract_total"/> 	    	 
+	    	
+	    <TextView 
+	        android:id="@+id/pay_type_title"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/contract_pay_type"/>
+	    <TextView 
+	        android:id="@+id/pay_type"
+	    	android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginLeft="@dimen/dp10_w"
+	    	android:text="@string/contract_pay_type"/> 	             
+    </LinearLayout>
+    
+   
+   	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="@dimen/dp10_w"
+    	android:paddingTop="@dimen/dp10_w"
+    	android:paddingBottom="@dimen/dp10_w">
+	    
+	    <TextView 
+	        android:id="@+id/contract_b_title"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/contract_party_B_company"/>  
+	    <TextView 
+	        android:id="@+id/contract_b"
+	    	android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginLeft="@dimen/dp10_w"
+	    	android:text="@string/contract_party_B_company"/> 	    	  
+	    	   
+	    <TextView 
+	        android:id="@+id/signatory_title"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/contract_signatories"/>
+	    <TextView 
+	        android:id="@+id/signatory"
+	    	android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginLeft="@dimen/dp10_w"
+	    	android:text="@string/contract_signatories"/>	      
+	    	
+	    <TextView 
+	        android:id="@+id/signing_time_title"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/contract_sign_date"/>
+	    <TextView 
+	        android:id="@+id/signing_time"
+	    	android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginLeft="@dimen/dp10_w"
+	    	android:text="@string/contract_sign_date"/> 	       	    
+   	    
+   	</LinearLayout>
+      
+</LinearLayout>

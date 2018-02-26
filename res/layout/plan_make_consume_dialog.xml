@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plan_make_consume_id"
+    android:layout_width="@dimen/dp600_w"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp48_h"
+        android:gravity="center_vertical"
+        android:background="@drawable/dialog_title"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginLeft="@dimen/dp15_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/add_project"
+            android:textSize="@dimen/sp18_s"/>
+      
+    </LinearLayout>
+       
+	<RadioGroup 
+	    android:id="@+id/radioGroup"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/dp40_h"
+		android:orientation="horizontal"
+		android:layout_gravity="center_horizontal">
+		<RadioButton
+		    android:id="@+id/stuff_radio_button"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dp10_w"
+			android:layout_gravity="center_vertical"
+			android:textColor="@android:color/black"
+			android:text="@string/material"
+			/>
+		<RadioButton 
+		    android:id="@+id/device_radio_button"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dp10_w"
+			android:layout_gravity="center_vertical"
+			android:textColor="@android:color/black"
+			android:text="@string/equipment"
+			/>
+		<RadioButton 
+		    android:id="@+id/manual_radio_button"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dp10_w"
+			android:layout_gravity="center_vertical"
+			android:textColor="@android:color/black"
+			android:text="@string/manpower"
+			/>
+	</RadioGroup>
+	<LinearLayout 
+	    android:id="@+id/line"
+	   	android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+         >
+		<include
+	        android:id="@+id/list_title_id"
+	        layout="@layout/task_consume_dialog_list_title"/>
+		
+	    <ListView
+	        android:id="@+id/consume_list_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp300_h"
+	        android:background="@color/task_home_list_table"
+	        android:divider="#c5707070"
+	        android:dividerHeight="@dimen/dp1_h">
+	    </ListView>
+    </LinearLayout>
+    
+	<RelativeLayout 
+	    android:id="@+id/relative_id"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	    <Button
+	        android:id="@+id/exit_Button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginBottom="@dimen/dp3_h"
+	        android:layout_marginRight="@dimen/dp20_w"
+	        android:background="@drawable/button_bg"
+	        android:minHeight="@dimen/dp30_h"
+	        android:paddingLeft="@dimen/dp30_w"
+	        android:paddingRight="@dimen/dp30_w"
+	        android:text="@string/cancel" />
+	
+	    <Button
+	        android:id="@+id/save_Button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="@dimen/dp25_w"
+	        android:layout_toLeftOf="@+id/exit_Button"
+	        android:background="@drawable/button_bg"
+	        android:minHeight="@dimen/dp30_h"
+	        android:paddingLeft="@dimen/dp30_w"
+	        android:paddingRight="@dimen/dp30_w"
+	        android:text="@string/save" />
+    </RelativeLayout>
+
+</LinearLayout>

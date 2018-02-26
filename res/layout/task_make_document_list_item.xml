@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/schedule_table_height"
+    android:background="@drawable/base_subtitle_bg"
+    android:orientation="horizontal" >
+	<View
+		android:layout_width="1px"
+		android:layout_height="match_parent"
+		android:background="@color/content_listview_edge_bg"
+		android:visibility="visible" />
+    <TextView
+        android:id="@+id/task_make_document_id"
+        android:layout_width="@dimen/dp60_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:text="@string/index"
+        android:textColor="@color/task_child_list_title_text"
+        android:textSize="@dimen/table_content_textsize"/>
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+            <ImageView
+		    	android:id="@+id/file_image"
+		        android:layout_width="@dimen/dp40_w"
+		        android:layout_height="match_parent"
+		        android:paddingTop="@dimen/dp3_h"
+		        android:paddingBottom="@dimen/dp3_h"
+		        android:scaleType="centerInside"
+		        android:gravity="center_vertical" />
+
+            <TextView
+		        android:id="@+id/task_make_document_title"
+		        android:layout_width="@dimen/dp300_w"
+		        android:layout_height="match_parent"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="@dimen/table_padding_left"
+		        android:textColor="@color/task_child_list_title_text"
+		        android:textSize="@dimen/table_content_textsize"/>
+            
+            <TextView
+                android:id="@+id/task_make_document_creater"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/task_child_list_title_text"
+                android:textSize="@dimen/table_content_textsize"/>
+
+            <TextView
+                android:id="@+id/task_make_document_uploadtime"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/task_child_list_title_text"
+                android:textSize="@dimen/table_content_textsize"/>
+
+            <TextView
+                android:id="@+id/task_make_document_ps"
+                android:layout_width="@dimen/dp140_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@color/task_child_list_title_text"
+                android:textSize="@dimen/table_content_textsize"/>
+            
+            <TextView
+                android:id="@+id/task_make_document_record"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@color/task_child_list_title_text"
+                android:textSize="@dimen/table_content_textsize"/>
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/content_listview_edge_bg"
+        android:visibility="visible" />
+
+</LinearLayout>

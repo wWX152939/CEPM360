@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/actionbar_background" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp8_w">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/dp8_w"
+            android:paddingRight="@dimen/dp8_w"
+            android:paddingTop="@dimen/dp8_h"
+            android:paddingBottom="@dimen/dp8_h"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp24_s"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp8_w">
+        
+        <ImageButton
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/dp8_w"
+            android:paddingRight="@dimen/dp8_w"
+            android:paddingTop="@dimen/dp8_h"
+            android:paddingBottom="@dimen/dp8_h"
+            android:src="@drawable/message_icon" />        
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/dp8_w"
+            android:paddingRight="@dimen/dp8_w"
+            android:paddingTop="@dimen/dp8_h"
+            android:paddingBottom="@dimen/dp8_h"
+            android:src="@drawable/menu" />
+<!--  
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/dp8_w"
+            android:paddingRight="@dimen/dp8_w"
+            android:paddingBottom="@dimen/dp8_h"
+            android:paddingTop="@dimen/dp8_h"
+            android:src="@drawable/refresh"
+            android:visibility="gone" />
+-->
+        <ImageButton
+            android:id="@+id/logoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/dp8_w"
+            android:paddingRight="@dimen/dp8_w"
+            android:paddingTop="@dimen/dp8_h"
+            android:paddingBottom="@dimen/dp8_h"
+            android:src="@drawable/logoff" />
+    </LinearLayout>
+
+</RelativeLayout>

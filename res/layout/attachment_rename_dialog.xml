@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attachment_name"
+    android:layout_width="@dimen/dp400_w"
+    android:layout_height="@dimen/dp180_w"
+    android:background="@drawable/ticket_dialog_bg"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/attachment_rename_title"
+        layout="@layout/dialog_title_bar" />
+    
+   	<EditText 
+        android:id="@+id/new_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_marginTop="@dimen/dp20_h"
+        android:layout_marginLeft="@dimen/dp10_w"
+        android:layout_marginRight="@dimen/dp10_w"
+        android:background="@drawable/bg_edittext_focused"
+        android:textCursorDrawable="@null"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp17_s"/>
+    
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="@dimen/dp120_w"
+        android:layout_height="@dimen/dp40_h"
+        android:background="@drawable/button_corners_blue_bg"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" 
+        android:layout_marginTop="@dimen/dp20_h"
+        android:text="@string/confirm"/>    
+     
+</LinearLayout>

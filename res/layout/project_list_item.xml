@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp62_h"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/project_name"
+        android:layout_width="@dimen/dp240_w"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dp20_w"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp14_s"/>
+
+    <View
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:background="#217f7f9c" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="@dimen/dp110_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp10_w"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14_s"/>
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#217f7f9c" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="@dimen/dp110_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp10_w"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14_s"/>
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#217f7f9c" />
+
+            <TextView
+                android:id="@+id/actual_start_time"
+                android:layout_width="@dimen/dp110_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp10_w"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14_s"/>
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#217f7f9c" />
+
+            <TextView
+                android:id="@+id/actual_end_time"
+                android:layout_width="@dimen/dp110_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp10_w"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14_s"/>
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#217f7f9c" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp24_w"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14_s"/>
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#217f7f9c" />
+
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp24_w"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14_s"/>
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#217f7f9c" />
+
+            <TextView
+                android:id="@+id/owner"
+                android:layout_width="@dimen/dp60_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp24_w"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14_s"/>
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#217f7f9c" />
+
+            <TextView
+                android:id="@+id/department"
+                android:layout_width="@dimen/dp60_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp24_w"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14_s"/>
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="#217f7f9c" />
+
+            <TextView
+                android:id="@+id/creater"
+                android:layout_width="@dimen/dp60_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp24_w"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14_s"/>
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

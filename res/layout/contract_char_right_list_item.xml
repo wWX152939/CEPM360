@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/schedule_table_height"
+    android:background="@color/listview_header_bg"
+    android:orientation="horizontal" >
+
+    <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+        android:id="@+id/tv1"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/table_content_textsize" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/task_home_list_line"
+        android:visibility="visible" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/tv2"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/tv3"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/tv4"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/tv5"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/tv6"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/table_content_textsize" />
+            
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/tv7"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/table_content_textsize" />
+            
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/tv8"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/table_content_textsize" />
+            
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_list_line"
+                android:visibility="visible" />
+
+            <com.pm360.cepm360.app.common.view.ScrollHorizontalTextView
+                android:id="@+id/tv9"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/table_content_textsize" />            
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

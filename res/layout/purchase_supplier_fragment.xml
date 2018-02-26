@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/suppliers"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dp4_w" android:layout_marginRight="@dimen/dp4_w">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/listHeaderView"
+            layout="@layout/supplers_list_item_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1_h"
+            android:background="@color/task_home_list_line" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/task_child_list_table"
+            android:cacheColorHint="#52555c"
+            android:clickable="true"
+            android:divider="#c5707070"
+            android:dividerHeight="@dimen/dp1_h"
+            android:focusable="false"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <com.pm360.cepm360.app.common.view.FloatingMenuView
+        android:id="@+id/purchase_supplier_floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginEnd="@dimen/dp164_w"
+        android:clickable="true"
+        android:src="@drawable/btn_add" />
+
+</FrameLayout>

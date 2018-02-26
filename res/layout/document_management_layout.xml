@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pm360.cepm360.app.common.view.ServerDragLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/file_browse_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+        
+    <LinearLayout
+        android:id="@+id/tree_view_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/tree_listview_bg"
+        android:orientation="vertical" >
+        
+        <com.pm360.cepm360.app.common.view.SHWhiteLinearLayout
+            android:id="@+id/tree_layout"
+            android:layout_width="@dimen/dp240_w"
+            android:layout_height="@dimen/content_tree_title_height"
+            android:orientation="horizontal" >
+            
+	        <TextView
+	            android:id="@+id/dir_category"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:textSize="@dimen/sp18_s"
+	            android:textColor="@android:color/black"
+	            android:text="@string/document_directory"/>
+	        
+<!-- 	       <com.pm360.cepm360.app.common.view.CHScrollView -->
+<!-- 	            android:layout_width="1dp" -->
+<!-- 	            android:layout_height="match_parent" -->
+<!-- 	            android:scrollbars="none" -->
+<!-- 	            android:visibility="gone" -->
+<!-- 	            android:tag="CHScrollView" > -->
+	    
+<!-- 	            <LinearLayout -->
+<!-- 	                android:layout_width="match_parent" -->
+<!-- 	                android:layout_height="match_parent" -->
+<!-- 	                android:orientation="horizontal" /> -->
+	  
+<!-- 	        </com.pm360.cepm360.app.common.view.CHScrollView> -->
+        </com.pm360.cepm360.app.common.view.SHWhiteLinearLayout>
+                    
+	    <com.pm360.cepm360.app.common.view.SHListView
+	        android:id="@+id/file_dir_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="@null" />
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/content_view_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+        <FrameLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent">
+			<!-- 文件列表  -->
+    		<LinearLayout
+    		    android:id="@+id/file_list_layout"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:layout_marginLeft="@dimen/content_listview_margin_width"
+        		android:layout_marginRight="@dimen/content_listview_margin_width"
+        		android:layout_marginTop="@dimen/content_listview_margin_height"
+        		android:layout_marginBottom="@dimen/content_listview_margin_height"
+        		android:orientation="vertical">
+        		       	
+                <LinearLayout
+                    android:id="@+id/content_header_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_height"
+                    android:orientation="horizontal" />
+        	 
+        		<com.pm360.cepm360.app.common.view.SHListView
+            		android:id="@+id/file_list_view"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:clickable="true"
+			        android:divider="@null"
+			        android:focusable="false"
+			        android:scrollbars="none"/>
+        		<View
+			        android:layout_width="match_parent"
+			        android:layout_height="1px"
+			        android:background="@color/content_listview_edge_bg"
+			        android:visibility="visible" />
+        	</LinearLayout>
+        	<!-- 文件列表 end -->        	
+        	        	
+        	<!-- 浮动菜单-->
+  		    <com.pm360.cepm360.app.common.view.FloatingMenuView
+			    android:id="@+id/floating_menu"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="bottom|right"
+			    android:layout_marginBottom="@dimen/dp16_h"
+			    android:layout_marginEnd="@dimen/dp116_w"
+			    android:clickable="true"
+			    android:src="@drawable/btn_add" />
+    	</FrameLayout>
+    </LinearLayout>
+</com.pm360.cepm360.app.common.view.ServerDragLinearLayout>

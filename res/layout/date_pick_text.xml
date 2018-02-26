@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/date_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/date_btn"
+        android:background="@android:color/transparent"
+        android:focusableInTouchMode="false"
+        android:hint=""
+        android:includeFontPadding="false"
+        android:inputType="date"
+        android:paddingLeft="@dimen/dp8_w"
+        android:paddingRight="@dimen/dp8_w"
+        android:paddingBottom="@dimen/dp8_h"
+        android:paddingTop="@dimen/dp8_h"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/sp16_s"/>
+
+    <ImageView
+        android:id="@id/date_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dp4_w"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dp4_w"
+    android:layout_marginRight="@dimen/dp4_w">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 检索布局 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/searchbar_bg2" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp12_w"
+                android:layout_marginRight="@dimen/dp12_w"
+                android:layout_marginBottom="@dimen/dp12_h"
+                android:layout_marginTop="@dimen/dp12_h"
+                android:baselineAligned="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp12_w"
+                    android:text="@string/searching"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp6_w"
+                    android:gravity="center_vertical" >
+
+                    <Spinner
+                        android:id="@+id/inventory_search_spinner"
+                        android:layout_width="@dimen/dp120_w"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/purchase_apply_spinner"
+                        android:paddingLeft="@dimen/dp6_w"
+                        android:paddingRight="@dimen/dp6_w"
+                        android:paddingBottom="@dimen/dp6_h"
+                        android:paddingTop="@dimen/dp6_h"
+                        android:popupBackground="@color/gray" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp24_w"
+                    android:text="@string/searching_keyword"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <LinearLayout
+                    android:id="@+id/search_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp36_h"
+                    android:layout_marginStart="@dimen/dp6_w"
+                    android:background="@drawable/edit_text_bg"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/key_work"
+                        android:layout_width="@dimen/dp240_w"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:hint="@string/input_searching_keyword"
+                        android:imeOptions="actionSearch"
+                        android:paddingLeft="@dimen/dp4_w"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/sp17_s"/>
+
+                    <ImageView
+                        android:id="@+id/clear_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/dp4_w"
+                        android:src="@drawable/ic_clear_input"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 列表头布局 -->
+
+            <include
+                android:id="@+id/purchase_listhead"
+                layout="@layout/purchase_apply_listhead" />
+
+            <!-- 列表布局 -->
+
+            <ListView
+                android:id="@+id/purchase_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/table_bg"
+                android:divider="#c5707070"
+                android:dividerHeight="@dimen/dp1_w">
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1_h"
+                android:background="#2e3442"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- 浮动菜单-->
+	<com.pm360.cepm360.app.common.view.FloatingMenuView
+	    android:id="@+id/floating_menu"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom|right"
+	    android:layout_marginBottom="@dimen/dp16_h"
+	    android:layout_marginEnd="@dimen/dp164_w"
+	    android:clickable="true"
+	    android:src="@drawable/btn_add" />
+</FrameLayout>

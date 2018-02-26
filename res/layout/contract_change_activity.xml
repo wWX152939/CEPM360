@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp420_h"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/change_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48_h"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/dialog_title"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp18_s"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_bar"
+        android:layout_below="@id/change_title" >
+
+        <include
+            android:id="@+id/change_list"
+            layout="@layout/project_table2" />
+
+        <include
+            android:id="@+id/contract_change_compare"
+            layout="@layout/contract_change_compare"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/button_bar"
+        style="@android:style/ButtonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp48_h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/dp12_w"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/change_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:background="@drawable/button_bg"
+            android:paddingBottom="@dimen/dp4_h"
+            android:paddingEnd="@dimen/dp40_w"
+            android:paddingStart="@dimen/dp40_w"
+            android:paddingTop="@dimen/dp4_h"
+            android:text="@string/close"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16_s"/>
+    </LinearLayout>
+
+</RelativeLayout>

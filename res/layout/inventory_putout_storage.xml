@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@color/table_bg">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_margin="@dimen/dp8_w"
+    	android:orientation="vertical">
+
+	    <include
+	        android:id="@+id/stock_out_list_header"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/table_height"
+	        layout="@layout/inventory_stock_out_listitem" />
+	
+	    <com.pm360.cepm360.app.common.view.SHListView
+	        android:id="@+id/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="true"
+	        android:focusable="false"
+	        android:scrollbars="none" />
+	    
+		<View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/content_listview_edge_bg"
+	        android:visibility="visible" />		    
+
+	</LinearLayout>
+
+    <com.pm360.cepm360.app.common.view.FloatingMenuView
+        android:id="@+id/pos_floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:clickable="true"
+        android:src="@drawable/btn_add" />
+      
+</FrameLayout>

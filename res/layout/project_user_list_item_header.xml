@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/table_height"
+    android:background="@color/content_listview_header_bg"
+    android:orientation="horizontal" >
+    
+    <CheckBox
+        android:id="@+id/cb_header"
+        android:layout_width="@dimen/dp40_w"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp8_w"
+        android:button="@drawable/table_checkbox_button"
+        android:focusable="false" />
+
+    
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="@dimen/dp120_w"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/dp8_w"
+        android:layout_gravity="center_vertical"
+        android:text="@string/personal_name"
+        android:textSize="@dimen/table_title_textsize"
+        android:textColor="@android:color/black" />
+    
+    <TextView
+        android:id="@+id/project_role"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/dp8_w"
+        android:text="@string/project_role"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/table_title_textsize"/>
+
+</LinearLayout>

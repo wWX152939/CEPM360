@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb" android:orientation="vertical">
+
+    <com.pm360.cepm360.app.common.view.BaseScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20_w"
+        android:layout_marginRight="@dimen/dp20_w"
+        android:layout_marginBottom="@dimen/dp20_h"
+        android:layout_marginTop="@dimen/dp20_h"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ebebeb"
+            android:orientation="vertical" >
+
+            <!-- milestone -->
+
+            <LinearLayout
+                android:id="@+id/milestone_bar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp45_h"
+                android:orientation="horizontal"
+                android:background="@drawable/rect_white_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10_w"
+                    android:layout_gravity="center"
+                    android:text="@string/milestone"
+                    android:textColor="#4b4b47"
+                    android:textSize="@dimen/sp15_s"/>
+
+                <ImageView
+                    android:id="@+id/milestone_arrow"
+                    android:layout_width="@dimen/dp12_w"
+                    android:layout_height="@dimen/dp6_h"
+                    android:layout_marginStart="@dimen/dp10_w"
+                    android:layout_gravity="center"
+                    android:background="@drawable/service_arrow_down"
+                    android:tag="service_arrow" />
+            </LinearLayout>
+
+            <com.pm360.cepm360.app.common.view.ToggleLinearLayout
+                android:id="@+id/milestone_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp120_h"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/milestone" />
+            </com.pm360.cepm360.app.common.view.ToggleLinearLayout>
+
+            <!-- task statistics -->
+
+            <LinearLayout
+                android:id="@+id/task_statistics_bar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp45_h"
+                android:background="@drawable/rect_white_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10_w"
+                    android:layout_gravity="center"
+                    android:text="@string/task_statistics"
+                    android:textColor="#4b4b47"
+                    android:textSize="@dimen/sp15_s"/>
+
+                <ImageView
+                    android:id="@+id/task_statistics_arrow"
+                    android:layout_width="@dimen/dp12_w"
+                    android:layout_height="@dimen/dp6_h"
+                    android:layout_marginStart="@dimen/dp10_w"
+                    android:layout_gravity="center"
+                    android:background="@drawable/service_arrow_down"
+                    android:tag="service_arrow" />
+            </LinearLayout>
+
+            <com.pm360.cepm360.app.common.view.ToggleLinearLayout
+                android:id="@+id/task_statistics_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp360_h"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/task_statistics" />
+            </com.pm360.cepm360.app.common.view.ToggleLinearLayout>
+            <!-- test -->
+
+            <LinearLayout
+                android:id="@+id/test_bar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp45_h"
+                android:background="@drawable/rect_white_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10_w"
+                    android:layout_gravity="center"
+                    android:text="@string/test_module"
+                    android:textColor="#4b4b47"
+                    android:textSize="@dimen/sp15_s"/>
+
+                <ImageView
+                    android:id="@+id/test_arrow"
+                    android:layout_width="@dimen/dp12_w"
+                    android:layout_height="@dimen/dp6_h"
+                    android:layout_marginStart="@dimen/dp10_w"
+                    android:layout_gravity="center"
+                    android:background="@drawable/service_arrow_down"
+                    android:tag="service_arrow" />
+            </LinearLayout>
+
+            <com.pm360.cepm360.app.common.view.ToggleLinearLayout
+                android:id="@+id/test_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp360_h"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/test_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp300_h"
+                    android:background="@android:color/black" />
+            </com.pm360.cepm360.app.common.view.ToggleLinearLayout>
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.BaseScrollView>
+
+</LinearLayout>

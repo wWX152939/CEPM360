@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/file_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/table_height"
+    android:orientation="vertical" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1" 
+    	android:orientation="horizontal" >
+    	<View 
+	        android:layout_width="@dimen/dp1_h"
+	        android:layout_height="match_parent"
+	        android:background="@color/light_gray"/>
+	        
+	    <ImageView 
+	        android:id="@+id/thumbnail"
+	        android:layout_width="@dimen/dp60_w"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="@dimen/dp4_w"
+	        android:paddingTop="@dimen/dp5_h"
+	        android:paddingBottom="@dimen/dp5_h"
+	        android:contentDescription="@null"
+	        android:gravity="center_vertical"/>
+	    
+	        
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+	        android:layout_marginLeft="@dimen/dp2_w"
+            android:layout_gravity="bottom"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/input_title_hint"
+            android:singleLine="true"
+            android:textSize="@dimen/sp16_s"
+            android:textColor="@android:color/black"/>
+        
+        <TextView
+            android:id="@+id/file_size"
+            android:layout_width="@dimen/dp80_w"
+            android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/dp5_w"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16_s"/>
+	    
+	    <ImageView 
+	        android:id="@+id/remove"
+	        android:layout_width="@dimen/dp24_w"
+	        android:layout_height="@dimen/dp24_h"
+	        android:layout_marginLeft="@dimen/dp2_w"
+	        android:layout_marginRight="@dimen/dp5_w"
+	        android:layout_gravity="center_vertical"
+	        android:contentDescription="@null"
+	        android:src="@drawable/icn_remove"/>
+	    <View 
+	        android:layout_width="@dimen/dp1_h"
+	        android:layout_height="match_parent"
+	        android:background="@color/light_gray"/>
+	
+	</LinearLayout>
+    <View 
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="@color/light_gray"/>
+</LinearLayout>

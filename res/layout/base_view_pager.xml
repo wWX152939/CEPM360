@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 列表切换按钮所在位置 -->
+
+   	<ImageView
+   	    android:id="@+id/base_title_left"
+   	    android:layout_width="@dimen/dp40_w"
+   	    android:layout_height="@dimen/dp45_h"
+   	    android:paddingTop="@dimen/dp14_h"
+   	    android:paddingBottom="@dimen/dp14_h"
+   	    android:layout_alignParentLeft="true"
+   	    android:visibility="gone"
+   	    android:src="@drawable/arrow_left" />
+
+    <LinearLayout
+        android:id="@+id/title_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp35_h"
+        android:layout_marginTop="@dimen/dp5_h"
+        android:layout_marginLeft="@dimen/dp5_w"
+        android:layout_marginBottom="@dimen/dp5_h"
+	    android:layout_toRightOf="@id/base_title_left"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+   </LinearLayout>
+
+	<ImageView
+	    android:id="@+id/base_title_right"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/dp35_h"
+        android:layout_marginTop="@dimen/dp5_h"
+	    android:layout_toRightOf="@id/title_menu"
+	    android:background="@drawable/base_title_right_bg" />
+
+    
+	<com.pm360.cepm360.app.common.activity.NoScrollViewPager
+	    android:id="@+id/tabpager"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/base_title_left"
+	    android:layout_below="@id/title_menu"
+        android:layout_marginRight="@dimen/dp5_w"  
+        android:layout_marginLeft="@dimen/dp5_w">
+
+	</com.pm360.cepm360.app.common.activity.NoScrollViewPager>
+    
+</RelativeLayout>

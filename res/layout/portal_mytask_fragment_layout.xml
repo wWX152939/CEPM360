@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    android:orientation="horizontal">
+        
+        <LinearLayout 
+            android:id="@+id/left_list"
+            android:layout_width="@dimen/dp140_w"
+	        android:layout_height="match_parent"
+	        android:background="@color/tree_listview_bg"
+	        android:orientation="vertical">
+            <ListView
+	            android:id="@+id/menu_list_view"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:divider="#e8edee"
+	            android:dividerHeight="@dimen/dp1_h" />
+        </LinearLayout>
+    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"> 
+	
+	        <LinearLayout
+	            android:id="@+id/header_layout"
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/table_height"
+	            android:background="@color/dialog_list_title_bg"
+	            android:orientation="vertical" >
+	        </LinearLayout>
+	        
+	        <ListView
+	            android:id="@+id/listview"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+	        </ListView>
+	        
+			<View
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="@color/content_listview_edge_bg"
+		        android:visibility="visible" />	        
+	    </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/floating_query_menu"
+        android:layout_width="@dimen/dp60_w"
+        android:layout_height="@dimen/dp60_w"
+        android:paddingLeft="@dimen/dp20_w"
+        android:paddingTop="@dimen/dp20_w"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp16_h"
+        android:layout_marginRight="@dimen/dp16_h"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_portal_mode_query" />
+    <include
+        android:id="@+id/baseViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/base_view_pager"
+        android:visibility="gone" />
+
+</FrameLayout>
+
+

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp8_w"
+    android:layout_marginTop="@dimen/dp8_w"
+    android:layout_marginRight="@dimen/dp8_w"
+    android:background="#F8F8F8"
+    android:orientation="vertical" >
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="#E2E2E2"
+        android:visibility="visible" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp24_h"
+        android:layout_marginLeft="@dimen/dp8_w"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:orientation="horizontal">
+        
+		<TextView 
+		    android:layout_width="@dimen/dp60_w"
+		    android:layout_height="wrap_content"
+		    android:gravity="right|center_vertical"
+		    android:paddingRight="@dimen/dp4_w"
+		    android:text="@string/email_sender_colon"
+		    android:textColor="@color/black"
+        	android:textSize="@dimen/sp16_s"/>
+		
+		<TextView 
+		    android:id="@+id/sender"
+		    android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="@dimen/dp8_w"
+		    android:gravity="left|center_vertical"
+		    android:textStyle="bold"
+		    android:textColor="@color/black"
+        	android:textSize="@dimen/sp16_s"/>
+		
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp8_w"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:orientation="horizontal">
+        
+		<TextView 
+		    android:layout_width="@dimen/dp60_w"
+		    android:layout_height="wrap_content"
+		    android:gravity="right|center_vertical"
+		    android:paddingRight="@dimen/dp4_w"
+		    android:paddingTop="@dimen/dp8_h"
+		    android:text="@string/email_reciever_colon"
+		    android:textColor="@color/black"
+        	android:textSize="@dimen/sp16_s"/>
+		
+		<com.pm360.cepm360.app.common.view.ViewContainer 
+		    android:id="@+id/reciever"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="@dimen/dp4_w"
+		    android:orientation="horizontal">
+		</com.pm360.cepm360.app.common.view.ViewContainer>
+		
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp8_w"
+        android:layout_marginTop="@dimen/dp4_h"
+        android:orientation="horizontal">
+        
+		<TextView 
+		    android:layout_width="@dimen/dp60_w"
+		    android:layout_height="wrap_content"
+		    android:gravity="right|center_vertical"
+		    android:paddingRight="@dimen/dp4_w"
+		    android:paddingTop="@dimen/dp8_h"
+		    android:text="@string/email_cc"
+		    android:textColor="@color/black"
+        	android:textSize="@dimen/sp16_s"/>
+		
+		<com.pm360.cepm360.app.common.view.ViewContainer 
+		    android:id="@+id/cc"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="@dimen/dp4_w"
+		    android:orientation="horizontal">
+		</com.pm360.cepm360.app.common.view.ViewContainer>
+		
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp8_w"
+        android:layout_marginTop="@dimen/dp4_h"
+        android:orientation="horizontal">
+        
+		<TextView 
+		    android:layout_width="@dimen/dp60_w"
+		    android:layout_height="wrap_content"
+		    android:gravity="right|center_vertical"
+		    android:paddingRight="@dimen/dp4_w"
+		    android:paddingTop="@dimen/dp8_h"
+		    android:text="@string/email_time"
+		    android:textColor="@color/black"
+        	android:textSize="@dimen/sp16_s"/>
+		
+		<TextView 
+		    android:id="@+id/time"
+		    android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="@dimen/dp8_w"
+		    android:layout_weight="1"
+		    android:gravity="left|center_vertical"
+		    android:textColor="@color/gray"
+        	android:textSize="@dimen/sp16_s"/>
+		
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp8_w"
+        android:layout_marginTop="@dimen/dp4_h"
+        android:layout_marginBottom="@dimen/dp8_h"
+        android:orientation="horizontal">
+        
+		<TextView 
+		    android:layout_width="@dimen/dp60_w"
+		    android:layout_height="wrap_content"
+		    android:gravity="right|center_vertical"
+		    android:paddingRight="@dimen/dp4_w"
+		    android:paddingTop="@dimen/dp8_h"
+		    android:text="@string/email_size"
+		    android:textColor="@color/black"
+        	android:textSize="@dimen/sp16_s"/>
+		
+		<TextView 
+		    android:id="@+id/size"
+		    android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="@dimen/dp8_w"
+		    android:gravity="left|center_vertical"
+		    android:layout_weight="1"
+		    android:paddingRight="@dimen/dp4_w"
+		    android:textColor="@color/gray"
+        	android:textSize="@dimen/sp16_s"/>
+		
+	</LinearLayout>
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="#E2E2E2"
+        android:visibility="visible" />
+	
+</LinearLayout>

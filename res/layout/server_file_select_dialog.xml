@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/file_browse_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:background="@drawable/obs_background"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50_h"
+        android:gravity="center_vertical"
+        android:background="@drawable/table_title_background"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/exit_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10_w"
+            android:layout_marginRight="@dimen/dp10_w"
+            android:layout_marginBottom="@dimen/dp10_h"
+            android:layout_marginTop="@dimen/dp10_h"
+            android:background="@drawable/dialog_button_close_bg"
+            android:src="@drawable/popup_exit" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15_w"
+            android:text="@string/select_document_path"
+            android:textSize="@dimen/sp18_s"/>
+      
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/tree_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">    
+        <ListView
+        	android:id="@+id/file_dir_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp380_h"
+            android:layout_marginLeft="@dimen/dp5_w"
+            android:layout_marginRight="@dimen/dp5_w"
+            android:layout_marginBottom="@dimen/dp5_h"
+            android:layout_marginTop="@dimen/dp10_h"
+            android:divider="#c5005880"
+        	android:dividerHeight="1px"/>
+    </LinearLayout>
+	
+</LinearLayout>

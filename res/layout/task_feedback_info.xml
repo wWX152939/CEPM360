@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" android:orientation="vertical">
+   
+    <TextView
+        android:id="@+id/task_feedback_actualstartdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20_w"
+        android:layout_marginRight="@dimen/dp20_w"
+        android:layout_marginBottom="@dimen/dp20_h"
+        android:layout_marginTop="@dimen/dp20_h"
+        android:text="@string/actual_start_date"
+        android:textColor="#888888"
+        android:textSize="@dimen/sp16_s"/>
+
+    <EditText
+        android:id="@+id/task_feedback_actualstartdate_edit"
+        android:layout_width="@dimen/dp300_w"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_alignBaseline="@+id/task_feedback_actualstartdate"
+        android:layout_marginLeft="@dimen/dp30_w"
+        android:layout_toRightOf="@+id/task_feedback_actualstartdate"
+        android:background="@drawable/input"
+        android:textColor="#888888"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+    <ImageButton
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@id/task_feedback_actualstartdate_edit"
+	    android:layout_marginTop="@dimen/dp10_h"
+	    android:background="#00ffffff"
+android:paddingLeft="@dimen/dp6_w"
+android:paddingRight="@dimen/dp6_w"
+android:paddingBottom="@dimen/dp6_h"
+android:paddingTop="@dimen/dp6_h"
+	    android:src="@drawable/calendar" />      
+    		    		    
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:layout_below="@id/task_feedback_actualstartdate"
+        android:background="#888888" />
+    
+    <TextView
+        android:id="@+id/task_feedback_actualenddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/task_feedback_actualstartdate"
+        android:layout_below="@id/line1"
+        android:layout_marginBottom="@dimen/dp20_h"
+        android:layout_marginTop="@dimen/dp20_h"
+        android:text="@string/actual_finish_date"
+        android:textColor="#888888"
+        android:textSize="@dimen/sp16_s"/>
+        
+    <EditText
+        android:id="@+id/task_feedback_actualenddate_edit"
+        android:layout_width="@dimen/dp300_w"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_alignBaseline="@+id/task_feedback_actualenddate"
+        android:layout_alignBottom="@+id/task_feedback_actualenddate"
+        android:layout_alignLeft="@+id/task_feedback_actualstartdate_edit"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:textColor="#888888" />    
+        
+    <ImageButton
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@id/task_feedback_actualenddate_edit"
+	    android:layout_below="@id/line1"
+	    android:layout_marginTop="@dimen/dp10_h"
+	    android:background="#00ffffff"
+android:paddingLeft="@dimen/dp6_w"
+android:paddingRight="@dimen/dp6_w"
+android:paddingBottom="@dimen/dp6_h"
+android:paddingTop="@dimen/dp6_h"
+	    android:src="@drawable/calendar" />    
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:layout_below="@id/task_feedback_actualenddate"
+        android:background="#888888" />
+        
+    <TextView
+        android:id="@+id/task_feedback_completepercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/task_feedback_actualstartdate"
+        android:layout_below="@id/line2"
+        android:layout_marginBottom="@dimen/dp20_h"
+        android:layout_marginTop="@dimen/dp20_h"
+        android:text="@string/task_complete_percent"
+        android:textColor="#888888"
+        android:textSize="@dimen/sp16_s"/>
+        
+    <EditText
+        android:id="@+id/task_feedback_completepercentage_edit"
+        android:layout_width="@dimen/dp300_w"
+        android:layout_height="@dimen/dp40_h"
+        android:layout_alignBaseline="@+id/task_feedback_completepercentage"
+        android:layout_alignBottom="@+id/task_feedback_completepercentage"
+        android:layout_alignLeft="@+id/task_feedback_actualstartdate_edit"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:textColor="#888888" /> 
+        
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:layout_below="@id/task_feedback_completepercentage"
+        android:background="#888888" />  
+        
+    <TextView
+        android:id="@+id/task_feedback_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/task_feedback_actualstartdate"
+        android:layout_below="@id/line3"
+        android:layout_marginBottom="@dimen/dp20_h"
+        android:layout_marginTop="@dimen/dp20_h"
+        android:text="@string/task_complete_status"
+        android:textColor="#888888"
+        android:textSize="@dimen/sp16_s"/>
+        
+        <RadioGroup
+            android:id="@+id/selectRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/task_feedback_actualstartdate_edit"
+            android:layout_below="@id/line3"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp15_h"
+            android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="@string/not_start_projects"
+            android:textColor="#888888" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30_w"
+            android:gravity="center_vertical"
+            android:text="@string/ongoing"
+            android:textColor="#888888" />
+        
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30_w"
+            android:gravity="center_vertical"
+            android:text="@string/combination_finished"
+            android:textColor="#888888" />
+
+    </RadioGroup>
+        
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:layout_below="@id/task_feedback_status"
+        android:background="#888888" /> 
+
+    <TextView
+        android:id="@+id/task_feedback_situation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/task_feedback_actualstartdate"
+        android:layout_below="@id/line4"
+        android:layout_marginBottom="@dimen/dp20_h"
+        android:layout_marginTop="@dimen/dp20_h"
+        android:text="@string/task_complete_descriptiion"
+        android:textColor="#888888"
+        android:textSize="@dimen/sp16_s"/>
+        
+    <EditText
+        android:id="@+id/task_feedback_situation_edit"
+        android:layout_width="@dimen/dp300_w"
+        android:layout_height="@dimen/dp200_h"
+        android:layout_alignLeft="@+id/task_feedback_actualstartdate_edit"
+        android:layout_below="@id/line4"
+        android:layout_marginBottom="@dimen/dp10_h"
+        android:layout_marginTop="@dimen/dp10_h"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:gravity="left|top"
+        android:textColor="#888888" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="@dimen/dp100_w"
+        android:layout_height="@dimen/dp30_h"
+        android:layout_alignBottom="@+id/task_feedback_situation_edit"
+        android:layout_marginBottom="@dimen/dp23_h"
+        android:layout_marginLeft="@dimen/dp109_w"
+        android:layout_toRightOf="@+id/task_feedback_situation_edit"
+        android:background="@drawable/button_bg"
+        android:text="@string/save" />
+              
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/content_listview_margin_height"
+        android:layout_marginLeft="@dimen/content_listview_margin_width"
+        android:layout_marginRight="@dimen/content_listview_margin_width"
+        android:layout_marginTop="@dimen/content_listview_margin_height"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/content_listview_edge_bg"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/content_listview_header_bg" >
+
+            <include
+                android:id="@+id/rolelistHeaderView"
+                layout="@layout/role_permissions_list_title" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="true"
+            android:divider="@null"
+            android:listSelector="@color/listview_selected_bg" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/content_listview_edge_bg"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

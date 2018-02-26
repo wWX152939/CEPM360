@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cepm="http://schemas.android.com/apk/res/com.pm360.cepm360"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp420_h"
+    android:background="@drawable/dialog_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_bar"
+        android:orientation="vertical" >
+
+        <!-- title bar -->
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp46_h"
+            android:background="@color/dialog_title_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp46_h"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/dp18_w"
+                android:text="@string/contract_add_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp17_s" />
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="@dimen/dp46_h"
+                android:layout_height="@dimen/dp46_h"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp8_h"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:padding="@dimen/dp10_h"
+                android:src="@drawable/popup_exit" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="@dimen/dp16_w"
+            android:layout_marginRight="@dimen/dp16_w" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp12_w"
+                android:stretchColumns="1" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp4_h"
+                    android:layout_marginTop="@dimen/dp8_h" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/dp12_h"
+                        android:layout_marginLeft="@dimen/dp12_w"
+                        android:layout_marginRight="@dimen/dp12_w"
+                        android:layout_marginTop="@dimen/dp12_h"
+                        android:gravity="right"
+                        android:text="@string/contract_code"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp16_s" />
+
+                    <EditText
+                        android:id="@+id/contract_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/dialog_edit_text_bg"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:hint=""
+                        android:paddingBottom="@dimen/dp6_h"
+                        android:paddingLeft="@dimen/dp6_w"
+                        android:paddingRight="@dimen/dp6_w"
+                        android:paddingTop="@dimen/dp6_h"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/sp16_s" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp4_h"
+                    android:layout_marginTop="@dimen/dp4_h" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/dp12_h"
+                        android:layout_marginLeft="@dimen/dp12_w"
+                        android:layout_marginRight="@dimen/dp12_w"
+                        android:layout_marginTop="@dimen/dp12_h"
+                        android:gravity="right"
+                        android:text="@string/contract_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp16_s" />
+
+                    <EditText
+                        android:id="@+id/contract_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/dialog_edit_text_bg"
+                        android:hint=""
+                        android:paddingBottom="@dimen/dp6_h"
+                        android:paddingLeft="@dimen/dp6_w"
+                        android:paddingRight="@dimen/dp6_w"
+                        android:paddingTop="@dimen/dp6_h"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/sp16_s" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/dp12_h"
+                        android:layout_marginLeft="@dimen/dp12_w"
+                        android:layout_marginRight="@dimen/dp12_w"
+                        android:layout_marginTop="@dimen/dp12_h"
+                        android:gravity="right"
+                        android:text="@string/contract_total"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp16_s" />
+
+                    <EditText
+                        android:id="@+id/contract_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/dialog_edit_text_bg"
+                        android:gravity="right"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="@dimen/dp6_h"
+                        android:paddingLeft="@dimen/dp6_w"
+                        android:paddingRight="@dimen/dp6_w"
+                        android:paddingTop="@dimen/dp6_h"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/sp16_s" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp4_h"
+                    android:layout_marginTop="@dimen/dp4_h" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/dp12_h"
+                        android:layout_marginLeft="@dimen/dp12_w"
+                        android:layout_marginRight="@dimen/dp12_w"
+                        android:layout_marginTop="@dimen/dp12_h"
+                        android:gravity="right"
+                        android:text="@string/contract_purchase_company"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp16_s" />
+
+                    <com.pm360.cepm360.app.common.view.RightButtonEditText
+                        android:id="@+id/contract_second_party"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/dialog_edit_text_bg"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp16_s"
+                        cepm:buttonIcon="@drawable/dialog_find_icon"
+                        cepm:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/dp12_h"
+                        android:layout_marginLeft="@dimen/dp12_w"
+                        android:layout_marginRight="@dimen/dp12_w"
+                        android:layout_marginTop="@dimen/dp12_h"
+                        android:gravity="right"
+                        android:text="@string/contract_owner"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp16_s" />
+
+                    <com.pm360.cepm360.app.common.view.RightButtonEditText
+                        android:id="@+id/contract_owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/dialog_edit_text_bg"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp16_s"
+                        cepm:buttonIcon="@drawable/dialog_find_icon"
+                        cepm:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp4_h"
+                    android:layout_marginTop="@dimen/dp4_h" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/dp12_h"
+                        android:layout_marginLeft="@dimen/dp12_w"
+                        android:layout_marginRight="@dimen/dp12_w"
+                        android:layout_marginTop="@dimen/dp12_h"
+                        android:gravity="right"
+                        android:text="@string/contract_sign_date"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp16_s" />
+
+                    <com.pm360.cepm360.app.common.view.DatePickText
+                        android:id="@+id/contract_sign_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/dp8_h"
+                        android:layout_marginLeft="@dimen/dp8_w"
+                        android:layout_marginRight="@dimen/dp8_w"
+                        android:layout_marginTop="@dimen/dp8_h"
+                        android:background="@drawable/dialog_edit_text_bg"
+                        cepm:buttonIcon="@drawable/dialog_calendar"
+                        cepm:textColor="@android:color/black" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/button_bar"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48_h"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/contract_save"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/dp140_w"
+            android:layout_height="@dimen/dp40_h"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dp8_w"
+            android:layout_marginStart="@dimen/dp8_w"
+            android:background="@drawable/button_corners_blue_bg"
+            android:minHeight="0dip"
+            android:paddingBottom="@dimen/dp4_h"
+            android:paddingEnd="@dimen/dp40_w"
+            android:paddingStart="@dimen/dp40_w"
+            android:paddingTop="@dimen/dp4_h"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16_s" />
+
+        <Button
+            android:id="@+id/contract_close"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/dp140_w"
+            android:layout_height="@dimen/dp40_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dp8_w"
+            android:layout_marginStart="@dimen/dp8_w"
+            android:background="@drawable/button_corners_blue_bg"
+            android:minHeight="0dip"
+            android:paddingBottom="@dimen/dp4_h"
+            android:paddingEnd="@dimen/dp40_w"
+            android:paddingStart="@dimen/dp40_w"
+            android:paddingTop="@dimen/dp4_h"
+            android:text="@string/close"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16_s"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

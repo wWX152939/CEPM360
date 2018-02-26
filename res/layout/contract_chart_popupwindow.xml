@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contract_chart_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners_contract_chart_dialog"
+    android:gravity="left|top"
+    android:orientation="horizontal"    
+    android:padding="2dp">
+    
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    android:animateLayoutChanges="true">
+    
+		<WebView
+		    android:id="@+id/webview"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/dp360_h"
+		    android:layout_marginLeft="-10dp"
+		    android:layout_marginTop="-10dp"
+		    android:scrollbarSize="0dip"
+		    android:visibility="gone"
+		    android:gravity="left|top"/> 
+		    
+		<LinearLayout 
+		    android:id="@+id/detail_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+		    
+		    <LinearLayout
+		        android:id="@+id/left_title_layout" 
+			    android:layout_width="@dimen/dp150_w"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:animateLayoutChanges="true">
+			    
+			    <include 
+			        android:id="@+id/contract_name_listheadview"
+			        layout="@layout/contract_char_left_list_item"/>		    
+			    
+				<com.pm360.cepm360.app.common.view.SHListView 
+			        android:id="@+id/contract_name_list"
+			    	android:layout_width="match_parent"
+			    	android:layout_height="match_parent"            
+			    	android:divider="@color/divider"
+            		android:dividerHeight="@dimen/dp1_h"/>
+			    
+		   	</LinearLayout>
+		    
+		    <View 
+		        android:layout_width="1dp"
+		        android:layout_height="fill_parent"
+		        android:background="@color/task_home_list_line"/>
+		    
+		    <LinearLayout
+		        android:id="@+id/right_layout" 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:animateLayoutChanges="true">		    
+		    
+			    <include 
+				    android:layout_width="match_parent"			        
+			        layout="@layout/contract_char_right_top_layout"/>
+				
+			    <include 
+			        android:id="@+id/contract_detail_listheadview"
+				    android:layout_width="match_parent"			        
+			        layout="@layout/contract_char_right_list_item"/>	
+				
+				<com.pm360.cepm360.app.common.view.SHListView 
+			        android:id="@+id/contract_detail_list"
+			    	android:layout_width="match_parent"
+			    	android:layout_height="match_parent"            
+			    	android:divider="@color/divider"
+            		android:dividerHeight="@dimen/dp1_h"/>
+			    
+			</LinearLayout>				    
+		    
+		</LinearLayout>
+	
+	</LinearLayout>	
+	    
+	<ImageView 
+	    android:id="@+id/switch_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentRight="true"
+	    android:padding="15dp"
+	    android:src="@drawable/switch_button"/>               
+</RelativeLayout>

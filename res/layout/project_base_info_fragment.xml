@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cepm="http://schemas.android.com/apk/res/com.pm360.cepm360"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/dp12_w"
+        android:paddingRight="@dimen/dp12_w"
+        android:scrollbars="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp16_w"
+                    android:layout_marginRight="@dimen/dp8_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp16_h"
+                    android:text="@string/project_number"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <TextView
+                    android:id="@+id/project_add_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8_w"
+                    android:layout_marginRight="@dimen/dp16_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp16_h"
+                    android:background="@drawable/dialog_edit_text_bg"
+                    android:hint=""
+                    android:paddingLeft="@dimen/dp6_w"
+                    android:paddingRight="@dimen/dp6_w"
+                    android:paddingBottom="@dimen/dp6_h"
+                    android:paddingTop="@dimen/dp6_h"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp16_s"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp16_w"
+                    android:layout_marginRight="@dimen/dp8_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:text="@string/project_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <EditText
+                    android:id="@+id/project_add_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8_w"
+                    android:layout_marginRight="@dimen/dp16_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:background="@drawable/dialog_edit_text_bg"
+                    android:hint=""
+                    android:paddingLeft="@dimen/dp6_w"
+                    android:paddingRight="@dimen/dp6_w"
+                    android:paddingBottom="@dimen/dp6_h"
+                    android:paddingTop="@dimen/dp6_h"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp16_s"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp16_w"
+                    android:layout_marginRight="@dimen/dp8_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:text="@string/project_location"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <EditText
+                    android:id="@+id/project_add_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8_w"
+                    android:layout_marginRight="@dimen/dp16_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:background="@drawable/dialog_edit_text_bg"
+                    android:hint=""
+                    android:paddingLeft="@dimen/dp6_w"
+                    android:paddingRight="@dimen/dp6_w"
+                    android:paddingBottom="@dimen/dp6_h"
+                    android:paddingTop="@dimen/dp6_h"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp16_s"/>
+            </TableRow>
+            
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp16_w"
+                    android:layout_marginRight="@dimen/dp8_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:text="@string/project_start_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <com.pm360.cepm360.app.common.view.DatePickText
+                    android:id="@+id/project_add_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8_w"
+                    android:layout_marginRight="@dimen/dp16_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:background="@drawable/dialog_edit_text_bg"
+                    cepm:buttonIcon="@drawable/dialog_calendar"
+                    cepm:textColor="@android:color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp16_w"
+                    android:layout_marginRight="@dimen/dp8_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:text="@string/project_end_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <com.pm360.cepm360.app.common.view.DatePickText
+                    android:id="@+id/project_add_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8_w"
+                    android:layout_marginRight="@dimen/dp16_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:background="@drawable/dialog_edit_text_bg"
+                    cepm:buttonIcon="@drawable/dialog_calendar"
+                    cepm:textColor="@android:color/black" />
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp16_w"
+                    android:layout_marginRight="@dimen/dp8_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:text="@string/project_department"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <com.pm360.cepm360.app.common.view.RightButtonEditText
+                    android:id="@+id/project_add_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8_w"
+                    android:layout_marginRight="@dimen/dp16_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:background="@drawable/dialog_edit_text_bg"
+                    android:hint=""
+                    cepm:buttonIcon="@drawable/user_select_icon"
+                    cepm:textColor="@android:color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp16_w"
+                    android:layout_marginRight="@dimen/dp8_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:text="@string/mark"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp16_s"/>
+
+                <EditText
+                    android:id="@+id/project_add_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8_w"
+                    android:layout_marginRight="@dimen/dp16_w"
+                    android:layout_marginBottom="@dimen/dp8_h"
+                    android:layout_marginTop="@dimen/dp8_h"
+                    android:background="@drawable/dialog_edit_text_bg"
+                    android:hint=""
+                    android:minLines="2"
+                    android:paddingLeft="@dimen/dp6_w"
+                    android:paddingRight="@dimen/dp6_w"
+                    android:paddingBottom="@dimen/dp6_h"
+                    android:paddingTop="@dimen/dp6_h"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp16_s"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+    
+    <LinearLayout
+        android:id="@id/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp10_h"
+        android:layout_marginBottom="@dimen/dp10_h"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="@dimen/dp140_w"
+            android:layout_height="@dimen/dp40_h"
+            android:layout_gravity="center"
+            android:background="@drawable/button_corners_blue_bg"
+            android:minHeight="0dip"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dialog_button_textsize"/>
+
+    </LinearLayout>
+
+</LinearLayout>

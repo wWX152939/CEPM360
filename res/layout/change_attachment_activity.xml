@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/change_attachment"
+    android:layout_width="@dimen/dp686_w"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40_h"
+        android:gravity="center"
+        android:textSize="@dimen/sp20_s"
+        android:textColor="@android:color/white"
+        android:background="@drawable/dialog_title"
+        android:text="@string/change_attachment_pics" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp4_h"
+        android:layout_marginLeft="@dimen/dp2_w"
+        android:layout_marginRight="@dimen/dp2_w"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+        
+        <GridView
+            android:id="@+id/gridview" 
+            android:layout_width="@dimen/dp120_w"
+            android:layout_height="@dimen/dp360_h"
+            android:layout_margin="@dimen/dp2_w"
+            android:columnWidth="@dimen/dp120_w"
+            android:numColumns="1"
+            android:horizontalSpacing="@dimen/dp1_w"
+            android:verticalSpacing="@dimen/dp10_h"
+            android:gravity="center|top"
+            android:paddingTop="@dimen/dp10_h"
+            android:stretchMode="none" 
+            android:src="@drawable/picture_add"
+            android:background="@drawable/corners_white_bg">
+        </GridView>
+        
+        <FrameLayout
+	        android:id="@+id/picture_pick_action" 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_margin="@dimen/dp2_w"
+	        android:background="@android:color/black"
+	        android:orientation="horizontal">
+	        
+	        <com.pm360.cepm360.app.common.view.ZoomImageView
+	            android:id="@+id/content_imageview"
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/dp360_h"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:scaleType="fitCenter"
+	            android:background="@android:color/white" />
+	        
+	        <ImageView 
+	            android:id="@+id/forward"
+	            android:layout_width="@dimen/dp48_w"
+	            android:layout_height="@dimen/dp68_h"
+	            android:layout_gravity="center|left"
+	            android:gravity="center"
+	            android:background="@drawable/change_attachment_forward_bg"
+	            android:src="@drawable/change_attachment_forward"
+	            android:contentDescription="@string/app_name"
+	            android:visibility="gone" />
+	        
+	        <ImageView 
+	            android:id="@+id/next"
+	            android:layout_width="@dimen/dp48_w"
+	            android:layout_height="@dimen/dp68_h"
+	            android:layout_gravity="center|right"
+	            android:gravity="center"
+	            android:background="@drawable/change_attachment_next_bg"
+	            android:src="@drawable/change_attachment_next"
+	            android:contentDescription="@string/app_name"
+	            android:visibility="gone" />
+	
+	    </FrameLayout>
+    </LinearLayout>
+    
+    <!-- 表单按钮-->
+    <include
+        android:id="@+id/ticket_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48_h"
+        android:layout_marginRight="@dimen/dp6_w"
+        android:layout_marginBottom="@dimen/dp6_h"
+        layout="@layout/dialog_button_bar_layout" />
+  
+</LinearLayout>

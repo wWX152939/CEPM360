@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:oneshot="false"
+  >
+<!--   	<item android:drawable="@drawable/click_me_01" android:duration="200"></item> -->
+<!--   	<item android:drawable="@drawable/click_me_02" android:duration="200"></item> -->
+  	<item android:drawable="@drawable/click_me_03" android:duration="200"></item>
+  	<item android:drawable="@drawable/click_me_04" android:duration="200"></item>
+  	<item android:drawable="@drawable/click_me_05" android:duration="200"></item>
+  	<item android:drawable="@drawable/click_me_06" android:duration="200"></item>
+  	<item android:drawable="@drawable/click_me_06" android:duration="3000"></item>
+</animation-list>

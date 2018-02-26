@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp488_w"
+    android:layout_height="@dimen/dp400_h"
+    android:layout_marginTop="@dimen/dp70_h"
+    android:layout_marginBottom="@dimen/dp20_h"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+    <!-- title bar -->
+    <include 
+        android:id="@+id/title"
+        layout="@layout/dialog_title_bar"/>
+ 
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <ListView
+		    android:id="@+id/listView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:clickable="true"
+		    android:divider="@null"
+		    android:focusable="false"
+		    android:scrollbars="none" >    
+		</ListView>
+        
+        <TextView
+            android:id="@+id/empty_text" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_store_house"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/sp20_s"
+            android:textColor="@android:color/black"/>
+    </FrameLayout>
+    
+    <!-- button_bar: 
+         1) 设置button_bar的布局位于对话框的底部
+         2) 布局高 dp48_h, marginTop/marginBottom dp8_h, 保证底部有一定的间距
+         3) Button style="@style/DialogButtonStyle_Normal", 这个style已经配置的背景色，字体大小，字体颜色
+                                         所以，只需要设置 宽，高， 按钮名称，是否显示就好。
+                                         按钮的宽根据界面的大小而定（dp120_w）,高为dp40_h，
+    -->
+	<LinearLayout
+	    android:id="@+id/button_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/dp48_h"
+	    android:layout_marginTop="@dimen/dp8_h"
+	    android:layout_marginBottom="@dimen/dp8_h"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+	    android:orientation="horizontal" >
+	    
+        <Button            
+            android:id="@+id/btn_new"
+            style="@style/DialogButtonStyle_Normal"
+            android:layout_width="@dimen/dp120_w"
+            android:layout_height="@dimen/dp40_h"
+            android:layout_marginRight="@dimen/dp16_w"
+            android:text="@string/new_add"
+            android:visibility="gone" />	                
+	           
+	    <Button
+	        android:id="@+id/btn_left"
+	        style="@style/DialogButtonStyle_Normal"
+	        android:layout_width="@dimen/dp120_w"
+            android:layout_height="@dimen/dp40_h"
+	        android:layout_marginLeft="@dimen/dp16_w"
+            android:text="@string/confirm" />
+	</LinearLayout>
+</LinearLayout>
+

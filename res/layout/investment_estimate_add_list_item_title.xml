@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/table_height"
+    android:layout_gravity="center_vertical"
+    android:background="@color/content_listview_header_bg"
+    android:orientation="horizontal" >
+
+    <!-- 序号 -->
+
+    <TextView
+        android:id="@+id/serial_number"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp4_w"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/table_content_textsize" />
+
+    <View
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:background="@color/divider"
+        android:visibility="gone" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cost_name"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp4_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/construction_cost"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp4_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/install_cost"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp4_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/other_cost"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp4_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sum"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp4_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp4_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp4_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="@dimen/dp1_w"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/mark"
+                android:layout_width="@dimen/dp120_w"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp4_w"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/table_content_textsize" />
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

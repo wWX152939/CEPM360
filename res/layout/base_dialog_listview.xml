@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_dialog_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ticket_dialog_bg"
+    android:orientation="vertical" >
+
+    <include 
+        android:id="@+id/title"
+        layout="@layout/dialog_title_bar"/>
+    
+    <LinearLayout
+        android:id="@+id/list_view"
+        android:layout_width="@dimen/dp800_w"
+        android:layout_height="@dimen/dp380_h"
+        android:layout_below="@id/title"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout 
+	    android:id="@+id/button_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:layout_below="@id/list_view"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:animateLayoutChanges="true"
+	    android:layout_marginTop="@dimen/dp14_h"
+	    android:layout_marginBottom="@dimen/dp14_h">
+
+		<Button
+			android:id="@+id/first_Button"
+			style="@style/DialogButtonStyle_Normal"
+			android:layout_width="@dimen/dp140_w"
+			android:layout_height="@dimen/dp40_h"
+			android:layout_marginRight="@dimen/dp16_w"
+			android:minHeight="@dimen/dp30_h"
+			android:visibility="gone"/>
+		
+	    <Button
+			android:id="@+id/save_Button"
+			style="@style/DialogButtonStyle_Normal"
+			android:layout_width="@dimen/dp140_w"
+			android:layout_height="@dimen/dp40_h"			
+            android:layout_marginLeft="@dimen/dp16_w"
+			android:minHeight="@dimen/dp30_h"
+			android:text="@string/save" />
+    </LinearLayout>
+
+</RelativeLayout>

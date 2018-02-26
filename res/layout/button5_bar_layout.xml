@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp48_h"
+    android:layout_marginBottom="@dimen/dp10_h"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dp10_w"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:layout_gravity="center_vertical"            
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/previous"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:layout_marginLeft="@dimen/dp10_w"
+        android:layout_marginRight="@dimen/dp10_w"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" />
+    
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp10_w"
+        android:layout_marginRight="@dimen/dp10_w"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" />
+    
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:layout_marginLeft="@dimen/dp10_w"
+        android:layout_marginRight="@dimen/dp10_w"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" />
+    
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp10_w"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/cooperation"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" />
+
+</LinearLayout>
+

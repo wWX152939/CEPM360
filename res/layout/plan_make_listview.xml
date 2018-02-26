@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plan_make_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/task_table_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/left_title_container"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp48_h"
+                android:background="#03a8b7"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1_h"
+                android:background="#c5707070" />
+
+            <com.pm360.cepm360.app.common.view.SyncScrollView
+                android:id="@+id/left_sv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ListView
+                        android:id="@+id/left_container_listview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:divider="#c5707070"
+                        android:dividerHeight="@dimen/dp1_h"
+                        android:listSelector="@android:color/transparent" >
+                    </ListView>
+                </LinearLayout>
+            </com.pm360.cepm360.app.common.view.SyncScrollView>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/right_title_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp48_h"
+                    android:background="#03a8b7"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1_h"
+                    android:background="#c5707070" />
+
+                <com.pm360.cepm360.app.common.view.SyncScrollView
+                    android:id="@+id/right_sv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ListView
+                            android:id="@+id/right_container_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:divider="#c5707070"
+                            android:dividerHeight="@dimen/dp1_h"
+                            android:listSelector="@android:color/transparent" >
+                        </ListView>
+                    </LinearLayout>
+                </com.pm360.cepm360.app.common.view.SyncScrollView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/floating_menu"
+        android:layout_width="@dimen/dp60_w"
+        android:layout_height="@dimen/dp60_h"
+        android:layout_gravity="bottom|right"
+        android:background="#b5626678"
+        android:clickable="true"
+        android:src="@drawable/btn_add" />
+</FrameLayout>

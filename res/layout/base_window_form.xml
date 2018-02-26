@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+       
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10_h"
+        android:paddingLeft="@dimen/dp10_w"
+        android:paddingRight="@dimen/dp10_w">
+
+        <LinearLayout
+            android:id="@+id/parent_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+	    </LinearLayout>
+    </ScrollView>
+    
+	<Button
+        android:id="@+id/save_Button"
+	    android:layout_width="@dimen/dp90_w"
+	    android:layout_height="@dimen/dp44_h"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp10_h"
+        android:layout_marginStart="@dimen/dp520_w"
+        android:background="@drawable/button_corners_blue_bg"
+        android:minHeight="@dimen/dp30_h"
+        android:paddingLeft="@dimen/dp10_w"
+        android:paddingRight="@dimen/dp10_w"
+        android:textSize="@dimen/sp18_s"
+        android:visibility="gone"
+        android:text="@string/save" />
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tree_listview_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tree_list_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/table_height"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dir_title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/table_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp18_s" />
+
+        <View
+            android:layout_width="@dimen/dp1_w"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp6_h"
+            android:layout_marginTop="@dimen/dp6_h"
+            android:background="@color/divider"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/expand_icon"
+            android:layout_width="@dimen/dp40_w"
+            android:layout_height="@dimen/table_height"
+            android:contentDescription="@null"
+            android:paddingBottom="@dimen/dp8_h"
+            android:paddingLeft="@dimen/dp8_w"
+            android:paddingRight="@dimen/dp8_w"
+            android:paddingTop="@dimen/dp8_h"
+            android:scaleType="center"
+            android:src="@drawable/arrow_double_right" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tree_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp4_h"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+</LinearLayout>

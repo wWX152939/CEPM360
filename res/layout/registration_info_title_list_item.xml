@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp48_h"
+    android:background="@color/task_home_list_title"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/registration_id"
+        android:layout_width="@dimen/dp50_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/task_home_list_title_text"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textSize="@dimen/sp16_s"/>
+
+    <TextView
+        android:id="@+id/registration_name"
+        android:layout_width="@dimen/dp100_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/task_home_list_title_text"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textSize="@dimen/sp16_s"/>
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/registration_time"
+                android:layout_width="@dimen/dp180_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/task_home_list_title_text"
+        		android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/sp16_s"/>
+
+            <TextView
+                android:id="@+id/registration_type"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/task_home_list_title_text"
+        		android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/sp16_s"/>
+
+            <TextView
+                android:id="@+id/registration_addr"
+                android:layout_width="@dimen/dp300_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/task_home_list_title_text"
+        		android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/sp16_s"/>
+
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

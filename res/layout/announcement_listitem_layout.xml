@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/setting_list_title_height"
+    android:background="@color/content_listview_header_bg"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/content_listview_edge_bg"
+        android:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/mult_select"
+        android:layout_width="@dimen/dp30_w"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp10_w"
+        android:button="@drawable/login_checkbox_button"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/select_right_view"
+        android:layout_width="@dimen/dp1_w"
+        android:layout_height="match_parent"
+        android:background="#c5707070"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/serial_number"
+        android:layout_width="@dimen/dp60_w"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_content_textsize" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#c5707070"
+        android:visibility="gone" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="@dimen/dp400_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#c5707070"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/creater"
+                android:layout_width="@dimen/dp100_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textColor="@color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#c5707070"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/publish_time"
+                android:layout_width="@dimen/dp140_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|right"
+                android:paddingRight="@dimen/table_padding_left"
+                android:textColor="@color/black"
+                android:textSize="@dimen/table_content_textsize" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#c5707070"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="@dimen/dp80_w"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/table_content_textsize" />
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/content_listview_edge_bg"
+        android:visibility="visible" />
+
+</LinearLayout>

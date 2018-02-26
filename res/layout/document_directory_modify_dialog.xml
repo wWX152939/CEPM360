@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/dp200_h"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+    <!-- title bar -->
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp46_h"
+        android:background="@color/dialog_title_bg"
+        android:orientation="horizontal" >    
+	    <TextView
+	        android:id="@+id/dialog_title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp46_h"
+            android:gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dp18_w"         
+            android:text="@string/document_upload"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp17_s"/>
+	    
+	    <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/dp46_h"
+            android:layout_height="@dimen/dp46_h"
+            android:padding="@dimen/dp10_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp8_h"
+            android:clickable="true"
+            android:gravity="center"
+            android:src="@drawable/popup_exit"
+            android:background="@drawable/dialog_button_close_bg"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="@dimen/dp468_w"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp12_w"
+        android:layout_marginEnd="@dimen/dp20_w"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+        <RadioGroup 
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10_w"
+            android:layout_marginRight="@dimen/dp10_w"
+            android:layout_marginBottom="@dimen/dp10_h"
+            android:layout_marginTop="@dimen/dp10_h"
+            android:visibility="gone">
+        </RadioGroup>
+        
+        <LinearLayout
+	        android:id="@+id/dir_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="@dimen/dp20_h"
+	        android:orientation="horizontal"
+	        android:visibility="gone">
+	        <TextView 
+	            android:layout_width="@dimen/dp100_w"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/dp10_w"
+	            android:text="@string/directory_name"
+	            android:textSize="@dimen/sp18_s"
+	            android:textColor="@android:color/black"/>
+	        <EditText 
+				android:id="@+id/dir_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="top|left"
+				android:background="@drawable/bg_edittext" 
+				android:cursorVisible="true"
+				android:paddingLeft="@dimen/dp8_w"
+				android:paddingRight="@dimen/dp8_w"
+				android:paddingBottom="@dimen/dp8_h"
+				android:paddingTop="@dimen/dp8_h"
+				android:singleLine="false"
+				android:hint="@string/input_directory_name"
+				android:textColor="@color/black"
+				android:textCursorDrawable="@null"
+				android:textSize="@dimen/sp18_s"/>
+	    </LinearLayout>
+    </LinearLayout>
+    
+   <Button
+       android:id="@+id/btn_save"
+       android:layout_width="@dimen/dp140_w"
+       android:layout_height="@dimen/dp40_h"
+       android:layout_gravity="center"
+       android:layout_marginTop="@dimen/dp16_h"
+       android:layout_marginBottom="@dimen/dp16_h"
+       android:clickable="true"
+       android:gravity="center"
+       android:background="@drawable/button_corners_blue_bg"
+       android:text="@string/upload"
+       android:textColor="@color/white"
+       android:textSize="@dimen/dialog_button_textsize"/>
+    
+</LinearLayout>

@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:animateLayoutChanges="true"
+            android:background="@color/tree_listview_bg"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/eps_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/content_tree_title_height"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/project_directory"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp20_s" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1_h"
+                android:background="#e8edee"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp1_w"
+            android:layout_height="match_parent"
+            android:background="@color/task_child_list_line" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/content_listview_margin_height"
+            android:layout_marginLeft="@dimen/content_listview_margin_width"
+            android:layout_marginRight="@dimen/content_listview_margin_width"
+            android:layout_marginTop="@dimen/content_listview_margin_height"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/content_listview_edge_bg"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/listHeaderView"
+                layout="@layout/rent_list_header" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#52555c"
+                android:clickable="true"
+                android:dividerHeight="@dimen/dp1_h"
+                android:focusable="false"
+                android:listSelector="@color/listview_selected_bg"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/content_listview_edge_bg"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <com.pm360.cepm360.app.common.view.FloatingMenuView
+            android:id="@+id/rent_floating_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/dp16_h"
+            android:layout_marginEnd="@dimen/dp116_w"
+            android:visibility="gone"
+            android:clickable="true"
+            android:src="@drawable/btn_add" />
+    </FrameLayout>
+
+</LinearLayout>

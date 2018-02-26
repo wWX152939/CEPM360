@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_content_bg">#17181d</color>
+    <color name="bar_layout_bg">#555869</color>
+    <color name="divider_line_bg">#373646</color>
+    <color name="window_bg">#ffeef1f3</color>
+    
+    <color name="color_black">#000000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_blue">#0000FF</color>
+    <color name="color_green">#00FF00</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_aqua">#00FFFF</color>
+    <color name="color_yellow">#FFFF00</color>
+    <color name="color_fuchsia">#FF00FF</color>
+    <color name="color_darkgray">#A9A9A9</color>
+    
+    <color name="qqblue">#ff54acea</color>
+    <color name="sky_blue">#39caf9</color>
+    <color name="light_blue">#33b5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#282d29</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#7f00</color>
+    <color name="blue">#770000ff</color>
+    <color name="aqua">#99ffff</color>
+    <color name="gray">#959697</color>
+    <color name="color_blue_violet">#8A2BE2</color>
+    <color name="project_left_listview_bg">#e5ebeb</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="green">#7700ff00</color>
+    <color name="pure_green">#00ff00</color>
+    <color name="yellow">#77ffff00</color>
+    <color name="black2">#00282d29</color>
+    <color name="translucent_background">#01000000</color>
+    <color name="transparent_button">#90000000</color>
+    <color name="popup_window_bg">#E6969cb7</color>
+    <color name="desktop1">#17181d</color>
+    <color name="desktop2">#787698</color>
+    <color name="desktop3">#373646</color>
+    <color name="divider">#E4E9EC</color>
+    <color name="table_title">#dddddd</color>
+    <color name="navigation_listview_divider">#68757b</color>
+    <color name="listview_divider">#a6a6a7</color>
+    <color name="popup_divider">#e4e5e5</color>
+    <color name="popup_black">#100F17</color>
+    <color name="popup_divider1">#77757b</color>
+    <color name="floating_menu_divider">#c1e1</color>
+    <color name="actionbar_background">#c74b46</color>
+    <color name="touch_high_light">#ECECEC</color>
+    <color name="view_pager_unselect">#747488</color>
+    <color name="task_navigation_line">#515456</color>
+    <color name="task_navigation_space">#484b50</color>
+    <color name="task_home_background">#272b2e</color>
+    <color name="task_home_list_title">#eeeeee</color>
+    <color name="task_home_list_title_text">#000000</color>
+    <color name="task_home_list_line">@color/divider</color>
+    <color name="task_home_list_table">#ffffff</color>
+    <color name="task_child_button">#68757b</color>
+    <color name="task_child_list_title_start">#174291</color>
+    <color name="task_child_list_title_end">#90abee</color>
+    <color name="task_child_list_title_text">#000000</color>
+    <color name="task_child_list_line">@color/content_listview_edge_bg</color>
+    <color name="task_child_list_table">#2e3442</color>
+    <color name="task_child_table_background">#272b2e</color>
+    <color name="task_dialog_text">#000000</color>
+    <color name="task_window_text">#000000</color>
+    <color name="actionbar_button_pressed">#20ffffff</color>
+    <color name="actionbar_button_normal">#00ffffff</color>
+    <color name="setting_list_divider">#626975</color>
+    <color name="setting_list_text_color">#ffffff</color>
+    <!-- lock pattern start -->
+    <attr name="alp_42447968_color_lock_pattern_view_regular" format="reference" />
+    <attr name="alp_42447968_color_lock_pattern_view_success" format="reference" />
+    <attr name="alp_42447968_color_lock_pattern_view_error" format="reference" />
+
+    <color name="alp_42447968_lock_pattern_view_regular_light">#ffffffff</color>
+    <color name="alp_42447968_lock_pattern_view_success_light">#ffffffff</color>
+    <color name="alp_42447968_lock_pattern_view_error_light">#fff4511e</color>
+    <color name="alp_42447968_lock_pattern_view_regular_dark">#AAEE</color>
+    <color name="alp_42447968_lock_pattern_view_success_dark">#ff009688</color>
+    <color name="alp_42447968_lock_pattern_view_error_dark">#fff4511e</color>
+    <color name="alp_42447968_view_group_progress_bar_background">#cc515151</color>
+
+    <!-- AOSP -->
+
+    <color name="alp_42447968_aosp_background_material_dark">#ff303030</color>
+    <color name="alp_42447968_aosp_background_material_light">#ffeeeeee</color>
+    <!-- lock pattern end -->
+
+    <color name="navigation_bg">#272b2e</color>
+    <color name="content_bg">@color/system_left_navigation_bg</color>
+    <color name="tab_content_bg">#2e3442</color>
+    <color name="table_line">@color/content_listview_edge_bg</color>
+    <color name="table_bg">#ffffff</color>
+    <color name="listview_header_bg">#5c7cbb</color>
+    <color name="flow_approvaling">#fb7317</color>
+    <color name="flow_approval_pass">#11b5a4</color>
+    <color name="flow_approval_rejected">#ff0000</color>
+    <color name="countersign_click">#aaaaaa</color>
+    <color name="countersign_normal">#eeeeee</color>
+    <color name="home_summary_item_selected">#7568A3</color>
+    
+    <!-- 扁平化风格  -->
+    <color name="system_login_bg">#1ca5d7</color>
+    <color name="system_action_bar_bg">#2c9bed</color>
+    <color name="home_background">#ebf0f5</color>
+    <!-- viewPager下子View的列表头布局 -->
+    <color name="viewpager_childlistview_title">#b7b7ed</color>
+    <!-- 导航栏背景色由 system_left_navigation_bg 为大背景，再由 navigation_listview_single_line_bg 为隔行颜色 -->
+    <color name="system_left_navigation_bg">#ededf3</color>
+    <color name="navigation_listview_selected_bg">#00ce98</color>
+    <color name="navigation_content_divider_bg">#d2d4d4</color>  
+    <color name="tree_listview_bg">#f2f4fa</color>
+    <color name="content_listview_header_bg">#d9dede</color>
+    <color name="content_listview_edge_bg">#d9dede</color>
+    <color name="content_listview_single_line_bg">#f2f4fa</color>
+    <color name="content_listview_father_bg">#ffffff</color>
+    <color name="listview_selected_bg">#c0def7</color>
+    <!-- 列表头字体颜色  -->
+    <color name="content_listview_header_text_color">#000000</color>    
+    
+    <!-- 弹出对话框 标题栏背景色 -->
+    <color name="dialog_title_bg">#1ae065</color>
+    <color name="dialog_button_bg">#2c9bed</color>
+    <color name="dialog_button_disable_bg">#97999A</color>
+    <color name="dialog_button_close_focus_bg">#09af47</color>
+    <color name="dialog_button_focused_bg">#0f77c4</color>
+	<color name="dialog_list_title_bg">#d9dede</color>    
+    <color name="dialog_list_title_text_color">#000000</color>
+    <color name="dialog_list_content_text_color">#000000</color>
+    
+    <!--  viewpage 表头颜色 -->
+    <color name="viewpage_normal_bg">#b4b6b7</color>
+    <color name="viewpage_click_bg">#0ecf84</color>      
+    <color name="popupwindows_menu_bg">#283034</color>
+    
+    <!--  LineProgress 颜色 -->
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="shader">#33000000</color>
+    
+</resources>

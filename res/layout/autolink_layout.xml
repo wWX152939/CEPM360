@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp420_w"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_light_gray"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="@dimen/dp12_w"
+        android:layout_marginRight="@dimen/dp12_w"
+        android:layout_marginTop="@dimen/dp12_h"
+        android:layout_marginBottom="@dimen/dp8_h"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/dp40_h"
+	        android:text="@string/link_address"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/sp16_s"
+	        android:labelFor="@+id/autolink_url"/>
+	    
+	    <EditText 
+	        android:id="@+id/autolink_url"
+	        android:layout_width="@dimen/dp320_w"
+	        android:layout_height="@dimen/dp40_h"
+	        android:layout_marginLeft="@dimen/dp12_w"
+	        android:paddingLeft="@dimen/dp4_w"
+	        android:paddingRight="@dimen/dp4_w"
+	        android:textCursorDrawable="@null"
+	        android:inputType="textUri"
+	        android:text="http://"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/sp16_s"
+	        android:background="@drawable/corners_white_bg_blue_border"/>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/save"
+        android:layout_width="@dimen/dp70_w"
+        android:layout_height="@dimen/dp45_h"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp4_h"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18_s"
+        android:background="@drawable/button_bg"/>
+
+</LinearLayout>

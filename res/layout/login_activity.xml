@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dp420_w"
+        android:layout_height="@dimen/dp300_h"
+        android:layout_gravity="center"
+        android:background="@drawable/login_bg2"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dp84_w"
+        android:paddingStart="@dimen/dp36_w"
+        android:paddingTop="@dimen/dp80_h">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp12_h"
+                android:layout_marginTop="@dimen/dp12_h">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp4_w"
+                    android:text="@string/login_name"
+                    android:textColor="#9ba9b0"
+                    android:textSize="@dimen/sp18_s"/>
+
+                <EditText
+                    android:id="@+id/login_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/login_edit_bg"
+                    android:hint=""
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:paddingBottom="@dimen/dp6_h"
+                    android:paddingEnd="@dimen/dp16_w"
+                    android:paddingStart="@dimen/dp16_w"
+                    android:paddingTop="@dimen/dp6_h"
+                    android:singleLine="true"
+                    android:textColor="#9ba9b0"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp18_s"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp12_h"
+                android:layout_marginTop="@dimen/dp12_h">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp4_w"
+                    android:text="@string/password"
+                    android:textColor="#9ba9b0"
+                    android:textSize="@dimen/sp18_s"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/login_edit_bg"
+                    android:digits="@string/text_match"
+                    android:hint=""
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingBottom="@dimen/dp6_h"
+                    android:paddingEnd="@dimen/dp16_w"
+                    android:paddingStart="@dimen/dp16_w"
+                    android:paddingTop="@dimen/dp6_h"
+                    android:singleLine="true"
+                    android:textColor="#9ba9b0"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp18_s"/>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20_h"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp48_w"
+                android:layout_marginRight="@dimen/dp24_w"
+                android:background="@drawable/login_button_bg"
+                android:enabled="false"
+                android:minHeight="@dimen/dp36_h"
+                android:minWidth="@dimen/dp96_w"
+                android:text="@string/login"
+                android:textColor="#9ba9b0"
+                android:textSize="@dimen/sp18_s"/>
+
+            <CheckBox
+                android:id="@+id/remember_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/login_checkbox_button"
+                android:paddingLeft="@dimen/dp4_w"
+                android:text="@string/remember_pwd"
+                android:textColor="#9ba9b0"
+                android:textSize="@dimen/sp16_s"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

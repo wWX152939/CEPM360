@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/portal_model_my_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:orientation="horizontal" >	    
+	        
+	    <LinearLayout
+	        android:id="@+id/nostart_task_layout"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="2"
+	        android:background="@drawable/portal_my_task_button_selector"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	    	
+		    <TextView 
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/not_start"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:textSize="@dimen/sp14_s"
+		    	android:gravity="center_vertical"
+		    	android:textColor="#5f6467"/>
+    
+		    <TextView 
+		        android:id="@+id/nostart_task_number"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="0"
+		    	android:textSize="@dimen/sp20_s"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:layout_marginBottom="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:gravity="center_vertical"
+		    	android:textColor="#33b5e5"/>       
+	    
+	    </LinearLayout>	    
+	    
+	    <View
+	        android:layout_width="1px"
+	        android:layout_height="match_parent"
+		    android:layout_marginTop="@dimen/dp10_h"
+	        android:background="@color/content_listview_edge_bg"
+	        android:visibility="visible" />	    
+	    
+	    <LinearLayout
+	        android:id="@+id/starting_task_layout"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="2"
+	        android:background="@drawable/portal_my_task_button_selector"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	    	
+		    <TextView 
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/ongoing"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:textSize="@dimen/sp14_s"
+		    	android:gravity="center_vertical"
+		    	android:textColor="#5f6467"/>
+    
+		    <TextView 
+		        android:id="@+id/starting_task_number"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="0"
+		    	android:textSize="@dimen/sp20_s"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:layout_marginBottom="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:gravity="center_vertical"
+		    	android:textColor="#33b5e5"/>         
+	    
+	    </LinearLayout>  
+	    
+	    <View
+	        android:layout_width="1px"
+	        android:layout_height="match_parent"
+		    android:layout_marginTop="@dimen/dp10_h"
+	        android:background="@color/content_listview_edge_bg"
+	        android:visibility="visible" />	    
+	    
+	    <LinearLayout
+	        android:id="@+id/delay_task_layout"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="2"
+	        android:background="@drawable/portal_my_task_button_selector"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+		    	
+		    <TextView 
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/delay"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:textSize="@dimen/sp14_s"
+		    	android:gravity="center_vertical"
+		    	android:textColor="#5f6467"/>
+    
+		    <TextView 
+		        android:id="@+id/delay_task_number"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="0"
+		    	android:textSize="@dimen/sp20_s"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:layout_marginBottom="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:gravity="center_vertical"
+		    	android:textColor="#e92272"/>      		    
+	    
+	    </LinearLayout>  	    
+	          
+    </LinearLayout>
+ 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+    	android:layout_marginTop="@dimen/dp10_h"
+    	android:layout_marginBottom="@dimen/dp10_h"
+    	android:layout_marginLeft="@dimen/dp10_w"
+    	android:layout_marginRight="@dimen/dp10_w"
+        android:background="@color/content_listview_edge_bg"
+        android:visibility="visible" />	    
+   
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:layout_marginBottom="@dimen/dp10_h"
+    	android:orientation="horizontal">
+	    
+	    <LinearLayout 
+		    android:id="@+id/today_expire_layout"
+	    	android:layout_width="0dp"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="1"
+	    	android:clickable="true"
+	    	android:background="@drawable/portal_my_task_button_selector"
+	    	android:orientation="vertical">
+
+		    <TextView 
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/expire_today"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:textSize="@dimen/sp14_s"
+		    	android:gravity="center_vertical"
+		    	android:textColor="#5f6467"/>
+    
+		    <TextView 
+		        android:id="@+id/today_expire_number"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:text="0"
+		    	android:textSize="@dimen/sp20_s"
+		    	android:textColor="#33b5e5"/>	        			
+	        
+		</LinearLayout>
+		
+		<View
+	        android:layout_width="1px"
+	        android:layout_height="match_parent"
+	        android:background="@color/content_listview_edge_bg"
+	        android:visibility="visible" />	    
+		
+	    <LinearLayout 
+		    android:id="@+id/week_expire_layout"
+	    	android:layout_width="0dp"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="1"
+	    	android:clickable="true"
+	    	android:background="@drawable/portal_my_task_button_selector"
+	    	android:orientation="vertical">
+
+		    <TextView 
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:text="@string/expire_this_week"
+		    	android:textSize="@dimen/sp14_s"
+		    	android:textColor="#5f6467"/>
+    
+		    <TextView 
+		        android:id="@+id/week_expire_number"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:text="0"
+		    	android:textSize="@dimen/sp20_s"
+		    	android:textColor="#33b5e5"/>	        			
+	        
+		</LinearLayout>
+		
+		<View
+	        android:layout_width="1px"
+	        android:layout_height="match_parent"
+	        android:background="@color/content_listview_edge_bg"
+	        android:visibility="visible" />	    
+		
+	    <LinearLayout 
+		    android:id="@+id/month_expire_layout"
+	    	android:layout_width="0dp"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="1"
+	    	android:clickable="true"
+	    	android:background="@drawable/portal_my_task_button_selector"
+	    	android:orientation="vertical">
+
+		    <TextView 
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:text="@string/expire_this_month"
+		    	android:textSize="@dimen/sp14_s"
+		    	android:textColor="#5f6467"/>
+    
+		    <TextView 
+		        android:id="@+id/month_expire_number"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="@dimen/dp10_h"
+		    	android:paddingLeft="@dimen/dp15_w"
+		    	android:text="0"
+		    	android:textSize="@dimen/sp20_s"
+		    	android:textColor="#33b5e5"/>	        			
+	        
+		</LinearLayout>	    	    
+	       
+    </LinearLayout> 
+    
+</LinearLayout>

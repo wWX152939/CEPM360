@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#30344e" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50_h">
+
+        <TextView
+            android:id="@+id/project_select_title"
+            android:layout_width="@dimen/dp200_w"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp16_w"
+            android:gravity="left"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16_s"/>
+
+        <ImageView
+            android:id="@+id/project_select_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp32_w"
+            android:background="@drawable/project_unchecked" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp48_h"
+    android:layout_marginBottom="@dimen/dp10_h"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dp20_w"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:layout_gravity="center_vertical"            
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/previous"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" />
+
+    <Button
+        android:id="@+id/btn_middle"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" />
+    
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp20_w"
+        android:layout_marginBottom="@dimen/dp6_h"
+        android:layout_marginTop="@dimen/dp6_h"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/button_corners_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/complete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp17_s" />
+
+</LinearLayout>

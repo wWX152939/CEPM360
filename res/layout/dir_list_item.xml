@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pm360.cepm360.app.common.view.SHWhiteLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tree_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/table_height"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/type"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp2_w"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/content_tree_text_size"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:textAppearanceMedium"/>
+</com.pm360.cepm360.app.common.view.SHWhiteLinearLayout>

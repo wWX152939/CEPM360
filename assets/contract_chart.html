@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>ichartjs ccl</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="ichart-1.0.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var data = [
+				         	{
+				         		name : '合同额',
+				         		value:[960000,650000,970000,1200000,870000,2150000,3000000],
+				         		color:'#3977c0'
+				         	},
+				         	{
+				         		name : '已支付额',
+				         		value:[100000,80000,120000,240000,60000,230000,340000],
+				         		color:'#c63b38'
+				         	},
+				         	{
+				         		name : '未支付额',
+				         		value:[860000,570000,850000,960000,810000,1920000,2660000],
+				         		color:'#8cb140'
+				         	},
+				         	{
+				         		name : '预计支付额',
+				         		value:[200000,100000,70000,350000,130000,550000,2400000],
+				         		color:'#704f96'
+				         	}							
+				         ];
+				var chart = new iChart.ColumnMulti2D({
+						render : 'canvasDiv',
+						data: data,
+						labels:["地基合同","搭建框架合同","内部干燥合同","外部工程合同","混凝土浇注合同","内部工作合同","绿化和土方合同"],
+						title : {
+							text:'大理洱海渔村项目(费用执行情况)',
+							color:'#ffffff',
+							fontsize:20,
+							fontweight:'bold',
+						},
+						width : 750,
+						height : 360,
+						offsety:-30,
+						offsetx:-20,
+						/*图表外部的矩形区域*/
+						background_color : '#012060',
+						sub_option : {
+							/*图表柱子*/
+							label : false,
+							fontsize : 50,
+						},	
+
+						legend:{
+						/*图例的矩形区域*/
+							enable:true,
+							color:'#ffffff',
+							background_color : null,
+							border : {
+								enable : false
+							}
+						},
+						label:{
+							/*横轴字体颜色*/
+							offsetx:-5,
+							offsety:5,
+							rotate:-45,
+							textAlign:'right',
+							color:'#ffffff'
+						},
+						coordinate:{
+							/*图表内部的矩形区域*/
+							width:520,
+							height:200,
+							grid_color:'#60697a',//配置间距横线颜色
+							axis:{
+								color:'#4e5464',//配置图表框颜色
+								width:[0,0,1,1]//配置图表框四周宽度
+							},							
+							scale:[{
+								 position:'left',//配置左值轴	
+								 start_scale:0,//设置开始刻度
+								 end_scale:3500000,//设置结束刻度
+								 scale_space:500000,//设置刻度间距
+								 label:{
+									/*纵轴字体颜色*/
+									color:'#ffffff'
+								 },
+								 listeners:{//配置事件
+									parseText:function(t,x,y){//设置解析值轴文本
+										return {text:"￥"+t}//添加“￥”符号
+									}
+								}								 
+							}]							
+						}
+				});				
+				chart.draw();
+			});
+				
+			</script>
+		</head>
+		<body>
+			<div id='canvasDiv'></div>
+		</body>
+</html>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/dp32_h"
+    android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/role_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:button="@drawable/table_checkbox_button"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/role_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp8_w"
+            android:text="@string/permission_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16_s"/>
+
+
+</LinearLayout>

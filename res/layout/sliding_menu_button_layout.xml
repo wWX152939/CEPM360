@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.pm360.cepm360.app.common.view.ScheduleSlidingPaneLayout
+        android:id="@+id/sliding_pane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/task_home_list_line" >
+
+        <!-- The navigation drawer -->
+
+        <LinearLayout
+            android:id="@+id/left_pane"
+            android:layout_width="@dimen/dp148_w"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/task_home_list_line"
+            android:choiceMode="singleChoice"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="@dimen/dp148_w"
+                android:layout_height="match_parent"
+                android:background="@color/task_home_background" >
+
+                <LinearLayout
+                    android:id="@+id/task_listview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/home"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/task_navigation_textview_height"
+                        android:gravity="center"
+                        android:text="@string/schedule_navigation_title"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp24_s"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/task_navigation_line"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/planmake"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/task_navigation_textview_height"
+                        android:background="#272b2e"
+                        android:drawableLeft="@drawable/ic_navigation_task_create"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp25_w"
+                        android:text="@string/schedule_navigation_item_1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp18_s"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/task_navigation_line"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/taskfeedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/task_navigation_textview_height"
+                        android:drawableLeft="@drawable/refresh_white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp25_w"
+                        android:text="@string/schedule_navigation_item_2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp18_s"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/task_navigation_line"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_selected_indicator_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/task_navigation_textview_height" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp24_h"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/shadow_up" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/task_navigation_textview_height" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/task_navigation_textview_height" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp24_h"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/shadow_down" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- The main content view -->
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:background="@color/task_navigation_space"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </com.pm360.cepm360.app.common.view.ScheduleSlidingPaneLayout>
+
+</LinearLayout>

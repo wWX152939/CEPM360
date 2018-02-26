@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/listHeaderView"
+        layout="@layout/schedule_daily_update_list_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1_h"
+        android:background="#217f7f9c" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="true"
+        android:divider="#217f7f9c"
+        android:dividerHeight="@dimen/dp1_w"
+        android:focusable="false"
+        android:scrollbars="none" />
+
+</LinearLayout>

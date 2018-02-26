@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/schedule_table_height"
+    android:background="@drawable/task_child_list_title_background"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/task_make_resource_id"
+        android:layout_width="@dimen/dp80_w"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp14_s"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/task_child_list_line"
+        android:visibility="visible" />
+
+    <com.pm360.cepm360.app.common.view.CHScrollView
+        android:id="@+id/item_chscroll_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:tag="CHScrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+           <TextView
+                android:id="@+id/task_make_resource_type"
+                android:layout_width="@dimen/dp180_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/sp14_s"/>
+			<View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_child_list_line"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/task_make_resource_number"
+                android:layout_width="@dimen/dp180_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:paddingLeft="@dimen/table_padding_left"
+                android:textSize="@dimen/sp14_s"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/task_child_list_line"
+                android:visibility="visible" />
+            
+        </LinearLayout>
+    </com.pm360.cepm360.app.common.view.CHScrollView>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<shape xmlns:android="http://schemas.android.com/apk/res/android">    
+
+<!--     <gradient   -->
+<!--         android:angle="90"    -->
+<!--         android:centerX="0.5"   -->
+<!--         android:centerY="0.5"   -->
+<!--         android:endColor="@color/task_child_list_title_end"   -->
+<!--         android:startColor="@color/task_child_list_title_start" -->
+<!--         android:type="linear" />      -->
+
+    <solid
+        android:color="@color/content_listview_header_bg"/><!-- 填充的颜色 -->
+        
+</shape>

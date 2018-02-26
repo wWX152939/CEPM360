@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_dialog_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ticket_dialog_bg"
+    android:orientation="vertical" >
+    
+	<LinearLayout  
+	    android:id="@+id/focus"
+        android:layout_width="0px" 
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"/>    
+    
+	<include 
+        android:id="@+id/title"
+        layout="@layout/dialog_title_bar"/>    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:background="@android:color/white"
+		android:layout_marginBottom="10dp"
+        android:padding="20dp" >
+		
+		<TextView
+		    android:id="@+id/export_filename"
+		    android:layout_width="wrap_content"
+		    android:layout_height="@dimen/dp48_h"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="10dp"
+		    android:gravity="center"
+		    android:text="@string/export_filename_title"
+		    android:textColor="@android:color/black"
+		    android:textSize="18sp" />
+		
+		<EditText
+		    android:id="@+id/export_filename_edit"
+		    android:layout_width="350dp"
+		    android:layout_height="@dimen/dp48_h"
+		    android:layout_alignBaseline="@+id/export_filename"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_toRightOf="@+id/export_filename"
+		    android:background="@drawable/combination_edit_text_bg"
+		    android:gravity="right"
+		    android:padding="10dp"
+		    android:text="@string/export_filename_content"
+		    android:textColor="@color/black"
+		    android:textCursorDrawable="@null"
+		    android:textSize="18sp" />
+		
+		<TextView
+		    android:id="@+id/export_filename_type"
+		    android:layout_width="wrap_content"
+		    android:layout_height="@dimen/dp48_h"
+		    android:layout_alignBaseline="@+id/export_filename"
+		    android:layout_toRightOf="@+id/export_filename_edit"
+		    android:gravity="center"
+		    android:text="@string/export_file_type"
+		    android:textColor="@android:color/black"
+		    android:textSize="18sp" />		
+		
+		<TextView
+		    android:id="@+id/export_filepath"
+		    android:layout_width="wrap_content"
+		    android:layout_height="@dimen/dp48_h"
+		    android:layout_alignLeft="@+id/export_filename"
+		    android:layout_below="@+id/export_filename"
+		    android:layout_marginTop="10dp"
+		    android:gravity="center"
+		    android:text="@string/export_path_title"
+		    android:textColor="@android:color/black"
+		    android:textSize="18sp" />
+		
+		<TextView
+		    android:id="@+id/export_filepath_edit"
+		    android:layout_width="350dp"
+		    android:layout_height="@dimen/dp48_h"
+		    android:layout_alignBaseline="@+id/export_filepath"
+		    android:layout_alignLeft="@+id/export_filename_edit"
+		    android:layout_toRightOf="@+id/export_filepath"
+		    android:background="@drawable/corners_nocolor_bg"
+		    android:gravity="center_vertical|right"
+		    android:padding="10dp"
+		    android:text="@string/export_path_content"
+		    android:textColor="@android:color/black"
+		    android:textSize="18sp" />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

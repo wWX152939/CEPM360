@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp600_w"
+    android:layout_height="@dimen/dp420_h"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- title bar -->
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp46_h"
+        android:background="@color/dialog_title_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp46_h"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/dp18_w"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp17_s" />
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/dp46_h"
+            android:layout_height="@dimen/dp46_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp8_h"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:padding="@dimen/dp10_h"
+            android:background="@drawable/dialog_button_close_bg"
+            android:src="@drawable/popup_exit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+
+        <include
+            android:id="@+id/list"
+            layout="@layout/project_table4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48_h"
+        android:layout_marginBottom="@dimen/dp10_w"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_import"
+            android:layout_width="@dimen/dp140_w"
+            android:layout_height="@dimen/dp40_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:background="@drawable/button_corners_blue_bg"
+            android:paddingBottom="@dimen/dp4_h"
+            android:paddingEnd="@dimen/dp40_w"
+            android:paddingStart="@dimen/dp40_w"
+            android:paddingTop="@dimen/dp4_h"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16_s" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="@dimen/dp140_w"
+            android:layout_height="@dimen/dp40_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:background="@drawable/button_corners_blue_bg"
+            android:paddingBottom="@dimen/dp4_h"
+            android:paddingEnd="@dimen/dp40_w"
+            android:paddingStart="@dimen/dp40_w"
+            android:paddingTop="@dimen/dp4_h"
+            android:text="@string/clear"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16_s" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="@dimen/dp140_w"
+            android:layout_height="@dimen/dp40_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp8_w"
+            android:layout_marginRight="@dimen/dp8_w"
+            android:background="@drawable/button_corners_blue_bg"
+            android:paddingBottom="@dimen/dp4_h"
+            android:paddingEnd="@dimen/dp40_w"
+            android:paddingStart="@dimen/dp40_w"
+            android:paddingTop="@dimen/dp4_h"
+            android:text="@string/close"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16_s"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

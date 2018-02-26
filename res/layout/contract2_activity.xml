@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/task_navigation_space"
+    android:orientation="horizontal" >
+    
+    <com.pm360.cepm360.app.common.view.BaseSlidingPaneLayout
+        android:id="@+id/sliding_pane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <FrameLayout
+        android:layout_width="@dimen/dp240_w"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/combination_eps_bg"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/eps_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/schedule_title_table_height"
+                android:background="@drawable/combination_eps_title_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/project_directory"
+                android:textColor="#4f4d4d"
+                android:textSize="@dimen/sp16_s"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1_h"
+                android:background="#e8edee" />
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="#e8edee"
+                android:dividerHeight="@dimen/dp1_h" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp1_w"
+            android:layout_height="match_parent"
+            android:background="@color/task_child_list_line" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/task_navigation_space" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp2_w"
+            android:layout_marginRight="@dimen/dp2_w"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/listHeaderView"
+                layout="@layout/contract2_list_item" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/task_child_list_table"
+                android:cacheColorHint="#52555c"
+                android:clickable="true"
+                android:divider="#c5707070"
+                android:dividerHeight="@dimen/dp1_h"
+                android:focusable="false"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <com.pm360.cepm360.app.common.view.FloatingMenuView
+            android:id="@+id/floating_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/dp16_h"
+            android:layout_marginEnd="@dimen/dp260_w"
+            android:clickable="true"
+            android:src="@drawable/btn_add" />
+    </FrameLayout>
+    </com.pm360.cepm360.app.common.view.BaseSlidingPaneLayout>
+</LinearLayout>

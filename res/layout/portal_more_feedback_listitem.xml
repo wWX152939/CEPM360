@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/table_height"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="@dimen/dp60_w"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="@color/dialog_list_content_text_color"
+        android:textSize="@dimen/table_content_textsize"/>
+    
+     <TextView
+        android:id="@+id/tv2"
+        android:layout_width="@dimen/dp240_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="3"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="@color/dialog_list_content_text_color"
+        android:textSize="@dimen/table_content_textsize"/>
+    
+     <TextView
+        android:id="@+id/tv3"
+        android:layout_width="@dimen/dp240_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:layout_weight="3"
+        android:textColor="@color/dialog_list_content_text_color"
+        android:textSize="@dimen/table_content_textsize"/>
+    
+     <TextView
+        android:id="@+id/tv4"
+        android:layout_width="@dimen/dp100_w"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:textColor="@color/dialog_list_content_text_color"
+        android:textSize="@dimen/table_content_textsize"/>
+    
+     <TextView
+        android:id="@+id/tv5"
+        android:layout_width="@dimen/dp100_w"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="2"
+        android:paddingLeft="@dimen/table_padding_left"
+        android:textColor="@color/dialog_list_content_text_color"
+        android:textSize="@dimen/table_content_textsize"/>
+    
+     <TextView
+        android:id="@+id/tv6"
+        android:layout_width="@dimen/dp100_w"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:textColor="@color/dialog_list_content_text_color"
+        android:textSize="@dimen/table_content_textsize"/>
+</LinearLayout>
+
+
